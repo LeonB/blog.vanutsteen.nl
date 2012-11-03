@@ -1,0 +1,19 @@
+---
+comments: true
+date: 2012-01-21 19:40:54
+layout: post
+slug: git-add-u
+title: git add -u
+wordpress_id: 593
+categories:
+- development
+tags:
+- git
+---
+
+This is a nice one:
+```
+git add -u
+```
+
+This only adds already commited files to a new commit. And leaves files not in the git repository alone.

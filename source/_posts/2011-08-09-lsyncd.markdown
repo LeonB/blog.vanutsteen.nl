@@ -1,0 +1,43 @@
+---
+comments: true
+date: 2011-08-09 23:50:19
+layout: post
+slug: lsyncd
+title: Lsyncd
+wordpress_id: 525
+categories:
+- Linux
+- python
+tags:
+- freebsd
+- lsyncd
+- make
+- python
+- rsync
+- sftp
+- spamassassin
+- ssh
+- Ubuntu
+---
+
+[![FreeBSD rsync config](http://www.vanutsteen.nl/wp-content/uploads/2011/08/rsync_config-300x231.png)](http://www.vanutsteen.nl/wp-content/uploads/2011/08/rsync_config.png)I was messing around with some python script to test a spamassassin install. It checks al the mail in the spam folder an see if it is marked as spam. Then it goes through the mail in ham/ and see if it passes as not-spam.
+
+So I'm developing it on my local computer but I wanted to test it on a remote server. Well, actually not that remote because I can touch it from where I'm sitting but that's not the point :) The point was that I needed something to keep the remote version of the sourcecode in sync with the local source. Google to the rescue and I found [lsyncd](http://code.google.com/p/lsyncd).
+
+A nice little tool to sync two directories with rsync. Too bad it didn't support transfers only via sftp because freebsd (the remote server) doesn't come with rsync installed. So I had to install that also :( Yeah, tough job....
+
+```
+cd /usr/ports/net/rsync
+make config
+make install
+```
+
+Then on the local machine:
+
+```
+lsyncd --no-daemon --delay 1 ~/Workspaces/spamassassin-test/ beastie:~/spamassassin-test/
+```
+
+You have to specify the remote directory or else it will wipe you home folder as I discovered...
+
+After this was done I could go on developing.

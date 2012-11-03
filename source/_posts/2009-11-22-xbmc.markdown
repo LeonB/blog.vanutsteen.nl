@@ -1,0 +1,22 @@
+---
+comments: true
+date: 2009-11-22 23:15:37
+layout: post
+slug: xbmc
+title: XBMC....
+wordpress_id: 447
+categories:
+- Linux
+tags:
+- sucks
+- xmbc
+---
+
+![xbmc_410](http://www.vanutsteen.nl/wp-content/uploads/2009/11/xbmc_410.jpg)In reply to [my last article about media centers](http://www.vanutsteen.nl/2008/11/19/mythtv-vs-freevo-vs-xbmc-vs-mediaportal-vs-elisa/).
+Well, I installed xbmc this weekend and actually it kinda sucked. Installation was a breeze: kudos for that. But when I ran it, it hogged all of the cpu time of the second core. 100% constantly.
+
+I've got an Ati hd3200 integrated on the motherboard and in combination with XBMC I believe that's a bad choice. I've read numerous threads about people having the same problem as me :( I'm quite upset with this. I don't blame the XBMC developers, they do a fabulous job, but still it sucks.
+
+I hope that in the next couple of weeks this problem is solved but I don't think it will. I'm now looking for an alternative but XBMC just _looks_ so polished.... It's too bad it's not usable for me :cry:
+
+I'm now downloading the live cd of XBMC and see if that works 'cause I dont know who to blame: me, ati, xbmc or ubuntu...

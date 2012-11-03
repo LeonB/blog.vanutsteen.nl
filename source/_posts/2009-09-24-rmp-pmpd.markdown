@@ -1,0 +1,21 @@
+---
+comments: true
+date: 2009-09-24 06:40:00
+layout: post
+slug: rmp-pmpd
+title: Rmp -> Pmpd
+wordpress_id: 362
+categories:
+- development
+- python
+- Ruby
+tags:
+- github
+- mpd
+- python
+- Ruby
+---
+
+![monty-python](http://www.vanutsteen.nl/wp-content/uploads/2009/09/monty-python.jpg)I've ditched [Ruby for my mpd project](http://github.com/LeonB/rmpd) and started using Python. Not that I like python that much more but the Gstreamer library for python is much more complete. I really wanted gapless playback and the Ruby Gstreamer libray just doesn't support that. If it does by the time you read this: please let me know :)
+
+The new Pmpd project (looking for a better name) can be found on [github](http://github.com/LeonB/pmpd). The hardest part so far is having to restructure the sources. Python is not a difficult language to master at all but I'm very picky on how everything fits together. My ruby project felt right on that part. But the python equivelant has some things I just don't like enough up to now.
