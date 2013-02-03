@@ -1,0 +1,19 @@
+--- suexec.orig.c	2008-06-14 19:37:18.000000000 +0200
++++ suexec.patched.c	2008-06-14 19:38:39.000000000 +0200
+@@ -563,6 +563,7 @@ int main(int argc, char *argv[])
+      * Error out if the target name/group is different from
+      * the name/group of the cwd or the program.
+      */
++/*No file owner check
+     if ((uid != dir_info.st_uid) ||
+         (gid != dir_info.st_gid) ||
+         (uid != prg_info.st_uid) ||
+@@ -574,6 +575,8 @@ int main(int argc, char *argv[])
+                 prg_info.st_uid, prg_info.st_gid);
+         exit(120);
+     }
++*/
++
+     /*
+      * Error out if the program is not executable for the user.
+      * Otherwise, she won't find any error in the logs except for

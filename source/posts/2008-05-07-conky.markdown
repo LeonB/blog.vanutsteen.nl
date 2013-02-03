@@ -1,0 +1,15 @@
+---
+comments: true
+date: 2008-05-07 23:39:16
+layout: post
+slug: conky
+title: Conky
+wordpress_id: 56
+categories:
+- Linux
+tags:
+- conky
+- frustrations
+---
+
+[![Grof taalgebruik](/images/uploads/2008/05/groftaalgebruik.jpg)](/images/uploads/2008/05/groftaalgebruik.jpg)If I browse some random "post your screenshots here" thread, I always think by myself: "I should install Conky one time, It looks godverdomme nice". So I apt-get install conky. And what a dissapointment. It doesn't work out of the box. You have to make and edit a conkyrc file. Just downloading some random .conkyrc doesn't work because it isn't geared towards your system. *Sigh* Just wished everything was [apt 'n run](2008/05/07/resizing-images-from-within-gnome).

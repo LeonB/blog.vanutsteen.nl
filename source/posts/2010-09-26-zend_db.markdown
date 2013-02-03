@@ -1,0 +1,20 @@
+---
+comments: true
+date: 2010-09-26 23:31:02
+layout: post
+slug: zend_db
+title: Zend_db
+wordpress_id: 494
+categories:
+- development
+- PHP
+tags:
+- crap
+- zend
+- zend_db
+- zf
+---
+
+[![Zend Framework logo](/images/uploads/2010/09/zf_logo.png)](/images/uploads/2010/09/zf_logo.png)The last few days I've been spending my time on creating a website with Zend Framework. A lot of it I liked but the Zend_db stuff is is a complicated piece of crap. I've worked with a lot of ORM's and db api's but the Zend_db stuff is really the most awfull I've had till now.
+
+I really, really don't want to work with it ever again and I regret that I chose ZF for this particular project just because of the db layer.

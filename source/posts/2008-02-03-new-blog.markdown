@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2008-02-03 12:05:43
+layout: post
+slug: new-blog
+title: New blog!
+wordpress_id: 3
+categories:
+- Other
+---
+
+I removed my [old blog](http://v2.vanutsteen.nl) and created this brand new one! Hopefully I'm going to post a little more here. Maybe some more on Rails. And I'm planning to pick up bass guitar playing again! So maybe some new bass tabs in the near future!
