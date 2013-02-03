@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><%= settings.title %></title>
+  <subtitle><%= settings.subtitle %></subtitle>
+  <link href="<%= settings.url %>/atom.xml" rel="self"/>
+  <link href="<%= settings.url %>/"/>
+  <id>urn:uuid:<%= settings.uuid %></id>
+  <updated><%= Time.now.strftime('%FT%T%:z') %></updated>
+  <rights>Copyright (c) <%= Date.today.strftime('%Y') %>, <%= settings.author %></rights>
+  <author>
+    <name><![CDATA[<%= settings.author %>]]></name>
+    <email><![CDATA[<%= settings.email %>]]></email>
+  </author>
+  <generator uri="http://middlemanapp.com/">Middleman</generator>
+  <% articles ||= blog.articles %>
+  <% articles.each do |article| %>
+  <entry>
+    <title type="html"><![CDATA[<%= article.title %>]]></title>
+    <link href="<%= settings.url %><%= article.url %>"/>
+    <published><%= article.date.strftime('%FT%T%:z') %></published>
+    <updated><%= article.date.strftime('%FT%T%:z') %></updated>
+    <id>urn:uuid:<%= UUID.create_sha1(settings.url + article.url, UUID::NameSpace_URL) %></id>
+    <summary type="html"><![CDATA[<%= article.summary %>]]></summary>
+    <content type="html"><![CDATA[<%= article.body %>]]></content>
+  </entry>
+  <% end %>    
+</feed>
