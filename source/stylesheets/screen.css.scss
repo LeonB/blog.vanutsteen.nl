@@ -3,20 +3,14 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-// Core variables and mixins
-// @import "bootstrap/variables"; // Modify this for custom colors, font-sizes, etc
-// @import "bootstrap/mixins";
-
-// CSS Reset
-// @import "compass/reset";
-
 @import "compass/css3/images";
+
+$grid-max-width: 1170px;
+
 @import "zurb/shared";
 @import "zurb/globals"; //includes reset
 @import "zurb/grid";
-// @import "bootstrap/grid";
-// @import "bootstrap/layouts";
-// @import "bootstrap-responsive";
+@import "zurb/mobile";
 @import "github";
 
 /*@include makeFluidColumn(2);
@@ -26,13 +20,14 @@ body {
 	font-family: 'Open Sans', Arial, sans-serif !important;
 	color: #676761;
 	background-color: #F5F5EC;
-	line-height: 20px;
+	line-height: 125%;
 	background-image: image-url('line-tile.png');
 	background-position: top left;
+	font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	padding-bottom: 5px;
+	padding-bottom: 0.3em;
 	color: #676761;
 	letter-spacing: -1px;
 	line-height: 1em;
@@ -43,14 +38,14 @@ h1 {
 	font-size: 1.88em; //30px
 	a {
 		font-weight: bold;
-		font-size: 34px;
+		font-size: 2em;
 	}
 }
 
 h2 {
 	font-weight: bold;
 	font-size: 1.88em; //30px
-	padding: 20px 0 20px 20px;
+	padding: 0.75em 0 0.75em 0.75em;
 	text-transform: uppercase;
 	a {
 		text-decoration: none;
@@ -59,7 +54,7 @@ h2 {
 
 h3 {
 	padding: 0.94em 0 0.94em 0;
-	font-size: 22px;
+	font-size: 1.4em;
 }
 
 h4 {
@@ -67,11 +62,12 @@ h4 {
 	text-transform: uppercase;
 	font-size: 0.86em;
 	color: #676761;
-	padding-bottom: 13px;
+	padding-bottom: 0.8em;
 }
 
 a {
 	color: #676761;
+	text-decoration: underline;
 }
 
 a:hover {
@@ -95,7 +91,8 @@ ul li {
 	background-image: image-url('footer-bullet.png');
 	background-repeat: no-repeat;
 	background-position: 0 8px;
-	padding-left: 0.4em;
+	padding-left: 0.94em;
+	margin: 0;
 }
 
 em {
@@ -112,9 +109,8 @@ code {
 }
 
 figure {
-	border: 1px solid #DDD;
 	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 
 	code {
 		margin: 0;
@@ -129,15 +125,17 @@ figure {
 
 figcaption {
 	@include background-image(linear-gradient(color-stops(#FAFAFA, #EAEAEA)));
-	font-size: 75%;
+	font-size: 0.75em;
 	padding: 5px 10px;
-	height: 20px;
+	height: 1.67em;
+	border-top: 1px solid #DDD;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
 }
 
 .highlighttable {
 	font-family: Consolas, "Liberation Mono", Courier, monospace;
 	width: 100%;
-	border-top: 1px solid #DDD;
 
 	pre {
 		line-height: 1.84em; //22px
@@ -148,6 +146,7 @@ figcaption {
 		text-align: right;
 		background-color: #ECECEC;
 		border-right: 1px solid #DDD;
+		padding: 0;
 		padding-left: 0;
 		vertical-align: top;
 		/*position: absolute;*/
@@ -164,6 +163,7 @@ figcaption {
 	}
 
 	td.code {
+		padding: 0;
 		padding-left: 10px;
 		width: 100%;
 		vertical-align: top;
@@ -189,30 +189,32 @@ figcaption {
 * Body gebeuren
 ****************************/
 .container {
-	margin-top: 50px;
+	margin-top: 3em;
 	position: relative;
-
-	@media (max-width: 767px) {
-		margin-top: 12px;
-	}
-}
-
-header {
-	margin-bottom: 20px;
 }
 
 /*header*/h1.title {
 	font-size: 1em;
 	margin-left: 0;
+	float: left;
 }
 
 .subtitle {
-	display: inline;
+	display: inline !important;
+
+	@media only screen and (max-width: 767px) {
+		display: none !important;
+	}
 }
 
 header {
+	margin-bottom: 1.25em !important;
+
+	@media only screen and (max-width: 767px) {
+		margin-bottom: 0 !important;
+	}
+
 	a {
-		margin-right: 20px;
 		margin-left: 0;
 		text-decoration: none;
 	}
@@ -223,14 +225,15 @@ header {
 	}
 }
 
-/* role=navigation */
-nav.span4 {
-	float: right;
-}
-
 nav {
+	float: right;
+
 	ul {
 		float: right;
+
+		@media only screen and (max-width: 767px) {
+			margin-bottom: 0 !important;
+		}
 	}
 
 	li {
@@ -243,7 +246,7 @@ nav {
 	}
 
 	a {
-		margin-left: 15%;
+		margin-left: 0.88em;
 		margin-right: 0;
 		font-weight: bold;
 		text-decoration: none;
@@ -254,21 +257,6 @@ nav {
 	border: 1px solid #F0F0E5;
 	background-color: white;
 	@include box-shadow(0 0 4px rgba(0, 0, 0, 0.1));
-	// padding-left: $gridGutterWidth;
-	margin-left: -30px;
-
-	@media (max-width: 767px) {
-		padding-left: 0px;
-		margin-left:  0px;
-	}
-	@media (min-width: 768px) and (max-width: 979px) {
-		// padding-left: $gridGutterWidth768;
-		margin-left: -30px;
-	}
-	@media (min-width: 1200px) {
-		// padding-left: $gridGutterWidth1200;
-		margin-left: -30px;
-	}
 }
 
 .breadcrumbs {
@@ -276,20 +264,24 @@ nav {
 	background-color: white;
 	font-size: 0.86em;
 	text-transform: uppercase;
-	padding: 21px 0 21px 20px;
+
 	a {
 		font-weight: bold;
 		color: #676761;
 		text-decoration: none;
 	}
+
 	ul {
-		margin-left: 0;
+		padding: 1.25em 0 1.25em 1.25em !important;
+		margin: 0;
 		list-style-type: none;
-		padding: 0px;
+		float: left !important;
+
 		li {
 			float: left;
 			background-image: none;
 			padding: 0;
+			margin: 0;
 		}
 	}
 }
@@ -301,11 +293,7 @@ nav {
 
 .content {
 	background-color: white;
-
-	.span8 {
-		border-right: 1px solid #F0F0E5;
-		margin-left: 0;
-	}
+	border-right: 1px solid #F0F0E5;
 }
 
 article {
@@ -319,7 +307,7 @@ article {
 		// overflow: auto;
 
 		img {
-			margin: 20px;
+			margin: 1.25em;
 			width: 100%;
 		}
 
@@ -365,19 +353,19 @@ article {
 	.banner img {
 		width: 100%;
 		margin: 0;
-		margin-bottom: 20px;
+		margin-bottom: 1.25em;
 	}
 
 	h1 {
 		margin: 0;
 		font-weight: bold;
-		font-size: 30px;
-		padding: 20px 0 20px 20px;
+		font-size: 1.88em;
+		padding: 0.67em 0 0.67em 0.67em;
 		text-transform: uppercase;
 	}
 
 	header {
-		margin: 0;
+		margin: 0 !important;
 
 		.meta {
 			margin-left: auto;
@@ -430,13 +418,10 @@ article {
 }
 
 aside {
-	padding-top: 23px;
+	padding-top: 2em;
 
 	section {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 35px;
-		width: 89%;
+		margin-bottom: 2em;
 	}
 
 	a {
@@ -444,7 +429,7 @@ aside {
 	}
 
 	li {
-		padding-bottom: 7px;
+		padding-bottom: 0.5em;
 	}
 }
 
@@ -457,7 +442,25 @@ footer {
 	}
 }
 
-#blog-archives {
+.frontpage_posts {
+	border-right: 1px solid #F0F0E5;
+}
+
+.post_detail {
+	border-right: 1px solid #F0F0E5;
+}
+
+.blog_categories {
+	border-right: 1px solid #F0F0E5;
+
+	h1 {
+		margin: 0;
+		font-weight: bold;
+		font-size: 1.88em;
+		padding: 0.67em 0 0.67em 0.67em;
+		text-transform: uppercase;
+	}
+
 	h2 {
 		position: absolute;
 	}
@@ -466,19 +469,29 @@ footer {
 		padding: 0;
 	}
 
+	ul {
+		margin-left: auto;
+		margin-right: auto;
+		width: 89%;
+	}
+
+	li {
+		background-image: none;
+	}
+
 	div.year {
 		margin-left: 120px;
 	}
 
 	article {
-		padding-top: 30px;
-		padding-bottom: 20px;
+		padding-top: 2em;
+		padding-bottom: 1.25em;
 
 		.row-fluid {
 			padding: 0;
 		}
 
-		[class*="span"] {
+		[class*="columns"] {
 			min-height: 20px;
 
 			@media (max-width: 767px) {
@@ -496,18 +509,17 @@ footer {
 	footer {
 		text-align: left;
 		float: left;
-		padding-top: 0px;
-		border-top: 0px solid transparent;
+		padding-top: 0;
+		border-top: 0 solid transparent;
 	}
 }
 
 .pagination {
 	text-align: right;
-	margin-left: auto;
-	margin-right: auto;
-	width: 89%;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-right: 5.5%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	border-right: 1px solid #F0F0E5;
 
 	.pages {
 		text-transform: uppercase;
@@ -517,17 +529,17 @@ footer {
 
 	.prev {
 		margin-left: 0;
-		margin-right: 20px;
+		margin-right: 1.25em;
 	}
 
 	.next {
 		margin-right: 0;
-		margin-left: 20px;
+		margin-left: 1.25em;
 	}
 }
 
 section.comments {
-	padding-top: 25px;
+	padding-top: 1.5em;
 	margin-left: auto;
 	margin-right: auto;
 	width: 89%;
