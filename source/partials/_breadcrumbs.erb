@@ -1,9 +1,12 @@
 <div class="row breadcrumbs">
-<ul class="span12">
-  <li><a href="/">Home</a></li>
-  <% if current_page.data.title and current_page.url != '/' %>
-  <li><span class="raquo">»</span></li>
-  <li><%= current_page.data.title %></li>
+<ul class="twelve columns">
+	<% breadcrumbs.each do |breadcrumb| %>
+  	<li><%= breadcrumb %></li>
+  	
+  	<% if breadcrumb != breadcrumbs.last %>
+  	<li><span class="raquo">»</span></li>
+  	<% end %>
+  	
   <% end %>
 </ul>
 </div>
