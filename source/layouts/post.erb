@@ -1,0 +1,47 @@
+<% wrap_layout :default do %>
+
+<div class="span8">
+  <article class="hentry" role="article">
+    <header>
+      <h1 class="entry-title"><%= current_page.title %></h1>
+      <p class="meta"><%= partial 'partials/meta', :locals => { :article => current_page } %></p>
+    </header>
+    <div class="entry-content"><%= yield %></div>
+
+    <footer>
+      <p class="meta row-fluid">
+        <% if current_page.previous_article %>
+          <a class="prev span6" href="<%= current_page.previous_article.url %>" title="Previous Post: <%= current_page.previous_article.title %>">
+            &larr; <%= current_page.previous_article.title %>
+          </a>
+        <% end %>
+        <% if current_page.next_article %>
+          <a class="next span6" href="<%= current_page.next_article.url %>" title="Next Post: <%= current_page.next_article.title %>">
+            <%= current_page.next_article.title %> &rarr;
+          </a>
+        <% end %>
+      </p>
+    </footer>
+  </article>
+
+  <section class="comments">
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">
+      <script type="text/javascript">
+            var disqus_shortname = '<%= settings.disqus_short_name %>';
+              // var disqus_developer = 1;
+              var disqus_identifier = '<%= settings.url + current_page.url %>';
+              var disqus_url = '<%= settings.url + current_page.url %>';
+              var disqus_script = 'embed.js';
+          (function () {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          }());
+      </script>
+    </div>
+  </section>
+
+</div>
+
+<% end %>

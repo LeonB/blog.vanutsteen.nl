@@ -1,0 +1,7 @@
+<span class="byline author vcard">Posted by <span class="fn"><%= settings.author %></span></span>
+on
+<time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate>
+  <%= article.date.strftime('%b %e, %Y') %>
+</time>
+in
+<%= partial 'partials/post_categories', :locals => { :article => article } %>

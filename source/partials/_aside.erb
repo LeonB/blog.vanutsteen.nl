@@ -1,0 +1,20 @@
+<aside class="span4 hidden-phone">
+	<section>
+	  <h4>Recent posts</h4>
+	  <ul id="recent_posts">
+	    <% blog.articles[0...5].each do |article| %>
+	      <li><a href="<%= article.url %>"><%= article.title %></a></li>
+	    <% end %>
+	  <ul>
+	</section>
+
+	<section>
+	  <h4>Categories</h4>
+	  <ul id="category_list">
+	    <% blog.categories.keys.sort_by(&:downcase).each do |category| %>
+	    	<% articles = blog.categories[category] %>
+	      <li><a href="<%= category_path(category) %>"><%= category %> (<%= articles.size %>)</a></li>
+	    <% end %>
+	  </ul>
+	</section>
+</aside>

@@ -1,0 +1,1 @@
+<%= (article.categories.sort_by(&:downcase).map {|c| "<a href=\"#{category_path(c)}\">#{c}</a>"}).join(', ') %>
