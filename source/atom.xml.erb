@@ -1,3 +1,4 @@
+<% articles ||= blog.articles -%>
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><%= settings.title %></title>
@@ -12,7 +13,6 @@
     <email><![CDATA[<%= settings.email %>]]></email>
   </author>
   <generator uri="http://middlemanapp.com/">Middleman</generator>
-  <% articles ||= blog.articles %>
   <% articles.each do |article| %>
   <entry>
     <title type="html"><![CDATA[<%= article.title %>]]></title>

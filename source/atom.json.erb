@@ -1,0 +1,45 @@
+<% articles ||= blog.articles -%>
+{
+    "feed": {
+        "title"    : "<%= settings.title %>",
+        "subtitle" : "<%= settings.subtitle %>",
+        "link": [
+            {
+                "@attributes": {
+                    "href": "<%= settings.url %>/atom.json",
+                    "rel": "self"
+                }
+            },
+            {
+                "@attributes": {
+                    "href": "<%= settings.url %>"
+                }
+            }
+        ],
+        "id": "urn:uuid:<%= settings.uuid %>",
+        "updated"  : "<%= Time.now.strftime('%FT%T%:z') %>",
+        "rights" : "Copyright (c) <%= Date.today.strftime('%Y') %>, <%= settings.author %>",
+        "author": {
+            "name": "<%= settings.author %>",
+            "email": "<%= settings.email %>"
+        },
+        "generator" : {
+            "version" : "7.00",
+            "uri" : "http://middlemanapp.com/",
+            "$t" : "Middleman"
+            },
+        "entries" : [
+        <% articles.each do |article| %>
+            {
+                "title"     : <%= article.title.to_json %>,
+                "link"      : "http://darrenknewton.com<%= article.url %>",
+                "published" : "<%= article.date.strftime('%FT%T%:z') %>",
+                "updated"   : "<%= article.date.strftime('%FT%T%:z') %>",
+                "id"        : "urn:uuid:<%= UUID.create_sha1(settings.url + article.url, UUID::NameSpace_URL) %>",
+                "summary"   : <%= article.summary.to_json %>,
+                "content"   : <%= article.body.to_json %>,
+            }<%= "," unless article == articles.last %>
+        <% end %>
+        ]
+    }
+}
