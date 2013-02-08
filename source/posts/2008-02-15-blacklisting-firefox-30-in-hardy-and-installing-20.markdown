@@ -18,14 +18,8 @@ tags:
 
 I used the following resources to accomplish this:
 
-
-
-	
   * http://www.debian.org/doc/manuals/apt-howto/ch-apt-get.en.html
-
-	
   * http://ubuntuforums.org/showthread.php?t=208426
-
 
 First add an additional deb source for feisty packages. I did it like this:
 
@@ -62,6 +56,7 @@ Make sure all of this is executed as sudo!
 
 [edit]
 _ They fixed this "problem". You can now install firefox-2 instead of using this overlay stuff._
+
 ```
 sudo aptitude install firefox-2 firefox-2-gnome-support
 ```

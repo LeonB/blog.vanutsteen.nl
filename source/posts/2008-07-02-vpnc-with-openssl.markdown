@@ -17,7 +17,7 @@ tags:
 
 [![](/images/uploads/2008/07/cisco_logo-300x162.jpg)](/images/uploads/2008/07/cisco_logo.jpg)The default vpnc in Ubuntu comes without openssl support. Bugger... But with these few lines of code this is solved:
 
-```
+``` bash
 sudo apt-get update
 sudo apt-get build-dep vpnc
 sudo apt-get install libssl-dev

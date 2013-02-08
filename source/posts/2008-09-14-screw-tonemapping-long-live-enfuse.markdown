@@ -25,9 +25,8 @@ But I couldn't create a realistic tonemapped image. Qtpfsgui creates a lot of th
 
 After doing some more research I found a commandline utility called [enfuse](http://enblend.sourceforge.net/). There were some very positive and exciting comments on it, so I decided to check it out. I wanted enfuse, which is part of the enblend package on ubuntu. But the newest enblend package on Ubuntu was 3.0. And I needed something newer for enfuse to be part of it. So I had to compile it from source. What I did:
 
-```
-
-sudi aptitude install build-essential
+``` bash
+sudo aptitude install build-essential
 sudo aptitude install pkg-config libtiff4-dev libboost-graph-dev libboost-thread1.34.1 liblcms1-dev libglew1.5-dev libplot-dev libglut3-dev libopenexr-dev libopenexr2ldbl libxi-dev
 cd ~/src
 wget http://kent.dl.sourceforge.net/sourceforge/enblend/enblend-enfuse-3.2.tar.gz
@@ -39,13 +38,13 @@ make
 
 You can optionally do:
 
-```
+``` bash
 sudo make install
 ```
 
 I decided to first try it from the build directory:
 
-```
+``` bash
 cd ~/Pictures/test
 ~/src/enblend-enfuse-3.2/src/enfuse DSC_080* -o enfuse_test.tiff
 ```
@@ -54,7 +53,7 @@ And it worked perfectly. Without any tweaking of the parameters, it resulted in 
 
 But.... what if your images aren't perfectly aligned as in my case? Install the latest hugin-tools package which contains the align_image_stack program:
 
-```
+``` bash
 sudo aptitude install hugin-tools=0.7.0~svn3191+beta5-1ubuntu1
 align_image_stack -a aligned_ DSC_080*
 ~/src/enblend-enfuse-3.2/src/enfuse aligned_* -o enfuse_test_2.tiff

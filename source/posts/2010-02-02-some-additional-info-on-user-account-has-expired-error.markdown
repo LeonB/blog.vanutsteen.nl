@@ -15,6 +15,7 @@ tags:
 ---
 
 You have to also use `chage`:
+
 ```bash
 sudo passwd -l root
 sudo usermod -p ! root

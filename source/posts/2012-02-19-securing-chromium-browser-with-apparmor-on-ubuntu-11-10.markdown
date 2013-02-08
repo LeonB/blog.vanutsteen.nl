@@ -24,6 +24,7 @@ sudo aa-enforce /usr/bin/chromium-browser /usr/lib/chromium-browser/chromium-bro
 When all is done, quit the chromium browser and restart it. Then, when you run aa-status it should list chromium-browser as 'enforced'.
 
 I tried to do the same thing for /usr/sbin/dovecot but that didn't quite work. Dovecot threw errors like:
+
 ```
 init: dovecot main process (8738) terminated with status 84
 ```

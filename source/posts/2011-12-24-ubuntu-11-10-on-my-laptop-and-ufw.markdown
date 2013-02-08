@@ -15,6 +15,7 @@ tags:
 ---
 
 I decided on enabling ufw (uncomplicated firewall) on my laptop (you can't be secure enough). Too bad it isn't enabled by default on Ubuntu. So I had to do this:
+
 ```
 sudo ufw enable
 sudo ufw default deny

@@ -1,0 +1,30 @@
+---
+pageable: true
+per_page: 100
+---
+<% breadcrumbs.unshift "#{categoryname}" %>
+<% breadcrumbs.unshift "categories" %>
+
+<div class="eight columns">
+  <section class="blog_categories">
+    <h1>Entries in the category '<%= categoryname %>'</h1>
+
+    <div id="blog-archives">
+      <% if paginate %>
+        <p>Page <%= page_number %> of <%= num_pages %></p>
+
+        <% if prev_page %>
+          <p><%= link_to 'Previous page', prev_page %></p>
+        <% end %>
+      <% end %>
+
+      <%= partial 'partials/articles_list_by_year', :locals => { :articles => page-articles } %>
+
+      <% if paginate %>
+        <% if next_page %>
+          <p><%= link_to 'Next page', next_page %></p>
+        <% end %>
+      <% end %>
+    </div>
+  </section>
+</div>

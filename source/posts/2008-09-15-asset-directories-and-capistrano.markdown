@@ -14,11 +14,9 @@ tags:
 
 I have this public/images/cars directory but it gets overwritten everytime I use "cap deploy". So in order to have my images/cars directory saved every time, I used this addon for capistrano:
 
-
-
 ![](/wp-content/uploads/2008/09/capistrano_logo.png)
 
-[ruby]
+``` ruby
 set :assets, ['images/cars']
 
 namespace :deploy do
@@ -36,7 +34,7 @@ namespace :deploy do
     end
   end
 end
-[/ruby]
+```
 
 
 

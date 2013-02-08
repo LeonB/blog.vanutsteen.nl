@@ -26,11 +26,13 @@ I saw the MountainWest Ruby conference video: [code generation: safety scissors 
 So I began crawling the Internet for how he did this and I found the [utility_belt gem](http://utilitybelt.rubyforge.org/). The utility belt contains the file I needed. So I installed the gem, edited my .irbrc and now I can use nano/gedit (or any other editor) from withing IRB!
 
 These were the steps:
+
 ```
 gem install utility_belt
 ```
 
 My .irbrc:
+
 ```
 require 'utility_belt/interactive_editor'
 module InteractiveEditing

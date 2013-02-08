@@ -29,7 +29,8 @@ Then, when I tried to login via ssh with shared key: nothing!
 After some searching I found out that capistrano messed up the permissions on the .ssh directory :(
 
 To fix it:
-```
+
+``` bash
 chmod 755 $HOME
 chmod 755 $HOME/.ssh
 chmod 644 $HOME/.ssh/authorized_keys

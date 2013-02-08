@@ -24,25 +24,21 @@ But the installation on the server was a little troublesome. I had to install so
 
 ### First step: installing software
 
-
-
-    
-    aptitude install build-essential ruby1.8-dev libxml2-dev libmysql++-dev
-    gem install merb datamapper do_mysql merb_datamapper --include-dependencies --no-ri --no-rdoc
-    gem update --include-dependencies
-    passenger-install-apache2-module
-
+``` bash
+aptitude install build-essential ruby1.8-dev libxml2-dev libmysql++-dev
+gem install merb datamapper do_mysql merb_datamapper --include-dependencies --no-ri --no-rdoc
+gem update --include-dependencies
+passenger-install-apache2-module
+```
 
 
 
 ### Step two: project's dependency packages
 
-
-
-    
-    aptitude install libmagick9-dev libtidy-0.99-0
-    gem install orderedhash shared-mime-info rmagick tidy
-
+``` bash
+aptitude install libmagick9-dev libtidy-0.99-0
+gem install orderedhash shared-mime-info rmagick tidy
+```
 
 But the big problem here was libtidy! All the packages keep segfaulting. So I had to use the Gutsy or Feisty package (don't remember which one exactly. One of the two :) ).
 

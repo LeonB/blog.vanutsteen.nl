@@ -14,7 +14,7 @@ tags:
 
 ``` bash
 git filter-branch --commit-filter 'if [ "$GIT_AUTHOR_NAME" = "LeonB" ];
-  then export GIT_AUTHOR_NAME="Leon Bogaert"; export GIT_AUTHOR_EMAIL=leon@tim-online.nl;
+then export GIT_AUTHOR_NAME="Leon Bogaert"; export GIT_AUTHOR_EMAIL=leon@tim-online.nl;
 ```
 
 

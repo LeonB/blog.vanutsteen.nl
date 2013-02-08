@@ -26,32 +26,21 @@ My previous setup used three separate certificates/keys: a user certificate, a C
 
 After I figured that out I wanted to make OpenVPN a little securer. I had three things in mind:
 
-
-
-	
-  1. CRL (certificate revocation list)
-
-	
-  2. Additional TLS authentication
-
-	
-  3. Certificate Subject Match
-
-
-
+1. CRL (certificate revocation list)
+2. Additional TLS authentication
+3. Certificate Subject Match
 
 ### CRL
 
-
 Add this to `/etc/config/openvpn`:
 
-```
+``` text
 option 'crl_verify' '/etc/easy-rsa/keys/crl.pem'
 ```
 
 Then I wanted to create the (empty) crl.pem with this command:
 
-```
+``` bash
 ca -config /etc/easy-rsa/openssl.cnf -gencrl -out /etc/easy-rsa/keys/crl.pem
 ```
 
@@ -59,7 +48,7 @@ But it kept throwing errors: `27215:error:0E065068:lib(14):func(101):reason(104)
 
 It turned out to be that I had to add these lines to `/etc/easy-rsa/vars`:
 
-```
+``` bash
 export KEY_OU=""
 export KEY_CN=""
 export KEY_NAME=""
@@ -73,13 +62,13 @@ After that the creation of the crl.pem succeeded.
 
 This was a lot simpler. Generate the ta.key on the router:
 
-```
+``` bash
 openvpn --genkey --secret /etc/openvpn/ta.key
 ```
 
 Add this to `/etc/config/openvpn`:
 
-```
+``` text
 option 'tls_auth' '/etc/openvpn/ta.key 0'
 ```
 
@@ -95,19 +84,19 @@ I tried some time ago to make the Subject Matching work in Network Manager but I
 
 First, on the router, do this:
 
-```
+``` bash
 openssl x509 -in router.vanutsteen.nl.crt -text -noout | grep "Subject:"
 ```
 
 You get something like:
 
-```
+``` text
 C=MyCountry, ST=MyState, L=MyCity, O=example.tld, CN=host.example.tld/name=MyFirstName MyLastName/emailAddress=myname@example.com
 ```
 
 First, append the string with a '/'. Next, replace all occurences of ' ,' with '/'. Now you have something like:
 
-```
+``` text
 /C=MyCountry/ST=MyState/L=MyCity/O=example.tld/CN=host.example.tld/name=MyFirstName MyLastName/emailAddress=myname@example.com
 ```
 
@@ -115,7 +104,7 @@ So far, so good. Now the tricky part. It seems that openssl/openvpn substitutes 
 
 So change `name=MyFirstName MyLastName` to `name=MyFirstName MyLastName`. You then end up with:
 
-```
+``` text
 /C=MyCountry/ST=MyState/L=MyCity/O=example.tld/CN=host.example.tld/name=MyFirstName_MyLastName/emailAddress=myname@example.com
 ```
 

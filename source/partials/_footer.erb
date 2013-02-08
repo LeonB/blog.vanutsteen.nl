@@ -9,18 +9,6 @@
 			</div>
 		</div>
 		<div id="badges">
-			<div id="badges-a">
-				<% if current_article %>
-				<ul>
-					<li>
-						<%= link_to 'JSON', current_article.url + 'atom.json', :type => "application/json", :rel => "alternate", :relative => false %>
-					</li>
-					<li>
-						<%= link_to 'XML', current_article.url + 'atom.xml', :type => "application/atom+xml", :rel => "alternate", :relative => false %>
-					</li>
-				</ul>
-				<% end %>
-			</div>
 			<div id="badges-b">
 				<%= partial "partials/coderwall" %>
 			</div>

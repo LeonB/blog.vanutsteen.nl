@@ -19,12 +19,13 @@ tags:
 
 When we play unreal tournament GOTY it always runs bad on newer machines. One of my collegues found it the problem was the smp support of UT. Disabling all cores except the first on solved the problem. In Linux that's like doing:
 
-```
+``` bash
 echo 0 > /sys/devices/system/cpu/cpu1/online
 ```
 
 To get it back online:
-```
+
+``` bash
 echo 1 > /sys/devices/system/cpu/cpu1/online
 ```
 

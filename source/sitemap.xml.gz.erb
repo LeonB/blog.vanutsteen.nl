@@ -1,0 +1,11 @@
+---
+layout: false
+---
+<%=
+content = partial('sitemap.xml')
+wio = StringIO.new("w")
+gz = Zlib::GzipWriter.new(wio)
+gz.write(content)
+gz.close
+wio.string
+%>

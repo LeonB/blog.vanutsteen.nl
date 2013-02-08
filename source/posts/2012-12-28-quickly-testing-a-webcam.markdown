@@ -21,4 +21,4 @@ After some Googling I found the following very easy script:
 gst-launch v4l2src device=/dev/video1 ! xvimagesink
 ```
 
-[{% img center /images/uploads/2012/12/screenshot-webcam.jpg Logitech C920 on Ubuntu Linux %}](/images/uploads/2012/12/screenshot-webcam.jpg)
+![Logitech C920 on Ubuntu Linux](/images/uploads/2012/12/screenshot-webcam.jpg)

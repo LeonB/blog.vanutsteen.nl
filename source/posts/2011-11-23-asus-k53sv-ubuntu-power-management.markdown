@@ -16,6 +16,7 @@ With the power regression bug of the Linux kernel in my mind, I started searchin
 Phoronix suggested enabling some power options for the i915 chipset (onboard videocard).
 
 So I changed the following in /etc/default/grub:
+
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 ```

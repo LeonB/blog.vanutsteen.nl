@@ -19,8 +19,9 @@ Ah, time for my yearrly recurring troubles with my Brother HL2030. Very nice pri
 
 I first picked the HL2060 drivers. But I had troubles printing pages in the landscape format. So after some searching I found the appropriate drivers. Just do:
 
-    
-    aptitude install brother-cups-wrapper-extra brother-cups-wrapper-laser
+``` bash
+aptitude install brother-cups-wrapper-extra brother-cups-wrapper-laser
+```
 
 
 I had to reboot before the drivers showed up in the system-config-printer tool. After the reboot I could select the HL-2030 drivers. But too bad,the same problem remained. When tweaking the default job options, I could set the orientation to landscape. Very weird. I believe it's a bug in Gnome but I couldn't find any similar cases.

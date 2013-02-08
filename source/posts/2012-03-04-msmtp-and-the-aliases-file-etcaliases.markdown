@@ -19,8 +19,7 @@ Since version 1.4.25 msmtp has support for a aliases file. I edited my ~/.msmtp
 aliases ~/.aliases
 ```
 
-~/.aliases:
-```
+``` text ~/.aliases:
 root:           myemail@mydomain.tld
 ```
 

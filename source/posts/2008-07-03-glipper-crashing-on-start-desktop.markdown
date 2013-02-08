@@ -23,7 +23,7 @@ Someone was even so kindly to provide a deb with the fixed code. You can find th
 
 The workaround was really simple. Just add these two lines to the top of the glipper executable:
 
-```
+``` python
 import time
 time.sleep(8)
 ```

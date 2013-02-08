@@ -1,4 +1,4 @@
-<% articles ||= blog.articles -%>
+<% articles ||= @articles -%>
 {
     "feed": {
         "title"    : "<%= settings.title %>",
@@ -17,7 +17,7 @@
             }
         ],
         "id": "urn:uuid:<%= settings.uuid %>",
-        "updated"  : "<%= Time.now.strftime('%FT%T%:z') %>",
+        "updated"  : "<%= blog.articles.first.date.xmlschema %>",
         "rights" : "Copyright (c) <%= Date.today.strftime('%Y') %>, <%= settings.author %>",
         "author": {
             "name": "<%= settings.author %>",

@@ -21,14 +21,13 @@ I wanted to update my hardy servers automatically, so I could spend a little les
 
 I installed two packages:
 
-```
+``` bash
 apt-get install unattended-upgrades update-notifier-common
 ```
 
 And then edited two files:
 
-**/etc/apt/apt.conf.d/50unattended-upgrades**
-```
+``` text /etc/apt/apt.conf.d/50unattended-upgrades
 // Automaticall upgrade packages from these (origin, archive) pairs
 Unattended-Upgrade::Allowed-Origins {
 "Ubuntu hardy-security";
@@ -36,8 +35,7 @@ Unattended-Upgrade::Allowed-Origins {
 };
 ```
 
-**/etc/apt/apt.conf.d/10periodic**
-```
+``` text /etc/apt/apt.conf.d/10periodic
 APT::Periodic::Update-Package-Lists "1";
 APT::Periodic::Download-Upgradeable-Packages "1";
 APT::Periodic::AutocleanInterval "1";

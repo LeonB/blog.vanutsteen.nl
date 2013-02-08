@@ -14,6 +14,7 @@ tags:
 ---
 
 As easy as:
+
 ```bash
 sudo add-apt-repository ppa:ubuntu-mozilla-daily
 sudo aptitude update

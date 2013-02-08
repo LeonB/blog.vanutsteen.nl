@@ -1,0 +1,23 @@
+AddEncoding gzip gz
+
+<FilesMatch "\.js\.gz$">
+    ForceType text/javascript
+    Header set Content-Encoding: gzip
+</FilesMatch>
+
+<FilesMatch "\.css\.gz$">
+    ForceType text/css
+    Header set Content-Encoding: gzip
+</FilesMatch>
+
+<FilesMatch "\.html\.gz$">
+    ForceType text/html
+    Header set Content-Encoding: gzip
+</FilesMatch>
+
+RewriteEngine on
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{HTTP_USER_AGENT} !Konqueror
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)\.css$ $1.css.gz [QSA,L]
+RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]

@@ -9,6 +9,6 @@ wordpress_id: 696
 
 I had some minor annoyance while using Vim on the commandline. Whenever I did: `sudo vim` my Vim plugin wheren't loaded (root had no .vimrc). I discovered that you can add environmental variables to sudo so I added this to my `~/.bash_aliases`:
 
-```
+``` bash
 alias sudo="sudo MYVIMRC=$HOME/.vimrc"
 ```

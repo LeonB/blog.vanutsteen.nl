@@ -20,12 +20,12 @@ We got a lot of complaints about legitimate mails being marked as spam and there
 These is the configuration I decided on:
 
 /etc/amavis/conf.d/20-debian_defaults:
+
 ```
 $final_spam_destiny       = D_PASS;
 ```
 
-/etc/maildroprc:
-```
+``` bash /etc/maildroprc:
 # Global maildrop filter file
 
 # Uncomment this line to make maildrop default to ~/Maildir for
@@ -48,8 +48,7 @@ to "$HOME/Maildir/.SPAM/"
 }
 ```
 
-/etc/roundcube-webmail/main.inc.php:
-```
+``` php /etc/roundcube-webmail/main.inc.php:
 // store spam messages in this mailbox
 $rcmail_config['junk_mbox'] = 'SPAM';
 
@@ -58,15 +57,14 @@ $rcmail_config['junk_mbox'] = 'SPAM';
 $rcmail_config['default_imap_folders'] = array('INBOX', 'Drafts', 'Sent', 'SPAM', 'Trash');
 ```
 
-Delete all the old Junk-folders:
-```
+``` bash Delete all the old Junk-folders:
 rm -r /home/*/Maildir/.Junk
 rm -r /home/*/homes/*/Maildir/.Junk
 ```
 
 To make it extra nice:
-/etc/amavis/conf.d/50-user:
-```
+
+``` perl /etc/amavis/conf.d/50-user:
 use strict;
 
 #

@@ -33,16 +33,18 @@ I have two scripts:
 
 I placed both scripts in ~/bin
 
-**UT:
-**```
+UT:
+
+``` bash
 #!/bin/bash
 wine=`which wine`
 
 $wine ~/.wine/drive_c/UnrealTournament/System/UnrealTournament.exe $*
 ```
 
-**newscreen:
-**```
+newscreen:
+
+``` bash
 #!/bin/bash
 
 MINARGS=1
@@ -69,7 +71,8 @@ xinit $* -- :$NEW_SCREEN  > /dev/null
 I am especially proud of the newscreen command. I think it's really nice. Especially because it counts the current number of running xservers. So if it's only one (usually) it creates :1. If there are more it raises the number.
 
 The commands are used like:
-```
+
+``` bash
 newscreen ut #start ut on a new :1 server
 newscreen xclock #start xclock on :2
 ```

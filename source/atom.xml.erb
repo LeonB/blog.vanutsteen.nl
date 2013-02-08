@@ -1,4 +1,4 @@
-<% articles ||= blog.articles -%>
+<% articles ||= @articles -%>
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><%= settings.title %></title>
@@ -6,7 +6,7 @@
   <link href="<%= settings.url %>/atom.xml" rel="self"/>
   <link href="<%= settings.url %>/"/>
   <id>urn:uuid:<%= settings.uuid %></id>
-  <updated><%= Time.now.strftime('%FT%T%:z') %></updated>
+  <updated><%= blog.articles.first.date.xmlschema %></updated>
   <rights>Copyright (c) <%= Date.today.strftime('%Y') %>, <%= settings.author %></rights>
   <author>
     <name><![CDATA[<%= settings.author %>]]></name>
@@ -23,5 +23,5 @@
     <summary type="html"><![CDATA[<%= article.summary %>]]></summary>
     <content type="html"><![CDATA[<%= article.body %>]]></content>
   </entry>
-  <% end %>    
+  <% end %>
 </feed>

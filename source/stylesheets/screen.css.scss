@@ -95,6 +95,20 @@ ul li {
 	margin: 0;
 }
 
+img {
+	&.alignright {
+		float: right;
+		margin-right: 0;
+		margin-top: 0;
+	}
+
+	&.alignleft {
+		float: right;
+		margin-right: 0;
+		margin-top: 0;
+	}
+}
+
 em {
 	font-style: italic;
 }
@@ -305,16 +319,14 @@ article {
 		margin-right: auto;
 		width: 89%;
 		// overflow: auto;
+		@include clearfix();
 
 		img {
-			margin: 1.25em;
-			width: 100%;
-		}
-
-		img.alignright {
-			float: right;
-			margin-right: 0;
-			margin-top: 0;
+			// box-sizing: border-box;
+			// padding: 1.25em;
+			padding-left: 1.25em;
+			padding-right: 1.25em;
+			max-width: 100%;
 		}
 	}
 
