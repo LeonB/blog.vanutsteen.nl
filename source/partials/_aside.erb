@@ -17,4 +17,16 @@
 	    <% end %>
 	  </ul>
 	</section>
+
+	<section>
+	  <h4>Github Repos</h4>
+	  <ul id="github_repos">
+	    <% github_repos.each do |repo| %>
+		    <li>
+		    	<a href="<%= repo['html_url'] %>"><%= repo['name'] %></a>
+		    	<p><%= repo['description'] %></p>
+		    </li>
+	    <% end %>
+	  </ul>
+	</section>
 </aside>
