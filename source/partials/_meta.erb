@@ -1,6 +1,6 @@
 <span class="byline author vcard">Posted by <span class="fn"><%= settings.author %></span></span>
 on
-<time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate>
+<time datetime="<%= article.date.xmlschema %>">
   <%= article.date.strftime('%b %e, %Y') %>
 </time>
 <% if article.categories.size > 0 -%>

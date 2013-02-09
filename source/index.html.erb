@@ -18,7 +18,7 @@ tags:
           <h2 class="entry-title"><%= link_to article.title, article %></h2>
           <% if article.data.banner %>
             <% link_to article, :class => 'banner' do %>
-                <%= image_tag article.data.banner %>
+                <%= image_tag article.data.banner, :alt => article.title %>
             <% end %>
           <% end %>
           <p class="meta"><%= partial 'partials/meta', :locals => { :article => article } %></p>
