@@ -4,6 +4,7 @@ require "lib/uuid"
 require "lib/html_filters"
 require "lib/backtick_code_block"
 require "lib/breadcrumbs"
+require "lib/github_repos"
 #require 'rack/tidy'
 
 #use Rack::Tidy
@@ -34,6 +35,7 @@ end
 activate :livereload
 activate :breadcrumbs
 activate :directory_indexes
+activate :github_repos
 
 ###
 # Compass
@@ -98,6 +100,9 @@ set :description, 'A blog on rails, php, computing, my bass guitar and stuff'
 set :author, 'Leon Bogaert'
 set :email, 'leon@tim-online.nl'
 set :disqus_short_name, 'vanutsteen'
+set :github_username, 'LeonB'
+set :github_repo_count, 5
+set :github_skip_forks, true
 
 set :layout, 'default'
 
