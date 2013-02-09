@@ -3,5 +3,7 @@ on
 <time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate>
   <%= article.date.strftime('%b %e, %Y') %>
 </time>
+<% if article.categories.size > 0 -%>
 in
 <%= partial 'partials/post_categories', :locals => { :article => article } %>
+<% end %>

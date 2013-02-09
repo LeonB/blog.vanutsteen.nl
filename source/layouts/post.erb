@@ -1,5 +1,6 @@
 <% breadcrumbs.unshift current_page.title %>
-<% breadcrumbs.unshift 'Articles' %>
+<% breadcrumbs.unshift link_to('Articles', '/archives', :title => 'Articles') %>
+<% content_for :meta_description do strip_tags(current_page.summary).strip end %>
 <% wrap_layout :default do %>
 
 <div class="eight columns">
@@ -45,7 +46,8 @@
       </div>
     </section>
   </section>
-
 </div>
+
+<%= partial "partials/aside" %>
 
 <% end %>

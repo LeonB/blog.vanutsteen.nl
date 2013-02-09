@@ -107,6 +107,12 @@ img {
 		margin-right: 0;
 		margin-top: 0;
 	}
+
+	&.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 em {
@@ -253,8 +259,13 @@ nav {
 	li {
 		float: left;
 		background-image: none;
+		padding-left: 1.1em;
 
-		&:first-child a {
+		&.first {
+			padding-left: 0;
+		}
+
+		&.first a {
 			margin-left: 0;
 		}
 	}
@@ -312,7 +323,7 @@ nav {
 
 article {
 	border-bottom: 1px solid #F0F0E5;
-	padding-bottom: 25px;
+	padding-bottom: 1.5em;
 
 	.entry-content {
 		margin-left: auto;
@@ -350,6 +361,7 @@ article {
 		font-style: italic;
 		font-size: 0.88em;
 		padding-bottom: 4px;
+		@include clearfix();
 
 		.prev {
 			float: left;
@@ -374,6 +386,10 @@ article {
 		font-size: 1.88em;
 		padding: 0.67em 0 0.67em 0.67em;
 		text-transform: uppercase;
+	}
+
+	h2 {
+		padding: 0.67em 0 0.67em 0.67em;
 	}
 
 	header {
@@ -434,6 +450,7 @@ aside {
 
 	section {
 		margin-bottom: 2em;
+		margin-right: 2em;
 	}
 
 	a {
@@ -462,8 +479,10 @@ footer {
 	border-right: 1px solid #F0F0E5;
 }
 
-.blog_categories {
+.blog_categories, .blog_archive {
 	border-right: 1px solid #F0F0E5;
+	border-bottom: 1px solid #F0F0E5;
+	margin-bottom: 1.5em;
 
 	h1 {
 		margin: 0;
@@ -489,10 +508,14 @@ footer {
 
 	li {
 		background-image: none;
+
+		&.last article {
+			border-bottom: 0;
+		}
 	}
 
 	div.year {
-		margin-left: 120px;
+		margin-left: 6em;
 	}
 
 	article {
@@ -563,6 +586,18 @@ section.comments {
 	}
 
 	li {
+		background-image: none;
+	}
+}
+
+.footer-page {
+	ul {
+		width: 100%;
+		float: right;
+	}
+
+	li {
+		float: right;
 		background-image: none;
 	}
 }

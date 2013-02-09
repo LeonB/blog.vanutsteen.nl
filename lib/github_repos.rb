@@ -11,11 +11,11 @@ module GithubRepos
 
   module Helpers
     class << self
-      @@repos = nil
+      @@github_repos = nil
     end
 
     def github_repos
-      return @@repos if @@repos
+      return @@github_repos if @@github_repos
 
       uri = URI.parse("https://api.github.com/users/#{github_username}/repos")
       http = Net::HTTP.new(uri.host, uri.port)
@@ -29,14 +29,14 @@ module GithubRepos
 
       repos.sort_by! { |repo| repo['watchers_count'] }.reverse!
 
-      @@repos = []
+      @@github_repos = []
       i = 0
       repos.each do |repo|
         if repo['fork'] and github_skip_forks
           next
         end
 
-        @@repos << repo
+        @@github_repos << repo
 
         if i > github_repo_count
           break
@@ -45,7 +45,7 @@ module GithubRepos
         i = i + 1
 
       end
-      return @@repos
+      return @@github_repos
     end
   end
 end

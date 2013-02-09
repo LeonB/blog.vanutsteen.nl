@@ -1,5 +1,5 @@
 require "lib/blog_categories"
-require "lib/coderwall_helpers"
+require "lib/coderwall_badges"
 require "lib/uuid"
 require "lib/html_filters"
 require "lib/backtick_code_block"
@@ -9,11 +9,13 @@ require "lib/github_repos"
 
 #use Rack::Tidy
 
+# linkchecker "http://v5.vanutsteen.nl" --no-warnings
+
 ###
 # Blog settings
 ###
 
-# Time.zone = "Europe/Amsterdam"
+Time.zone = "Europe/Amsterdam"
 
 activate :blog do |blog|
   # blog.prefix = "posts"
@@ -24,7 +26,7 @@ activate :blog do |blog|
   blog.per_page = 10
   blog.page_link = "page/:num"
 
-  blog.summary_generator = lambda{|resource, raw| truncatehtml(strip_img(resource.body), 200) }
+  blog.summary_generator = lambda{|resource, raw| (resource.data['summary']) ? resource.data['summary'] : (truncatehtml(strip_img(resource.body), 200)).strip }
 end
 
 activate :blog_categories do |categories|
@@ -36,6 +38,7 @@ activate :livereload
 activate :breadcrumbs
 activate :directory_indexes
 activate :github_repos
+activate :coderwall_badges
 
 ###
 # Compass
@@ -103,6 +106,7 @@ set :disqus_short_name, 'vanutsteen'
 set :github_username, 'LeonB'
 set :github_repo_count, 5
 set :github_skip_forks, true
+set :coderwall_username, 'leonb'
 
 set :layout, 'default'
 
@@ -123,7 +127,7 @@ configure :build do
   # Compress PNGs after build
   # First: gem install middleman-smusher
   require "middleman-smusher"
-  activate :smusher
+  # activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
@@ -172,7 +176,7 @@ ready do
 end
 
 # Syntax highlighting based on Pygments
-activate :syntax, :linenos => 'table', :linenostart => 1, :lexer => 'text'
+activate :syntax, :linenos => 'table', :linenostart => 1
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
@@ -183,4 +187,3 @@ set :markdown, :fenced_code_blocks => true,
 activate :backtick_code_block
 
 helpers HtmlFilters
-set :achievements, CoderWallHelpers.achievements_of("leonb")
