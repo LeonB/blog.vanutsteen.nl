@@ -1,3 +1,4 @@
+ErrorDocument 404 /404/
 AddEncoding gzip gz
 
 <FilesMatch "\.js\.gz$">
@@ -21,3 +22,4 @@ RewriteCond %{HTTP_USER_AGENT} !Konqueror
 RewriteCond %{REQUEST_FILENAME}.gz -f
 RewriteRule ^(.*)\.css$ $1.css.gz [QSA,L]
 RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]
+RewriteRule ^feed/?$ /feed.rss [QSA,L]
