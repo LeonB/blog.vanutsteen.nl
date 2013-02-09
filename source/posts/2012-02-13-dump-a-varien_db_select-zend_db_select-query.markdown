@@ -44,5 +44,4 @@ foreach ($profiles as $profile) {
 	}
 	var_dump($query);
 }
-?>
 ```

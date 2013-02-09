@@ -1,9 +1,0 @@
----
-title: NOHUP
-date: 2013-02-07 18:50 +01:00
-tags:
-published: false
----
-
-``` bash
-nohup compass watch&
