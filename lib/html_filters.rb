@@ -1,67 +1,15 @@
-require 'iconv'
-require 'nokogiri'
+require "html_truncator"
 
 module HtmlFilters
-  def truncatehtml(raw, max_length = 15, continuation_string = ".")
-    #doc = Nokogiri::HTML(Iconv.conv('UTF8//TRANSLIT//IGNORE', 'UTF8', raw))
-    doc = Nokogiri::HTML.fragment(raw)
-    current_length = 0;
-    deleting = false
-    to_delete = []
 
-    depth_first(doc.children.first) do |node|
-
-      if !deleting && node.class == Nokogiri::XML::Text
-        current_length += node.text.length
-      end
-
-      if deleting
-        to_delete << node
-      end
-
-      if !deleting && current_length > max_length
-        deleting = true
-
-        trim_to_length = current_length - max_length + 1
-        node.content = node.text[0..trim_to_length] + continuation_string
-      end
-    end
-
-    to_delete.map(&:remove)
-
-    doc.inner_html
+  # Like the Rails _truncate_ helper but doesn't break HTML tags or entities.
+  def truncate_html(text, max_length = 30, ellipsis = "...")
+    return if text.nil?
+    return HTML_Truncator.truncate(text, max_length, ellipsis)
   end
 
   def strip_img(raw)
     raw.gsub(/<img.*\/>/, '')
   end
 
-  private
-
-  def depth_first(root, &block)
-    parent = root.parent
-    sibling = root.next
-    first_child = root.children.first
-
-    yield(root)
-
-    if first_child
-      depth_first(first_child, &block)
-    else
-      if sibling
-        depth_first(sibling, &block)
-      else
-        # back up to the next sibling
-        n = parent
-        while n && n.next.nil? && n.name != "document"
-          n = n.parent
-        end
-
-        # To the sibling - otherwise, we're done!
-        if n && n.next
-          depth_first(n.next, &block)
-        end
-      end
-    end
-  end
 end
