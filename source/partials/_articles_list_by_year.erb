@@ -15,7 +15,7 @@
     <% end %>
 
 
-    <li>
+    <li class="<%= 'first' if article == articles.first %> <%= 'last' if article == articles.last %>">
       <article>
         <div class="row">
           <time class="two columns" datetime="<%= article.date.xmlschema %>" pubdate>

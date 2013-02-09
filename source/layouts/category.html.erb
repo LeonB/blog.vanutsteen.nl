@@ -18,7 +18,7 @@ per_page: 100
         <% end %>
       <% end %>
 
-      <%= partial 'partials/articles_list_by_year', :locals => { :articles => page-articles } %>
+      <%= partial 'partials/articles_list_by_year', :locals => { :articles => page_articles } %>
 
       <% if paginate %>
         <% if next_page %>
