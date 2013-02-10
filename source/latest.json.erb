@@ -1,0 +1,9 @@
+<% articles = blog.articles[0..5] -%>
+[
+<% articles.each do |article| %>
+    {
+        "title"     : <%= article.title.to_json %>,
+        "link"      : "<%= settings.url %><%= article.url %>"
+    }<%= "," unless article == articles.last %>
+<% end %>
+]
