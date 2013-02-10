@@ -1,0 +1,15 @@
+---
+title: PHP
+date: 2004-09-11 23:44 +01:00
+tags:
+- php
+- oop
+categories:
+- development
+- PHP
+---
+Thursday I started searching the internet for tutorials on how to program object oriënted in PHP.
+I found some tutorials, but I still find it very difficult to grep the why of object oriënted programming.
+So if you know a good book or better, a good tutorial on OOP. Please let me now!
+
+I'm thinking of installing the new PHP5. With it's better support for OOP it might push me in the right direction.

@@ -1,0 +1,17 @@
+---
+title: PHP5
+date: 2004-12-19 12:00 +01:00
+tags:
+- php
+- oop
+- gentoo
+- mambo
+categories:
+- development
+- Linux
+- PHP
+---
+Last week I installed PHP5. I was a bit afraid I would get all sorts of errors in combination with Mambo. And I got them. PHP was giving me errors that sessions wouldn't work. At first I thought it was a rights issue. 
+
+But after some investigation it looked like I compiled php without the Use Flag ([Gentoo](http://www.gentoo.org)) 'session'. So after I re-compiled it, it was fixed.
+Gallery and Mambo now both work. Maybe I'll try to code something myself with the OO-features of PHP5. 

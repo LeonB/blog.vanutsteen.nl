@@ -1,0 +1,16 @@
+---
+title: "Go Mono!"
+date: 2004-10-14 12:00 +01:00
+tags:
+- mono
+- dotnet
+- linux
+- ximian
+categories:
+- Linux
+---
+Today I installed the new version of the mono-project. It brings the .Net technology to the linux platform. Ximian is a big sponsor of the project and that's noticeable because the project was rapidly developped in contrast to some other open source projects.
+
+But it still lacks a couple of nice functions the windows version does support. For example the VB.net language is missing and there's no function that caches the compiled code.
+
+I really hope that those features will be added soon. Maybe, than it'll be mature enough to be used on production systems. Until then, you better stick with the windows version of the .Net framework.

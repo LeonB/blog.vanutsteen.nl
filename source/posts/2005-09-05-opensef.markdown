@@ -1,0 +1,20 @@
+---
+title: OpenSEF
+date: 2005-09-05 23:21 +01:00
+tags:
+ - php
+ - sef
+ - mambo
+categories:
+  - development
+published: true
+banner: 
+summary:
+---
+A new project for Mambo has been started: OpenSEF. The company Xaneon has opensourced it's SEF component for Mambo. It's still a bèta version, but soon the stable version will be released.
+
+I installed it and expected it to work right out of the box. But that wasn't true. My old stories aren't SEF'ed and I have to 'alias' them myself. But that's too much work, so I'll try now to make it work automagically.
+
+<some time later>
+Ah, I now know how it works. It generates the automatic aliases the first time when you click on a link. Excellent!
+Like the new look of my site?

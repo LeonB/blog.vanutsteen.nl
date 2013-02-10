@@ -1,0 +1,20 @@
+---
+title: VoIP
+date: 2004-09-15 23:40 +01:00
+tags:
+- linux
+- asterisk
+- pbx
+- sip
+categories:
+---
+This week I've been busy with Asterisk.
+Arthur from TIM_Online really believes that Voice Over IP is thé next big thing and that big bucks can be earned with it. So I started fidling with it.
+
+The developers of Asterisk say:
+
+>"Asterisk is a complete PBX in software. It runs on Linux and provides all of the features you would expect from a PBX and more. Asterisk does voice over IP in three protocols, and can interoperate with almost all standards-based telephony equipment using relatively inexpensive hardware."
+
+I say: Asterisk is a bitch to configure. I can't get it to work. And I didn't even look at the 'advanced' options.
+
+I really think it has potential, especially the 'SIP' protocol. I suggest you take a look at gnomemeeting and SJphone. Both are nice clients and work with H.323 as well as SIP. Both run on linux but SJphone is available as a really nice windows client too.
