@@ -12,6 +12,7 @@ $grid-max-width: 1170px;
 @import "zurb/grid";
 @import "zurb/mobile";
 @import "github";
+@import "jquery.fancybox";
 
 /*@include makeFluidColumn(2);
 http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html*/
@@ -156,6 +157,7 @@ figcaption {
 .highlighttable {
 	font-family: Consolas, "Liberation Mono", Courier, monospace;
 	width: 100%;
+	table-layout: fixed;
 
 	pre {
 		line-height: 1.84em; //22px
@@ -170,37 +172,39 @@ figcaption {
 		padding-left: 0;
 		vertical-align: top;
 		/*position: absolute;*/
+		width: 1.2em;
 
 		pre {
+			display: block;
 			text-align: right;
 			padding: 0;
 			margin: 0;
-			padding-right: 5px;
-			padding-top: 4px;
-			padding-left: 5px;
+			padding-right: 0.4em;
+			padding-top: 0.3em;
+			padding-right: 0.4em;
 			color: #AAA;
 		}
 	}
 
 	td.code {
 		padding: 0;
-		padding-left: 10px;
 		width: 100%;
 		vertical-align: top;
-		overflow-y: hidden;
-		overflow-x: auto;
 
 		.highlight {
-			width: 0;
+			overflow-y: hidden;
+			overflow-x: auto;
+			background-color: transparent;
 		}
 
 		pre {
-		  padding-right: 9px;
-		  padding-top: 4px;
-		  padding-left: 0px;
+			display: block;
+		  padding-left: 0.8em;
+		  padding-top: 0.3em;
+		  padding-right: 0.8em;
 		  padding-bottom: 0;
-		  margin-right: 9px;
-		  width: 100%;
+		  width: auto;
+		  float: left;
 		}
 	}
 }
@@ -251,9 +255,9 @@ nav {
 	ul {
 		float: right;
 
-		@media only screen and (max-width: 767px) {
-			margin-bottom: 0 !important;
-		}
+		// @media only screen and (max-width: 767px) {
+		// 	margin-bottom: 0 !important;
+		// }
 	}
 
 	li {
@@ -271,7 +275,7 @@ nav {
 	}
 
 	a {
-		margin-left: 0.88em;
+		margin-left: 0.5em;
 		margin-right: 0;
 		font-weight: bold;
 		text-decoration: none;
@@ -333,7 +337,7 @@ article {
 		@include clearfix();
 
 		img {
-			// box-sizing: border-box;
+			box-sizing: border-box;
 			// padding: 1.25em;
 			padding-left: 1.25em;
 			padding-right: 1.25em;
@@ -588,6 +592,11 @@ section.comments {
 	li {
 		background-image: none;
 	}
+}
+
+.footer-container {
+	@extend .container;
+	margin-top: 0;
 }
 
 .footer-page {
