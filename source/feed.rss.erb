@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title><%= settings.title %></title>
-<description><%= settings.description %></description>
+<title><%=h settings.title %></title>
+<description><%=h settings.description %></description>
 <link><%= settings.url %></link>
 <language>en-us</language>
 <lastBuildDate><%= Time.now.strftime("%a, %d %b %Y %H:%M:%S %z") %></lastBuildDate>

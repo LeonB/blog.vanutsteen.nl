@@ -1,8 +1,8 @@
 <% articles ||= @articles -%>
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><%= settings.title %></title>
-  <subtitle><%= settings.subtitle %></subtitle>
+  <title><%=h settings.title %></title>
+  <subtitle><%=h settings.subtitle %></subtitle>
   <link href="<%= settings.url %>/atom.xml" rel="self"/>
   <link href="<%= settings.url %>/"/>
   <id>urn:uuid:<%= settings.uuid %></id>

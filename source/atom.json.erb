@@ -32,7 +32,7 @@
         <% articles.each do |article| %>
             {
                 "title"     : <%= article.title.to_json %>,
-                "link"      : "http://darrenknewton.com<%= article.url %>",
+                "link"      : "<%= settings.url %><%= article.url %>",
                 "published" : "<%= article.date.strftime('%FT%T%:z') %>",
                 "updated"   : "<%= article.date.strftime('%FT%T%:z') %>",
                 "id"        : "urn:uuid:<%= UUID.create_sha1(settings.url + article.url, UUID::NameSpace_URL) %>",
