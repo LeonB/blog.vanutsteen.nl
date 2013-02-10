@@ -5,6 +5,8 @@ require "lib/html_filters"
 require "lib/backtick_code_block"
 require "lib/breadcrumbs"
 require "lib/github_repos"
+require "lib/blog_article_summary"
+
 #require 'rack/tidy'
 
 #use Rack::Tidy
@@ -15,7 +17,7 @@ require "lib/github_repos"
 # Blog settings
 ###
 
-Time.zone = "Europe/Amsterdam"
+# Time.zone = "Europe/Amsterdam"
 
 activate :blog do |blog|
   # blog.prefix = "posts"
@@ -26,7 +28,7 @@ activate :blog do |blog|
   blog.per_page = 10
   blog.page_link = "page/:num"
 
-  blog.summary_generator = lambda{|resource, raw| (resource.data['summary']) ? resource.data['summary'] : (truncatehtml(strip_img(resource.body), 200)).strip }
+  blog.summary_generator = lambda{|resource, raw| (resource.data['summary']) ? resource.data['summary'] : (truncate_html(strip_img(resource.body), 40)) }
 end
 
 activate :blog_categories do |categories|
@@ -39,6 +41,7 @@ activate :breadcrumbs
 activate :directory_indexes
 activate :github_repos
 activate :coderwall_badges
+activate :blog_article_summary
 
 ###
 # Compass
@@ -90,11 +93,8 @@ activate :coderwall_badges
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
-
 set :url, 'http://blog.vanutsteen.nl'
 set :url, 'http://v5.vanutsteen.nl'
 set :title, 'vanutsteen.nl'
@@ -107,7 +107,6 @@ set :github_username, 'LeonB'
 set :github_repo_count, 5
 set :github_skip_forks, true
 set :coderwall_username, 'leonb'
-
 set :layout, 'default'
 
 # Build-specific configuration
@@ -126,8 +125,8 @@ configure :build do
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
-  require "middleman-smusher"
   # activate :smusher
+  # use trimage instead!
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
@@ -156,8 +155,8 @@ ready do
   # http://darrenknewton.com/2012/09/16/hacking-up-sites-with-middleman.html
 
   blog.articles.each do |a|
-    proxy "#{a.url}atom.xml", "/atom.xml", :locals => { :articles => [a] }
-    proxy "#{a.url}atom.json", "/atom.json", :locals => { :articles => [a] }
+    proxy "#{a.url}atom.xml", "/atom.xml", :layout => false, :locals => { :articles => [a] }
+    proxy "#{a.url}atom.json", "/atom.json", :layout => false, :locals => { :articles => [a] }
   end
 
   page "/atom.xml", :layout => false do
@@ -169,6 +168,10 @@ ready do
   end
 
   page "/feed.rss", :layout => false
+
+  ignore "/javascripts/vendor/*"
+  ignore "/stylesheets/jquery.fancybox.css"
+  ignore "/stylesheets/_github.css.scss"
 
   # page "/about.html" do
   #   current_page.extend ::Middleman::Blog::BlogArticle
