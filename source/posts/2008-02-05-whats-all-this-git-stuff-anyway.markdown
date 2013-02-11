@@ -6,7 +6,7 @@ slug: whats-all-this-git-stuff-anyway
 title: What's all this git stuff anyway?
 wordpress_id: 5
 categories:
-- development
+- Development
 - Ruby
 ---
 

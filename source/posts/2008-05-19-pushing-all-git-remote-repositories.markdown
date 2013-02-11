@@ -6,7 +6,7 @@ slug: pushing-all-git-remote-repositories
 title: pushing all git remote repositories
 wordpress_id: 66
 categories:
-- development
+- Development
 - Linux
 tags:
 - git

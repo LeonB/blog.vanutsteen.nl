@@ -6,7 +6,7 @@ tags:
  - sef
  - mambo
 categories:
-  - development
+  - Development
 published: true
 banner: 
 summary:

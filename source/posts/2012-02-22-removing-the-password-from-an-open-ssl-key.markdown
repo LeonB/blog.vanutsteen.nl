@@ -6,7 +6,7 @@ slug: removing-the-password-from-an-open-ssl-key
 title: Removing the password from an (open) ssl key
 wordpress_id: 645
 categories:
-- development
+- Development
 - Linux
 tags:
 - key

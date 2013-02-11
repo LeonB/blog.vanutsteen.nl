@@ -7,7 +7,7 @@ tags:
 - gentoo
 - mambo
 categories:
-- development
+- Development
 - Linux
 - PHP
 ---

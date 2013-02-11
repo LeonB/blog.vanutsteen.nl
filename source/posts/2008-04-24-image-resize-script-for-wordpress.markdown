@@ -6,7 +6,7 @@ slug: image-resize-script-for-wordpress
 title: Image resize script for wordpress
 wordpress_id: 38
 categories:
-- development
+- Development
 - PHP
 tags:
 - com_resize

@@ -6,7 +6,7 @@ tags:
 - gallery
 - cvs
 categories:
-- development
+- Development
 ---
 Today I tried to add another gallery to mambo. This gallery is called: gallery. A verry original name but it is a nice piece of software. You can find it at:
 http://gallery.sourceforge.net

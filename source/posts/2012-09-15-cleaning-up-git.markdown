@@ -6,7 +6,7 @@ slug: cleaning-up-git
 title: Cleaning up Git
 wordpress_id: 801
 categories:
-- development
+- Development
 - Linux
 tags:
 - git

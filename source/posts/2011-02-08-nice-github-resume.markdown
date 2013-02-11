@@ -6,7 +6,7 @@ slug: nice-github-resume
 title: 'Nice: github resumé'
 wordpress_id: 509
 categories:
-- development
+- Development
 - Other
 tags:
 - github resumé

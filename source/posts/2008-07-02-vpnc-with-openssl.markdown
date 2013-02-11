@@ -6,7 +6,7 @@ slug: vpnc-with-openssl
 title: vpnc with openssl!
 wordpress_id: 96
 categories:
-- development
+- Development
 - Linux
 tags:
 - building

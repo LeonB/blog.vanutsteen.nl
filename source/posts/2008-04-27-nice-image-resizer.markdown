@@ -6,7 +6,7 @@ slug: nice-image-resizer
 title: Nice image resizer
 wordpress_id: 46
 categories:
-- development
+- Development
 - PHP
 tags:
 - com_resize

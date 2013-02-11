@@ -6,7 +6,7 @@ slug: released-github-widget
 title: Released github widget
 wordpress_id: 241
 categories:
-- development
+- Development
 - PHP
 tags:
 - github

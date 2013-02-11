@@ -8,7 +8,7 @@ tags:
  - sass
  - css
 categories:
- - development
+ - Development
  - Linux
 published: true
 banner: /images/uploads/2013/02/banner_compass.png

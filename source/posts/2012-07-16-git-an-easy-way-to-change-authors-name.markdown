@@ -6,7 +6,7 @@ slug: git-an-easy-way-to-change-authors-name
 title: 'Git: an easy way to change authors name'
 wordpress_id: 741
 categories:
-- development
+- Development
 - Linux
 tags:
 - git

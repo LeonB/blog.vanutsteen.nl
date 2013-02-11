@@ -6,7 +6,7 @@ slug: up-to-date-on-git
 title: Up to date on GIT
 wordpress_id: 26
 categories:
-- development
+- Development
 - Ruby
 tags:
 - cool kid club

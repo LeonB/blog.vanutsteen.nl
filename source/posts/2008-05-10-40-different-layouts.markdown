@@ -6,7 +6,7 @@ slug: 40-different-layouts
 title: 40 different layouts
 wordpress_id: 61
 categories:
-- development
+- Development
 tags:
 - css
 - design

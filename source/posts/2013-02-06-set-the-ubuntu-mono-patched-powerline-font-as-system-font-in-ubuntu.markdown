@@ -4,7 +4,7 @@ date: 2013-02-06 23:47 +01:00
 published: true
 categories:
 - Linux
-- development
+- Development
 tags:
 - vim
 - fonts

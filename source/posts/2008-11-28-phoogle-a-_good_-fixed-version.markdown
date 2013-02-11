@@ -6,7 +6,7 @@ slug: phoogle-a-_good_-fixed-version
 title: 'Phoogle: a _good_ fixed version'
 wordpress_id: 279
 categories:
-- development
+- Development
 - PHP
 tags:
 - google maps

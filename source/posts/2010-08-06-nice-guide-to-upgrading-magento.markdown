@@ -6,7 +6,7 @@ slug: nice-guide-to-upgrading-magento
 title: Nice guide to upgrading magento
 wordpress_id: 486
 categories:
-- development
+- Development
 - PHP
 tags:
 - magento

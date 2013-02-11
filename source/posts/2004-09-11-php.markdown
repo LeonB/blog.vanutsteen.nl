@@ -5,7 +5,7 @@ tags:
 - php
 - oop
 categories:
-- development
+- Development
 - PHP
 ---
 Thursday I started searching the internet for tutorials on how to program object oriënted in PHP.

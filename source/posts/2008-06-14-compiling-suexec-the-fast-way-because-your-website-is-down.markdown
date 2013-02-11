@@ -6,7 +6,7 @@ slug: compiling-suexec-the-fast-way-because-your-website-is-down
 title: 'compiling suexec: the fast way (because your website is down)'
 wordpress_id: 79
 categories:
-- development
+- Development
 - Linux
 - PHP
 tags:

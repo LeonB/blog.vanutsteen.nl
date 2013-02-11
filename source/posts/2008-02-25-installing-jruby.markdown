@@ -6,7 +6,7 @@ slug: installing-jruby
 title: Installing jruby
 wordpress_id: 14
 categories:
-- development
+- Development
 - Linux
 - Ruby
 ---

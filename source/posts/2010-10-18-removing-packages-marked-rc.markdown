@@ -6,7 +6,7 @@ slug: removing-packages-marked-rc
 title: Removing packages marked rc
 wordpress_id: 493
 categories:
-- development
+- Development
 - Linux
 tags:
 - compiling

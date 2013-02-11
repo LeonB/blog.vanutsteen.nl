@@ -6,7 +6,7 @@ slug: ruby-on-rails-custom-fields-on-a-per-user-basis
 title: 'Ruby on Rails: custom fields on a per-user basis'
 wordpress_id: 259
 categories:
-- development
+- Development
 - Ruby
 tags:
 - bmw

@@ -6,7 +6,7 @@ slug: dump-a-varien_db_select-zend_db_select-query
 title: dump a Varien_Db_Select / Zend_Db_Select query
 wordpress_id: 630
 categories:
-- development
+- Development
 - PHP
 tags:
 - magento

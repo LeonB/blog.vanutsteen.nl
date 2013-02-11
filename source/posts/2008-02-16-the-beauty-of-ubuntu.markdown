@@ -6,7 +6,7 @@ slug: the-beauty-of-ubuntu
 title: The beauty of Ubuntu
 wordpress_id: 12
 categories:
-- development
+- Development
 - Linux
 - PHP
 ---

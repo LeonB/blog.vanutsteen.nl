@@ -6,7 +6,7 @@ slug: rails-vs-merb
 title: Rails vs. Merb
 wordpress_id: 236
 categories:
-- development
+- Development
 - Ruby
 tags:
 - activerecord

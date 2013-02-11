@@ -6,7 +6,7 @@ slug: how-to-repair-an-sqlite-database
 title: How to repair an SQLite database
 wordpress_id: 803
 categories:
-- development
+- Development
 - Linux
 tags:
 - sqlite

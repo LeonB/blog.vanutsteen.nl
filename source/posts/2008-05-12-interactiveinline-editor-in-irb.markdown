@@ -6,7 +6,7 @@ slug: interactiveinline-editor-in-irb
 title: Interactive/inline editor in irb
 wordpress_id: 62
 categories:
-- development
+- Development
 - Ruby
 tags:
 - editor

@@ -6,7 +6,7 @@ slug: testing-and-rails
 title: testing and Rails
 wordpress_id: 16
 categories:
-- development
+- Development
 - Ruby
 ---
 

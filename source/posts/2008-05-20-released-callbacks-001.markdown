@@ -6,7 +6,7 @@ slug: released-callbacks-001
 title: Released callbacks 0.0.1
 wordpress_id: 70
 categories:
-- development
+- Development
 - Ruby
 tags:
 - bones

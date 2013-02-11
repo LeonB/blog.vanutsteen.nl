@@ -7,7 +7,7 @@ tags:
  - mongrel
  - ruby on rails
 categories:
-  - development
+  - Development
   - Ruby
 published: true
 banner: 

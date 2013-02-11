@@ -6,7 +6,7 @@ slug: new-ticketissue-tracking-software
 title: New ticket/issue tracking software
 wordpress_id: 121
 categories:
-- development
+- Development
 tags:
 - bug
 - issue

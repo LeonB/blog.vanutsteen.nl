@@ -6,7 +6,7 @@ slug: how-to-make-a-diffpatch
 title: How to make a diff/patch
 wordpress_id: 107
 categories:
-- development
+- Development
 - Linux
 tags:
 - diff

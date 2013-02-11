@@ -6,7 +6,7 @@ slug: css-flash-messages
 title: Css flash messages
 wordpress_id: 125
 categories:
-- development
+- Development
 tags:
 - css
 - ruby on rails

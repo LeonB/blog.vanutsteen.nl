@@ -6,7 +6,7 @@ slug: blog-themes
 title: Blog themes
 wordpress_id: 49
 categories:
-- development
+- Development
 tags:
 - designing
 - template

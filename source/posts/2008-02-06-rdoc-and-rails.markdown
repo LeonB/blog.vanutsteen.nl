@@ -6,7 +6,7 @@ slug: rdoc-and-rails
 title: Rdoc and Rails
 wordpress_id: 6
 categories:
-- development
+- Development
 - Ruby
 ---
 

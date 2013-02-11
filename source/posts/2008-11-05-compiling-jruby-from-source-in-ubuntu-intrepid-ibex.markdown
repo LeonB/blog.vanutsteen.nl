@@ -6,7 +6,7 @@ slug: compiling-jruby-from-source-in-ubuntu-intrepid-ibex
 title: Compiling jruby from source in Ubuntu Intrepid Ibex
 wordpress_id: 256
 categories:
-- development
+- Development
 - Linux
 - Ruby
 tags:

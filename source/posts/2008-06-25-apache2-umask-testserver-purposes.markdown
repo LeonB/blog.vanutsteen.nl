@@ -6,11 +6,11 @@ slug: apache2-umask-testserver-purposes
 title: 'Apache2 umask: testserver purposes!'
 wordpress_id: 104
 categories:
-- development
+- Development
 - Linux
 tags:
 - apache
-- development
+- Development
 - server
 - testing
 ---

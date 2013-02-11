@@ -6,7 +6,7 @@ slug: zend_db
 title: Zend_db
 wordpress_id: 494
 categories:
-- development
+- Development
 - PHP
 tags:
 - crap

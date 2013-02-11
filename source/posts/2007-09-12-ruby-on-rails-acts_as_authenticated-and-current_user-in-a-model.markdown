@@ -5,7 +5,7 @@ tags:
  - Ruby on Rails
  - ruby
 categories:
-  - development
+  - Development
   - Ruby
 published: true
 banner: 

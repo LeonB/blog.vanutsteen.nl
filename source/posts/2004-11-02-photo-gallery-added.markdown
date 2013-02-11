@@ -5,7 +5,7 @@ tags:
 - zoom
 - mambo
 categories:
-- development
+- Development
 ---
 As you all can see I added a photo gallery to my site. I used Zoom for the gallery. Zoom is a nice component for Mambo. But it isn't really mature. I installed, had to fix a bug and change the code before I could use it. And still it's not what I exactly wanted. But with all it's quirks it's still the best photo gallery out there for Mambo 4.5.1.
 

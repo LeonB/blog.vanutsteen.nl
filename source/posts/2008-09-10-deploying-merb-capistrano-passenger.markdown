@@ -6,7 +6,7 @@ slug: deploying-merb-capistrano-passenger
 title: Deploying, merb, capistrano & passenger
 wordpress_id: 196
 categories:
-- development
+- Development
 - Ruby
 tags:
 - capistrano

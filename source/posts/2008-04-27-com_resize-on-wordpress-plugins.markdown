@@ -6,7 +6,7 @@ slug: com_resize-on-wordpress-plugins
 title: com_resize on wordpress plugins
 wordpress_id: 48
 categories:
-- development
+- Development
 - PHP
 tags:
 - com_resize

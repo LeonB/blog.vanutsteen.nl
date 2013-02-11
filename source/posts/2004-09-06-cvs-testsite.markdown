@@ -6,6 +6,6 @@ tags:
 - cron
 - cvs
 categories:
-- development
+- Development
 ---
 I've installed a cronjob which downloads the newest version of Mambo CVS and installs it on the server. You can see it at work here.

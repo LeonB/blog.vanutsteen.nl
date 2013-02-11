@@ -6,7 +6,7 @@ slug: puppet-troubles
 title: Puppet troubles
 wordpress_id: 100
 categories:
-- development
+- Development
 - Linux
 - Ruby
 tags:

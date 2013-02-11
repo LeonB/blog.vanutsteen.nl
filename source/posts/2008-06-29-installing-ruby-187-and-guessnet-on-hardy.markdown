@@ -6,7 +6,7 @@ slug: installing-ruby-187-and-guessnet-on-hardy
 title: Installing ruby 1.8.7 (and guessnet) on Hardy
 wordpress_id: 111
 categories:
-- development
+- Development
 - Linux
 - Ruby
 tags:

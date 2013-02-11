@@ -6,7 +6,7 @@ slug: images-why-you-need-com_resize
 title: Images & why you need com_resize
 wordpress_id: 72
 categories:
-- development
+- Development
 - PHP
 tags:
 - browsers

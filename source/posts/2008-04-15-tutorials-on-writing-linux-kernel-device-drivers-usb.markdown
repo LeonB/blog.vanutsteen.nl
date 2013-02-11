@@ -6,7 +6,7 @@ slug: tutorials-on-writing-linux-kernel-device-drivers-usb
 title: Tutorials on writing linux kernel device drivers (usb)
 wordpress_id: 30
 categories:
-- development
+- Development
 - Linux
 tags:
 - kernel

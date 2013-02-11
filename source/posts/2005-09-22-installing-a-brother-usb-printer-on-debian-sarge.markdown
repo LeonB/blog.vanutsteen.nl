@@ -6,7 +6,7 @@ tags:
  - brother
  - debian
 categories:
-  - development
+  - Development
   - Ruby
 published: true
 banner: 
