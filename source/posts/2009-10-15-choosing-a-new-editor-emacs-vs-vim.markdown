@@ -6,10 +6,10 @@ slug: choosing-a-new-editor-emacs-vs-vim
 title: 'Choosing a new editor: Emacs vs. Vim'
 wordpress_id: 393
 categories:
-- development
+- Development
 - Linux
 - PHP
-- python
+- Python
 - Ruby
 tags:
 - editor

@@ -4,7 +4,7 @@ date: 2004-11-16 12:00 +01:00
 tags:
 - bass
 categories:
-- other
+- Other
 ---
 
 As you know I play bass guitar. If I want to play a new song I get the tab from MXtabs.

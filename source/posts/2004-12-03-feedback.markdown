@@ -3,7 +3,7 @@ title: feedback?
 date: 2004-12-03 12:00 +01:00
 tags:
 categories:
-- other
+- Other
 ---
 Hi! Welcome! Don't go away... :(
 

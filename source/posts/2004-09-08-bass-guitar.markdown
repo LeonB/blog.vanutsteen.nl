@@ -5,7 +5,7 @@ tags:
 - bass
 - amp
 categories:
-- other
+- Other
 ---
 Some time ago I bought myself a bass guitar. My little brother started playing electric guitar about a year ago and he pushed me to play bass.
 

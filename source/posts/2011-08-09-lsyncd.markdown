@@ -7,7 +7,7 @@ title: Lsyncd
 wordpress_id: 525
 categories:
 - Linux
-- python
+- Python
 tags:
 - freebsd
 - lsyncd

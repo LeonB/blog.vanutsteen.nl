@@ -5,7 +5,7 @@ tags:
 - bass
 - tabs
 categories:
-- other
+- Other
 ---
 Some time ago, I posted this news item. I told that mxtabs suck because they rejected my tab of Herman Brood's song Saturday night. 
 

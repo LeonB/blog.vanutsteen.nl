@@ -6,8 +6,8 @@ slug: motorrijweer-nl
 title: motorrijweer.nl
 wordpress_id: 659
 categories:
-- development
-- python
+- Development
+- Python
 tags:
 - flask
 - google appengine

@@ -3,7 +3,7 @@ title: Never mess...
 date: 2004-09-01 23:58 +01:00
 tags:
 categories:
-- other
+- Other
 ---
 OK, here's a golden tip which everybody knows: don't mess with a live server! Yes, I did and I know regret it.
 I didn't write much but all I did write is gone. 

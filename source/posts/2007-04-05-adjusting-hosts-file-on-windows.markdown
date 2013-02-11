@@ -5,7 +5,7 @@ tags:
  - windows
  - host file
 categories:
-  - windows
+  - Windows
 published: true
 banner: 
 summary:

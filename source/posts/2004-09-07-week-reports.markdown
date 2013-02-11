@@ -3,7 +3,7 @@ title: Week reports
 date: 2004-09-07 23:46 +01:00
 tags:
 categories:
-- other
+- Other
 ---
 Last week I started my new job at TIM as I have mentioned in one of my previous posts.
 

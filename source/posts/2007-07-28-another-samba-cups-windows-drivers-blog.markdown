@@ -7,7 +7,7 @@ tags:
 - printer
 - brother
 categories:
-- other
+- Other
 ---
 Again tried to reinstall the printer. I used the windows admin to install printer drivers. But it did not work. I opened everything to anyone, but it did not work.
 

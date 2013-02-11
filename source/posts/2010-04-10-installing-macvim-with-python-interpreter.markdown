@@ -6,8 +6,8 @@ slug: installing-macvim-with-python-interpreter
 title: installing macvim with python interpreter
 wordpress_id: 482
 categories:
-- mac
-- python
+- Mac
+- Python
 tags:
 - mac
 - python

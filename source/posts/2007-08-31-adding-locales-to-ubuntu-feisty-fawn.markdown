@@ -5,7 +5,7 @@ tags:
  - linux
  - bash
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

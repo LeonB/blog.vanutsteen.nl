@@ -6,10 +6,10 @@ slug: sublime-text-2
 title: Sublime Text 2
 wordpress_id: 562
 categories:
-- development
+- Development
 - Linux
 - PHP
-- python
+- Python
 - Ruby
 tags:
 - gvim

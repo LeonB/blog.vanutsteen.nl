@@ -7,7 +7,7 @@ title: Installing & using flexget
 wordpress_id: 704
 categories:
 - Linux
-- python
+- Python
 tags:
 - flexget
 - rss

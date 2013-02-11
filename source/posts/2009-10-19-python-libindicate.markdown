@@ -6,9 +6,9 @@ slug: python-libindicate
 title: python libindicate
 wordpress_id: 421
 categories:
-- development
+- Development
 - Linux
-- python
+- Python
 tags:
 - libindicate
 - python

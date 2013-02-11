@@ -6,7 +6,7 @@ slug: downloading-netbeans-nightly-builds
 title: Downloading Netbeans nightly builds
 wordpress_id: 109
 categories:
-- development
+- Development
 tags:
 - gtk
 - gtkbuilder

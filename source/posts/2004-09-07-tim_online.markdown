@@ -4,7 +4,7 @@ date: 2004-09-07 23:48 +01:00
 tags:
 - work
 categories:
-- other
+- Other
 ---
 
 Last week school started and this half year should be my last half year at (this) school. This half year I have a training period at a little company called TIM_online.

@@ -7,7 +7,7 @@ tags:
  - mail
  - aliases
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

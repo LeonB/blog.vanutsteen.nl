@@ -5,7 +5,7 @@ tags:
  - linux
  - smartmontools
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

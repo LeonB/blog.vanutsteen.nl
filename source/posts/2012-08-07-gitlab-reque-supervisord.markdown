@@ -7,7 +7,7 @@ title: Gitlab reque & supervisord
 wordpress_id: 765
 categories:
 - Linux
-- python
+- Python
 - Ruby
 tags:
 - git

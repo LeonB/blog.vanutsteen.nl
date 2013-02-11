@@ -5,7 +5,7 @@ tags:
 - visio
 - project
 categories:
-- other
+- Other
 ---
 It's been three days since I made a promise to post a lot of news on this site. And I really wanted to do that, but... I've been really busy. Again? Yes, again!
 This week I had to produce a project planning. This morning I have to deliver it to the bidder. So, I'm gonna make some last-moment adjustments and I hope it gets accepted. I'll let it know.

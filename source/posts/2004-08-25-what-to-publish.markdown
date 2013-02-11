@@ -3,7 +3,7 @@ title: What to publish
 date: 2004-08-25 23:57 +01:00
 tags:
 categories:
-- other
+- Other
 ---
 OK, the site is live now (again). After picking a Content Management System, learning CSS, making a template and refreshing my php-skills the difficult part is yet to come: placing content and keeping the site up-to-date.
 

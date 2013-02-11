@@ -7,7 +7,7 @@ tags:
  - ftp
  - vsftpd
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

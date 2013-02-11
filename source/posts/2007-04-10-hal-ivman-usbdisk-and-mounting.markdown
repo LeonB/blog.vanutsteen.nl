@@ -4,7 +4,7 @@ date: 2007-04-10 22:54 +01:00
 tags:
  - linux
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

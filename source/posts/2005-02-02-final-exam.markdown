@@ -3,7 +3,7 @@ title: Final exam
 date: 2005-02-02 12:00 +01:00
 tags:
 categories:
-- other
+- Other
 ---
 
 Last friday I had my final exam  where I had to defend my project at Tim_online. I presented the implementationplan I wrote and after that I had to answer the questions of the comission in an assesment. The comission existed of two teachers and an external expert. 

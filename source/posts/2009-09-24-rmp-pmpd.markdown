@@ -6,8 +6,8 @@ slug: rmp-pmpd
 title: Rmp -> Pmpd
 wordpress_id: 362
 categories:
-- development
-- python
+- Development
+- Python
 - Ruby
 tags:
 - github

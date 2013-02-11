@@ -3,7 +3,7 @@ title: Banner development
 date: 2004-09-03 23:54 +01:00
 tags:
 categories:
-- other
+- Other
 ---
 What a busy day it has been. This was the fourth day at my new job. Since monday I've been working at Tim_online.
 But I'll tell more about that maybe this weekend. When I'll probably have some sparetime. If I can, I'll add the logo of TIM to this item tomorrow.

@@ -7,7 +7,7 @@ tags:
  - knoppix
  - debian
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

@@ -5,7 +5,7 @@ tags:
  - mysql
  - password
 categories:
-  - devlopment
+  - Development
 published: true
 banner: 
 summary:

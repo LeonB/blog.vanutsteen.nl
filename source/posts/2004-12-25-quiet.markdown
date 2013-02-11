@@ -3,7 +3,7 @@ title: Quiet
 date: 2004-12-25 12:00 +01:00
 tags:
 categories:
-- other
+- Other
 ---
 Well, you really notice it's Christmas. No news at all on the Internet!
 

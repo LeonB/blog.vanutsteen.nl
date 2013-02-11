@@ -5,7 +5,7 @@ tags:
  - linux
  - awstats
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

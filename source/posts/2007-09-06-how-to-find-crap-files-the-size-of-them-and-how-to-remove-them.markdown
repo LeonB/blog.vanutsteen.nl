@@ -6,7 +6,7 @@ tags:
  - find
  - mp3
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

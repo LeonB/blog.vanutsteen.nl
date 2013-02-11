@@ -6,7 +6,7 @@ tags:
  - debian
  - openoffice.org
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

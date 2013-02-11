@@ -7,7 +7,7 @@ title: Weechat 0.3.0 on Ubuntu 9.10
 wordpress_id: 415
 categories:
 - Linux
-- python
+- Python
 tags:
 - irc. ubuntu
 - weechat

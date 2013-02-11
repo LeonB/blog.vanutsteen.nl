@@ -6,7 +6,7 @@ tags:
  - samba
  - winbind
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:

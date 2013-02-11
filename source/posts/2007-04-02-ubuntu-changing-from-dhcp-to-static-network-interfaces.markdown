@@ -5,7 +5,7 @@ tags:
  - ubuntu
  - dhcp
 categories:
-  - linux
+  - Linux
 published: true
 banner: 
 summary:
