@@ -16,7 +16,7 @@ tags:
 - usb
 ---
 
-[![12 inch touchscreen](http://www.vanutsteen.nl/wp-content/uploads/2008/04/inexio1-300x242.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/04/inexio1.jpg)My boss recently bought some [inexio](http://www.inexio.co.kr/) touchscreens. Including a nice little 12.1 inch variant. I thought about using it in my living room for controlling audio et cetera. But alas, a no go. Because there weren't any linux device drivers available for it. So I played with the idea of creating my own driver for it.
+[![12 inch touchscreen](/images/uploads/2008/04/inexio1-300x242.jpg)](/images/uploads/2008/04/inexio1.jpg)My boss recently bought some [inexio](http://www.inexio.co.kr/) touchscreens. Including a nice little 12.1 inch variant. I thought about using it in my living room for controlling audio et cetera. But alas, a no go. Because there weren't any linux device drivers available for it. So I played with the idea of creating my own driver for it.
 
 Examples enough: [usbtouchscreen](http://www.gelato.unsw.edu.au/lxr/source/drivers/usb/input/usbtouchscreen.c) and [mtouchusb](http://www.gelato.unsw.edu.au/lxr/source/drivers/usb/input/mtouchusb.c). But how to start (I have totally no c experience). I think the biggest problem is getting to know the kernel api. After reading through the source code of some modules I realised that a lot of the lines were kernel macro's & functions and just a little bit of _real_ coding.
 

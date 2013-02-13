@@ -10,7 +10,7 @@ categories:
 - Other
 ---
 
-[![htpc_setup](http://www.vanutsteen.nl/wp-content/uploads/2009/12/htpc_setup-273x300.png)](http://www.vanutsteen.nl/wp-content/uploads/2009/12/htpc_setup.png)I've managed to get XBMC running (and good!). It took me a while to get everything to my liking. Almost everything works perfectly! Except sound is still a bit of a hassle. Linux (with pulseaudio) only sends analog sound through my s/pdif connection (aaarghh... forgot to draw in the schema ->) and not digital.
+[![htpc_setup](/images/uploads/2009/12/htpc_setup-273x300.png)](/images/uploads/2009/12/htpc_setup.png)I've managed to get XBMC running (and good!). It took me a while to get everything to my liking. Almost everything works perfectly! Except sound is still a bit of a hassle. Linux (with pulseaudio) only sends analog sound through my s/pdif connection (aaarghh... forgot to draw in the schema ->) and not digital.
 
 Maybe I'll switch back to alsa. But then again: maybe not. It's only connected to an old Yamaha amplifier I had laying around so I don't think I'll hear the difference.
 

@@ -31,4 +31,4 @@ Well, that did it. I removed xen, shut down the computer and offered it for sale
 
 Stupid open source!
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/garfield_computer-275x300.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/07/garfield_computer.jpg)
+[![](/images/uploads/2008/07/garfield_computer-275x300.jpg)](/images/uploads/2008/07/garfield_computer.jpg)

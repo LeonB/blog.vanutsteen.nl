@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="span8">
+  <article role="article">
+    {% if page.title %}
+    <header>
+      <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+      {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+    </header>
+    {% endif %}
+
+    <div class="entry-content">{{ content }}</div>
+  </article>
+</div>
+
+{% unless page.sidebar == false %}
+<aside class="span4 hidden-phone">
+  {% if site.blog_index_asides.size %}
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>
+{% endunless %}

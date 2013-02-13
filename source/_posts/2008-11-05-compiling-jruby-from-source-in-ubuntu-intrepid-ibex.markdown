@@ -18,7 +18,7 @@ tags:
 - Ubuntu
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/jruby_logo.png)
+![](/images/uploads/2008/11/jruby_logo.png)
 Very easy to do:
 
 ```

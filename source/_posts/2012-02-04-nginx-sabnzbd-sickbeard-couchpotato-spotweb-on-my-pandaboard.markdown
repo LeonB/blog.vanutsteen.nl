@@ -27,7 +27,7 @@ This post describes how to set up **Nginx**. Not how to install sabnzbd, sickbea
 ### Step 1: install nginx
 
 
-```
+```bash
 leon@panda:~$ sudo apt-get install nginx-light
 ```
 
@@ -37,8 +37,7 @@ leon@panda:~$ sudo apt-get install nginx-light
 
 Add all the important proxy stuff in one file so it can be included later on.
 
-leon@panda:~$ cat /etc/nginx/conf.d/proxy.conf
-```
+```plain /etc/nginx/conf.d/proxy.conf
 proxy_redirect off;
 proxy_set_header Host $host;
 proxy_set_header X-Real-IP $remote_addr;
@@ -60,49 +59,42 @@ deny all;
 
 Set up alle the locations (subdirectories on you http server) for sabnzbdplus, sickbeard, couchpotato and spotweb.
 
-The important part from /etc/nginx/sites-enabled/default:
+The important part from `/etc/nginx/sites-enabled/default`:
 
-```
+```plain
 server {
 
-location /sabnzbd {
-include /etc/nginx/conf.d/proxy.conf;
+	location /sabnzbd {
+		include /etc/nginx/conf.d/proxy.conf;
 
-proxy_pass http://localhost:9090;
-}
+		proxy_pass http://localhost:9090;
+	}
 
-location /sickbeard {
-include /etc/nginx/conf.d/proxy.conf;
+	location /sickbeard {
+		include /etc/nginx/conf.d/proxy.conf;
 
-proxy_pass http://localhost:8081;
-}
+		proxy_pass http://localhost:8081;
+	}
 
-location /couchpotato {
-include /etc/nginx/conf.d/proxy.conf;
+	location /couchpotato {
+		include /etc/nginx/conf.d/proxy.conf;
 
-proxy_pass http://localhost:5000/;
-rewrite ^/couchpotato/?$ /couchpotato/movie/ permanent;
-}
+		proxy_pass http://localhost:5000/;
+		rewrite ^/couchpotato/?$ /couchpotato/movie/ permanent;
+	}
 
-location /spotweb {
-alias /home/leon/src/spotweb/spotweb.git; #not root directive
+	location /spotweb {
+		alias /home/leon/src/spotweb/spotweb.git; #not root directive
 
-location ~* \.php$ {
-fastcgi_pass localhost:9001; #defined in /etc/php5/fpm/pool.d/leon.conf
-include fastcgi_params;
-fastcgi_index index.php;
-}
-}
-
+		location ~* \.php$ {
+			fastcgi_pass localhost:9001; #defined in /etc/php5/fpm/pool.d/leon.conf
+			include fastcgi_params;
+			fastcgi_index index.php;
+		}
+	}
 }
 
 ```
-
-
-> Sorry about the indentation... Anyone recomend a good code plugin for wordpress?
-
-
-
 
 ### Step 4: setup php
 
@@ -113,10 +105,9 @@ Now we're going to set up php for nginx with php5-fpm. This is a new module and 
 leon@panda:~$ sudo apt-get install php5-fpm
 ```
 
-Then edit /etc/php5/fpm/pool.d/leon.conf (in my case). I created another pool for my user ('leon') because I don't want it to run under the user www-data or similar.
+Then edit `/etc/php5/fpm/pool.d/leon.conf` (in my case). I created another pool for my user ('leon') because I don't want it to run under the user www-data or similar.
 
-cat /etc/php5/fpm/pool.d/leon.conf
-```
+```ini /etc/php5/fpm/pool.d/leon.conf
 
 ; Start a new pool named 'leon'.
 [leon]
@@ -135,17 +126,17 @@ pm.max_children = 4
 ### Step 5: Restart everything and admire your work
 
 
-```
+```bash
 leon@panda:~$ sudo service nginx restart
 leon@panda:~$ sudo service php5-fmp restart
 ```
 
 Footnotes:
-I also tried to get it working with chroot = /home/leon in /etc/php5/fpm/pool.d/leon.conf but I couldn't get spotweb working with mysql on port 3306. When chrooted you can't access /var/run/mysqld/mysqld.sock. I'll have to investigate that a bit more.
+I also tried to get it working with `chroot = /home/leon` in `/etc/php5/fpm/pool.d/leon.conf` but I couldn't get spotweb working with mysql on port 3306. When chrooted you can't access `/var/run/mysqld/mysqld.sock`. I'll have to investigate that a bit more.
 
-Also, you could remove /etc/php5/fpm/pool.d/www.conf if you don't use it (like in my case):
+Also, you could remove `/etc/php5/fpm/pool.d/www.conf` if you don't use it (like in my case):
 
-```
+```bash
 cd /etc/php5/fpm/pool.d/
 sudo mv www.conf www.conf.disabled
 sudo service php5-fpm restart

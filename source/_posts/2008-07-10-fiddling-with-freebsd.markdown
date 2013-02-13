@@ -15,7 +15,7 @@ tags:
 - ports
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/freebsd_beastie.gif)](http://www.vanutsteen.nl/wp-content/uploads/2008/07/freebsd_beastie.gif)
+[![](/images/uploads/2008/07/freebsd_beastie.gif)](/images/uploads/2008/07/freebsd_beastie.gif)
 Because I use Linux on my servers + on my daily desktop (work and private) now, I don't have an OS to play around with anymore and f*ck up.
 
 So I've installed FreeBSD (only in Virtualbox for now). And it worked! Last time I tried to install FreeBSd, it hang on some network-driver issue.

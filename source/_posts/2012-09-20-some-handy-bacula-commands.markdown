@@ -10,16 +10,13 @@ categories:
 tags:
 - backups
 - bacula
+banner: /images/uploads/2012/09/banner-some-handy-bacula-commands.jpg
 ---
 
-Show what files will be backed up:
-
-``` bash
+``` bash Show what files will be backed up:
 echo "estimate job=client.vanutsteen.nl listing client=client.vanutsteen.nl fileset=Server" | bconsole
 ```
 
-List all files backuped in a particular job:
-
-``` bash
+``` bash List all files backuped in a particular job:
 echo "list files jobid=12"  | bconsole
 ```

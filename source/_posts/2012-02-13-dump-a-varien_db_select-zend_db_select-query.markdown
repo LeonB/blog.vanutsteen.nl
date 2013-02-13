@@ -16,18 +16,17 @@ tags:
 - zend
 ---
 
-```
-
+```php
+<?php
 $query = $adapter->getProfiler()->getLastQueryProfile()->getQuery(); //print last executed query
 foreach ($adapter->getProfiler()->getLastQueryProfile()->getQueryParams() as $k => $v) {
-$query = $query = str_replace($k, "'{$v}'", $query);
+	$query = $query = str_replace($k, "'{$v}'", $query);
 }
-var_dump($query);
+var_dump($query);?>
 ```
 
-A more complete example:
-```
-
+```php A more complete example:
+<?php
 $adapter = Mage::getSingleton('core/resource')->getConnection('core_write');
 $adapter->getProfiler()->setEnabled(true); //enable profiler
 
@@ -38,12 +37,12 @@ $profiles = $adapter->getProfiler()->getQueryProfiles();
 $profiles = array_slice($profiles, count($profiles)-$number, $number);
 
 foreach ($profiles as $profile) {
-$query = $profile->getQuery(); //print last executed query
-foreach ($profile->getQueryParams() as $k => $v) {
-$query = $query = str_replace($k, "'{$v}'", $query);
-$query = preg_replace('/\?/', $v, $query);
+	$query = $profile->getQuery(); //print last executed query
+	foreach ($profile->getQueryParams() as $k => $v) {
+		$query = $query = str_replace($k, "'{$v}'", $query);
+		$query = preg_replace('/\?/', $v, $query);
+	}
+	var_dump($query);
 }
-var_dump($query);
-}
-
+?>
 ```

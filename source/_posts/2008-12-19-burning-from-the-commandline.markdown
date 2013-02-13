@@ -15,7 +15,7 @@ tags:
 - commandline
 ---
 
-![cdrecord logo](http://www.vanutsteen.nl/wp-content/uploads/2008/12/cdrec2.gif)I download a Debian Sid livecd on my home server/HTPC and there's a cd burner in there. So I would like to burn the downloaded iso. There no X Server running (yet) on the box so I was searching for a nice commandline utility.
+![cdrecord logo](/images/uploads/2008/12/cdrec2.gif)I download a Debian Sid livecd on my home server/HTPC and there's a cd burner in there. So I would like to burn the downloaded iso. There no X Server running (yet) on the box so I was searching for a nice commandline utility.
 
 I found cdw and it really looked nice so I installed it:
 

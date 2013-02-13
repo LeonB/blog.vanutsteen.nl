@@ -25,7 +25,7 @@ tags:
 
 This weekend I've been installing [Gitlab](http://gitlabhq.com/) on a LXC guest. The host is running Ubuntu 12.04 and so is the guest. I tried to document my steps the best I could so I could share my experiences with it. Sometimes I had to go back a few steps so maybe something are garbled up but I believe this is still a good starting point on setting up gitlab on a Ubuntu server.
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2012/07/gitlab_screenshot.png)](http://www.vanutsteen.nl/wp-content/uploads/2012/07/gitlab_screenshot.png)
+[![](/images/uploads/2012/07/gitlab_screenshot.png)](/images/uploads/2012/07/gitlab_screenshot.png)
 
 My main goals were:
 
@@ -108,7 +108,7 @@ I had some troubles with this version of Nginx from Brightbox because of some mi
 
 The configuration file of my gitlab virtual host I put in: /etc/nginx/sites-available/gitlab.host.tld.
 
-The contents of that file can be found [here](http://www.vanutsteen.nl/wp-content/uploads/2012/07/gitlab.host.tld).
+The contents of that file can be found [here](/images/uploads/2012/07/gitlab.host.tld).
 
 
 ### Step 2: installing dependencies from Ubuntu sources
@@ -152,7 +152,7 @@ dpkg-reconfigure gitolite
 
 The question about the public key can be answered with the contents of `/home/gitlab.host.tld/.ssh/id_rsa.pub`
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2012/07/gitolite_ssh_key.png)](http://www.vanutsteen.nl/wp-content/uploads/2012/07/gitolite_ssh_key.png)
+[![](/images/uploads/2012/07/gitolite_ssh_key.png)](/images/uploads/2012/07/gitolite_ssh_key.png)
 
 
 ### Step 6: loosening the permissions so the gitlab user can reach the gitolite files
@@ -212,7 +212,7 @@ cp config/database.yml.example config/database.yml
 cp config/gitlab.yml.example config/gitlab.yml
 ```
 
-Here is my [gitlab.yml](http://www.vanutsteen.nl/wp-content/uploads/2012/07/gitlab.yml)
+Here is my [gitlab.yml](/images/uploads/2012/07/gitlab.yml)
 
 It has admin_uri defined twice because of bug [#1052](https://github.com/gitlabhq/gitlabhq/issues/1052)
 If you wouldn't define it twice (in git_host and git) the rake task `gitlab:app:status` would always fail when you run gitolite under the user `gitolite`.

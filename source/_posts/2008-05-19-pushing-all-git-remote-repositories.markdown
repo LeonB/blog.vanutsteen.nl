@@ -40,4 +40,4 @@ git-push-all
 
 Don't get confused with "git-push --all"! That's something completely different!
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/05/something-completely-different-300x221.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/05/something-completely-different.jpg)
+[![](/images/uploads/2008/05/something-completely-different-300x221.jpg)](/images/uploads/2008/05/something-completely-different.jpg)

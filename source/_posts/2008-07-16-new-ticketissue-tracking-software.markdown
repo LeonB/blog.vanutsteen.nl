@@ -14,7 +14,7 @@ tags:
 - software
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/bug-260x300.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/07/bug.png)
+[![](/images/uploads/2008/07/bug-260x300.png)](/images/uploads/2008/07/bug.png)
 I was surfing for some ticketing / project management software and it returned the following result:
 
 

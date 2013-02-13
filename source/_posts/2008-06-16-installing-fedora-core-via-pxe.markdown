@@ -17,7 +17,7 @@ tags:
 - xen
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/fedora_9_logo-300x236.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/fedora_9_logo.jpg)I really like ubuntu and I wouldn't try anything else if it wasn't for Xen. I was trying to install Xen + xenman/virt-manager of Ubuntu Hardy. But xenman doesn't install (the pulled it out of the repositories) and virt-manager gives all kind of python errors. Thank you ubuntu! Very nice with a long term release. And nobody's even answered [my bugreport](https://bugs.launchpad.net/ubuntu/+source/virt-manager/+bug/237113) about this issue.
+[![](/images/uploads/2008/06/fedora_9_logo-300x236.jpg)](/images/uploads/2008/06/fedora_9_logo.jpg)I really like ubuntu and I wouldn't try anything else if it wasn't for Xen. I was trying to install Xen + xenman/virt-manager of Ubuntu Hardy. But xenman doesn't install (the pulled it out of the repositories) and virt-manager gives all kind of python errors. Thank you ubuntu! Very nice with a long term release. And nobody's even answered [my bugreport](https://bugs.launchpad.net/ubuntu/+source/virt-manager/+bug/237113) about this issue.
 
 So I decided to give Fedora a try. They're the real driving force behind libvirt and Xen (Ubuntu picks kvm over Xen). So that must work?!
 
@@ -44,7 +44,7 @@ kernel i386/vmlinuz
 append initrd=i386/initrd.img vnc ip=dhcp ksdevice=eth0 method=http://download.fedora.redhat.com/pub/fedora/linux/releases/9/Fedora/i386/os/ lang=en_US keymap=us
 ```
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/fedora-9-alpha-installation-2-300x225.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/fedora-9-alpha-installation-2.png)After the boot I have to skip one screen which asks if it should use ipv4 and/or ipv6. It's really annoying, but I couldn't find a way to disable.
+[![](/images/uploads/2008/06/fedora-9-alpha-installation-2-300x225.png)](/images/uploads/2008/06/fedora-9-alpha-installation-2.png)After the boot I have to skip one screen which asks if it should use ipv4 and/or ipv6. It's really annoying, but I couldn't find a way to disable.
 
 Why is it annoying? Because you have to hook up a keyboard + monitor for it to confirm the question. When you've confirmed the question it boots up the installer in which you can login with vnc. So you don't need a keyboard anymore at that point. The vnc server port is 5901! Not the standard 5900!
 

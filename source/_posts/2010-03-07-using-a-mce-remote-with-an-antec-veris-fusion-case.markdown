@@ -17,7 +17,7 @@ I got a MCE remote and wanted to use it with my Antecct Fusion case. It has a re
 
 I found a great post about [how to use the mce remote](http://forum.xbmc.org/showthread.php?t=68722).
 
-I only had to modprobe the lirc_imon module with some parameter (lirc_imon ir_protocol=1) and change the xbmc configuration. After that it worked perfectly!
+I only had to modprobe the lirc_imon module with some parameter (`lirc_imon ir_protocol=1`) and change the xbmc configuration. After that it worked perfectly!
 
 Only my xbox 360 is right next to my media pc. So when I press a button my xbox 360 start :)
 

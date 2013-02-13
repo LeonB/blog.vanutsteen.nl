@@ -24,7 +24,7 @@ aliases ~/.aliases
 root:           myemail@mydomain.tld
 ```
 
-Only ~/.aliases didn't get expanded to the full path:
+Only `~/.aliases` didn't get expanded to the full path:
 
 [http://sourceforge.net/mailarchive/forum.php?thread_name=1330871670.3229.1.camel%40polly&forum_name=msmtp-users](http://sourceforge.net/mailarchive/forum.php?thread_name=1330871670.3229.1.camel%40polly&forum_name=msmtp-users)
 

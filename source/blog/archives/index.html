@@ -1,0 +1,31 @@
+---
+layout: page
+title: Blog Archive
+footer: false
+---
+
+<!--
+http://aijazansari.com/blog/archives/
+http://wynnnetherland.com/archives
+-->
+
+<div id="blog-archives">
+{% for post in site.posts reverse %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% unless year == this_year %}
+  {% assign year = this_year %}
+  {% if post != site.posts.first %}
+  </div> <!-- end year -->
+  {% endif %}
+
+  <h2>{{ year }}</h2>
+  <div class="year year={{ year }} row">
+{% endunless %}
+
+<article>
+  {% include archive_post.html %}
+</article>
+
+{% endfor %}
+</div> <!-- end year -->
+</div>

@@ -16,7 +16,7 @@ tags:
 - wlan
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/05/marvin_hhgg-182x300.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/05/marvin_hhgg.jpg)
+[![](/images/uploads/2008/05/marvin_hhgg-182x300.jpg)](/images/uploads/2008/05/marvin_hhgg.jpg)
 
 A little while ago I wrote [a post](/2008/05/05/autoconnecting-wlan-on-startup-without-gnome-network/) about the wonderful [guessnet](http://guessnet.alioth.debian.org/). It really works well! It integrates so nicely with GNU/Linux that I wonder why (for example) the gnome network manager doesn't make use of it! I've been playing with the thought of making a GUI for it. But for that I have to become a little better at making them :(
 

@@ -13,7 +13,7 @@ tags:
 - patch
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/patch.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/patch.jpg)
+[![](/images/uploads/2008/06/patch.jpg)](/images/uploads/2008/06/patch.jpg)
 I had to make a couple of diff's lately and I always forget what switch to use :P
 
 So here is it:

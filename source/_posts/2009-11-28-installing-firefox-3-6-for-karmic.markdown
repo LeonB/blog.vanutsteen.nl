@@ -14,7 +14,7 @@ tags:
 ---
 
 As easy as:
-```
+```bash
 sudo add-apt-repository ppa:ubuntu-mozilla-daily
 sudo aptitude update
 sudo aptitude install firefox-3.6

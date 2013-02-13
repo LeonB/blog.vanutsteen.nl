@@ -15,7 +15,7 @@ tags:
 - upgrade
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/update_upgrade.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/update_upgrade.jpg)
+[![](/images/uploads/2008/06/update_upgrade.jpg)](/images/uploads/2008/06/update_upgrade.jpg)
 
 I wanted to update my hardy servers automatically, so I could spend a little less time each week working on my servers. I've searched through the ubuntu wiki/documentation and I think using the unattended-upgrade package is the nicest alternative.
 

@@ -26,7 +26,7 @@ sudo apt-get install python-setuptools python-transmissionrpc
 ### Edit ~/.pydistutils.cfg
 
 
-```
+```ini
 [easy_install]
 user = true
 ```
@@ -44,7 +44,7 @@ mkdir ~/.flexget
 ### Edit ~/.flexget/config.yml
 
 
-```
+```yaml
 
 feeds:
   Coder Radio Video:

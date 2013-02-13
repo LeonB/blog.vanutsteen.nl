@@ -15,7 +15,7 @@ tags:
 - Ubuntu
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/de_gladde_glipper-227x300.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/07/de_gladde_glipper.jpg)Since I've installed Ubuntu Hardy Herron I have this problem that the Glipper applet keeps crashing whenever I've started my Gnome desktop. When I add glipper to the panel again, it doesn't crash anymore (for that session). I couldn't find a solution, so I let it slide.
+[![](/images/uploads/2008/07/de_gladde_glipper-227x300.jpg)](/images/uploads/2008/07/de_gladde_glipper.jpg)Since I've installed Ubuntu Hardy Herron I have this problem that the Glipper applet keeps crashing whenever I've started my Gnome desktop. When I add glipper to the panel again, it doesn't crash anymore (for that session). I couldn't find a solution, so I let it slide.
 
 But, when I revisited Ubuntu launchpad today to search for the problem, a [solution came up](https://bugs.launchpad.net/ubuntu/+source/glipper/+bug/213494/comments/17).
 

@@ -15,7 +15,7 @@ tags:
 - Ubuntu
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/flash_logo-300x200.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/07/flash_logo.jpg)Because I'm had (yes, past tense) some issues with Flash player 9 on Ubuntu Hardy Herron, I was looking for some simple way to install Flash 10 on my installation. So I browsed the Ubuntu forums a bit and fout some howto's. But they all involved some downloading and manual installing the Flash 10 Linux package. Yeah, that was a no-go for me. First of all because it were only some minor issues and because I'm lazy. And manually installing is sooooo 2005.
+[![](/images/uploads/2008/07/flash_logo-300x200.jpg)](/images/uploads/2008/07/flash_logo.jpg)Because I'm had (yes, past tense) some issues with Flash player 9 on Ubuntu Hardy Herron, I was looking for some simple way to install Flash 10 on my installation. So I browsed the Ubuntu forums a bit and fout some howto's. But they all involved some downloading and manual installing the Flash 10 Linux package. Yeah, that was a no-go for me. First of all because it were only some minor issues and because I'm lazy. And manually installing is sooooo 2005.
 
 But then I thought: waaaait a minute, I can pull the same trick I did with [ruby 1.8.7 and guessnet](2008/06/29/installing-ruby-187-and-guessnet-on-hardy/)! The steps:
 

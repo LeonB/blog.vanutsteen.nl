@@ -15,7 +15,7 @@ tags:
 - system administration
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/puppet.png)I've installed [puppet](http://reductivelabs.com/trac/puppet) recently and I'm know trying to understand how it works and make use of it :)
+![](/images/uploads/2008/06/puppet.png)I've installed [puppet](http://reductivelabs.com/trac/puppet) recently and I'm know trying to understand how it works and make use of it :)
 
 If that's not difficult enough, I encountered this weird behaviour that the --noop argument didn't do anything. After an hour of searching I realized it was my own stupid fault!
 

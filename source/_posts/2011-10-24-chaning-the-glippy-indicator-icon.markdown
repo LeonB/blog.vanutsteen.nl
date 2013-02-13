@@ -12,6 +12,4 @@ tags:
 - glippy
 ---
 
-Copy the [mono paste icon](http://gnome-look.org/content/show.php/Ubuntu+Lucid+Parcellite+icon?content=123418) over to ~/.icons/Humanity/actions/22/edit-paste.svg
-
-
+Copy the [mono paste icon](http://gnome-look.org/content/show.php/Ubuntu+Lucid+Parcellite+icon?content=123418) over to `~/.icons/Humanity/actions/22/edit-paste.svg`

@@ -24,4 +24,4 @@ There's also a wiki about this [new feature from Ubuntu](https://wiki.ubuntu.com
 I asked my question on the [libindicate launchpad](https://answers.launchpad.net/indicator-applet/+question/86361) so I'm very curious about the answer(s).
 [/update]
 
-![messaging-menu-karmic ubuntu 9.10 libindicate](http://www.vanutsteen.nl/wp-content/uploads/2009/10/messaging-menu-karmic.png)
+![messaging-menu-karmic ubuntu 9.10 libindicate](/images/uploads/2009/10/messaging-menu-karmic.png)

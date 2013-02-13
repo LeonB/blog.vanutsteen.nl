@@ -16,7 +16,7 @@ tags:
 - yaml
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/brightbox_logo.jpg)Just some quick links!
+![](/images/uploads/2008/07/brightbox_logo.jpg)Just some quick links!
 
 This links describes [how to manage multiple databases with Capistrano](http://shanesbrain.net/2007/5/30/managing-database-yml-with-capistrano-2-0). That's not why I picked it though. I liked it because it shows the "<<: *" syntax of yaml.
 

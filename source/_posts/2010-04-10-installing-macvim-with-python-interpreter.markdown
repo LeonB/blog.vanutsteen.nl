@@ -14,4 +14,4 @@ tags:
 - vim
 ---
 
-As easy as: sudo port install macvim +python :)
+As easy as: `sudo port install macvim +python` :)

@@ -11,9 +11,7 @@ categories:
 
 Met onze super-stabiele connectie op het kantoor wil rsync er nog wel eens uitklappen. Dus als je dan 's ochtends kijkt hoe ver 'ie is kom je er achter dat rsync gestopt is. Daarom een rrsync. Gebasseerd op deze link: [http://blog.iangreenleaf.com/2009/03/rsync-and-retrying-until-we-get-it.html](http://blog.iangreenleaf.com/2009/03/rsync-and-retrying-until-we-get-it.html) maar iets beter gemaakt zodat het rsync commando er niet hard in staat:
 
-(Misschien dat de indent niet helemaal goed is)
-```
-
+```bash
 #!/bin/bash
 
 ### ABOUT
@@ -30,12 +28,12 @@ false
 
 while [ $? -ne 0 -a $i -lt $MAX_RETRIES ]
 do
-i=$(($i+1))
-`which rsync` $*
+	i=$(($i+1))
+	`which rsync` $*
 done
 
 if [ $i -eq $MAX_RETRIES ]
 then
-echo "Hit maximum number of retries, giving up."
+	echo "Hit maximum number of retries, giving up."
 fi
 ```

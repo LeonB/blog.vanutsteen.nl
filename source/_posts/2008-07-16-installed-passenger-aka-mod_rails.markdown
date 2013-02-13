@@ -16,7 +16,7 @@ tags:
 - Ruby
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/ruby_on_rails_logo-252x300.jpg)
+![](/images/uploads/2008/07/ruby_on_rails_logo-252x300.jpg)
 Today I've installed Phusion passenger on one of our servers. I wanted Redmine for one of our projects so this seemede a nice opportunity to install it.
 
 Installation was a breeze. For mod_rails as well Redmine.

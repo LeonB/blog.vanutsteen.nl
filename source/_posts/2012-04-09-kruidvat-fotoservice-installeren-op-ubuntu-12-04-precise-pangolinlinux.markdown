@@ -23,6 +23,6 @@ tar -xzvf setup_Kruidvat_fotoservice.tgz
 ./install.pl
 ```
 
-[![Kruidvat fotoservice op Ubuntu Linux](http://www.vanutsteen.nl/wp-content/uploads/2012/04/kruidvat-op-linux-ubuntu.png)](http://www.vanutsteen.nl/wp-content/uploads/2012/04/kruidvat-op-linux-ubuntu.png)
+[![Kruidvat fotoservice op Ubuntu Linux](/images/uploads/2012/04/kruidvat-op-linux-ubuntu.png)](/images/uploads/2012/04/kruidvat-op-linux-ubuntu.png)
 
 Daarna kwam ik erachter dat [Pixnum](http://pixum.com) ook Linux ondersteunt met verschillende uploaders (Flash, FTP & Java) en goedkoper is dan Kruidvat. Toen waren de foto's echter al besteld. Misschien voor de volgende keer dus.

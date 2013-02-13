@@ -38,50 +38,21 @@ I think I have been comparing the two editors for nearly two weeks now. I have s
 
 **VIM:**
 
-
-
-	
   * Better syntax highlighting/theming supprt (wombat ftw!!)
-
-	
   * Faster/smaller
-
-	
   * No weird handling of new buffers like with emacsclient
-
-	
   * No daemon like: emacs --daemon
-
-	
   * Better python integration
-
-	
   * Easier to make extensions
-
-	
   * Preview of docstrings when using omni completion
-
 
 **EMACS:**
 
-
-
-	
   * Better python-mode
-
-	
   * No commandmode/normalmode
-
-	
   * Directory browser/editor
-
-	
   * Debugger (better integration with external tools)
-
-	
   * easier to begin
-
-	
   * Everyting is a buffer™
 
 
@@ -96,17 +67,11 @@ And while writing this article I was looking for a [Wordpress/blog plugin for Vi
 As cherry on the pie, a nice screenshot of my gvim in action:
 
 
-[![Vim with python-mode](/wp-content/uploads/2009/10/vim_python.png)](http://www.vanutsteen.nl/wp-content/uploads/2009/10/vim_python.png)
-
-
-
-
+[![Vim with python-mode](/wp-content/uploads/2009/10/vim_python.png)](/images/uploads/2009/10/vim_python.png)
 
 [update]
 I've installed Netneans 6.8m2 and it feels a lot faster than 6.7 but python completion is as bad as in 6.7.
 [/update]
-
-
 
 [update2]
 Found out about Vim's [netrw](http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html#netrw). So Emacs no longer got "Directory browser/editor" as a strong point.

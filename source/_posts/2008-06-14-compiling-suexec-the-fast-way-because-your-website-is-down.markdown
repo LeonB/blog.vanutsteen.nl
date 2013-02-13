@@ -16,7 +16,7 @@ tags:
 - Ubuntu
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/time_equals_money-300x151.gif)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/time_equals_money.gif)
+[![](/images/uploads/2008/06/time_equals_money-300x151.gif)](/images/uploads/2008/06/time_equals_money.gif)
 
 At [Tim_online](http://www.tim-online.nl) we have several webservers and each of them have apache2 installed running php with fcgid (a fastcgi implementation). Why this configuration and not mod_php? Because it is reasonably fast (at leaster faster than plain cgi) an secure (because it doesn't run under the apache user).
 
@@ -48,7 +48,7 @@ cd ~/src/suexec
 sudo apt-get install apache2-threaded-dev
 wget http://svn.apache.org/repos/asf/httpd/httpd/trunk/support/suexec.c
 wget http://svn.apache.org/repos/asf/httpd/httpd/trunk/support/suexec.h
-wget http://www.vanutsteen.nl/wp-content/uploads/2008/06/suexecc.patch
+wget /images/uploads/2008/06/suexecc.patch
 patch suexec.c suexec.c.patch -o suexec.patched.c
 gcc -DLOG_EXEC='"/var/log/apache2/suexec.log"' -DAP_HTTPD_USER='"www-data"' -DAP_DOC_ROOT='"/var/www"' -I/usr/include/apr-1.0 -I/usr/include/apache2  -o suexec suexec.patched.c
 ```

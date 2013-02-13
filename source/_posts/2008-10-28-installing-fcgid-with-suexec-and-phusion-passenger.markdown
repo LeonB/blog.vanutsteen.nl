@@ -17,7 +17,7 @@ tags:
 - suexec
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/10/blame.jpg)
+![](/images/uploads/2008/10/blame.jpg)
 It was a troublesome day today. All did not go as planned.
 
 I had to install fcgid + suexec on one of our servers, I had delayed it too long. So I used my how-to and it still worked flawless. But I noticed I hadn't mentioned what the right were of the suexec binary. So here it goes:

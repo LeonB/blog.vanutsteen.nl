@@ -17,7 +17,7 @@ tags:
 I've been using Ubuntu/Gnome fulltime now for some 2 years I believe. I never found out what the "show desktop" shortcup was. I always used the little icon. But while I was tweaking compiz I found out that the shortcut was <ctrl><alt>d. I Windows it was Super+D (Windows key + D). So I decided to change the keybinding to that. I couldn't manage it via the "Keyboard shortcuts" configuration. I kept insisting on Super_L. So I "hacked" it via the gconf-editor. See the screenshot for the correct value:
 
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/09/show_desktop_keybindings-300x242.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/09/show_desktop_keybindings.png)
+[![](/images/uploads/2008/09/show_desktop_keybindings-300x242.png)](/images/uploads/2008/09/show_desktop_keybindings.png)
 
 
 

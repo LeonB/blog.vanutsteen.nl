@@ -16,4 +16,4 @@ tags:
 
 Recently phoogle broke because of some Google maps update. The original creators of Phoogle haven't updated the code (yet). And when searching online for newer, fixed versions all that showed up were crappy hacked Phoogle files by people who don't know what they're doing.
 
-So hereby I present to you: a [fixed Phoogle files](http://www.vanutsteen.nl/wp-content/uploads/2008/11/phoogle.zip) which is hacked decent.
+So hereby I present to you: a [fixed Phoogle files](/images/uploads/2008/11/phoogle.zip) which is hacked decent.

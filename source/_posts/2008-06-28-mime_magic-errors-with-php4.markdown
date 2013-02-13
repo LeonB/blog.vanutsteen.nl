@@ -14,7 +14,7 @@ tags:
 - Ubuntu
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/mime-276x300.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/mime.jpg)I went to a customer for our three-weekly sprint review, I opened my mail there and it was full with hundreds of failed cronjobs. Ah, shit! Another night at the datacenter? But it wasn't that bad :)
+[![](/images/uploads/2008/06/mime-276x300.jpg)](/images/uploads/2008/06/mime.jpg)I went to a customer for our three-weekly sprint review, I opened my mail there and it was full with hundreds of failed cronjobs. Ah, shit! Another night at the datacenter? But it wasn't that bad :)
 
 The server had ran an update of php that night and it broke. When I ran php4 from the commandline I got these errors:
 

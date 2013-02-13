@@ -14,11 +14,11 @@ tags:
 - root
 ---
 
-You have to also use "chage":
-```
+You have to also use `chage`:
+```bash
 sudo passwd -l root
 sudo usermod -p ! root
 sudo chage -E-1 root
 ```
 
-So [my previous post about this subject](http://www.vanutsteen.nl/2009/11/12/root-crontabscronjobs-not-executing-or-running/) is now obsolete ;)
+So [my previous post about this subject](/2009/11/12/root-crontabscronjobs-not-executing-or-running/) is now obsolete ;)

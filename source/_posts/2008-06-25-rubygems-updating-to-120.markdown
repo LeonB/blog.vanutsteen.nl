@@ -14,7 +14,7 @@ tags:
 - rubygems
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/rubygems-125x125t.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/rubygems-125x125t.png)I've installed rubygems manually (no package manager) in my home directory. But since then "gem --version" reported that it could not it's version. So now I've removed the previous installed version, downloaded the tar and reinstalled. I've used this command to install this time:
+[![](/images/uploads/2008/06/rubygems-125x125t.png)](/images/uploads/2008/06/rubygems-125x125t.png)I've installed rubygems manually (no package manager) in my home directory. But since then "gem --version" reported that it could not it's version. So now I've removed the previous installed version, downloaded the tar and reinstalled. I've used this command to install this time:
 
 ```
 ruby setup.rb --destdir=~/.rubygems --prefix=/

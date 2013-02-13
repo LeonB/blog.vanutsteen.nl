@@ -15,7 +15,7 @@ tags:
 - rss
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/04/liferea-300x233.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/04/liferea.png)
+[![](/images/uploads/2008/04/liferea-300x233.png)](/images/uploads/2008/04/liferea.png)
 
 I daily read a lot of blog posts. To keep up with what's happening in the ruby/linux community and what's the latests buzz in the webdeveloper world.
 

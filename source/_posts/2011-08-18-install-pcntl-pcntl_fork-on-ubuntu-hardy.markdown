@@ -15,7 +15,7 @@ tags:
 
 No apt-getting on Hardy :(
 
-```
+```bash
 cd ~/
 mkdir php
 cd php

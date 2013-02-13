@@ -16,7 +16,7 @@ tags:
 - wlan
 ---
 
-[![Wirelesnas Anten](http://www.vanutsteen.nl/wp-content/uploads/2008/05/antenna-226x300.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/05/antenna.png)I usually boot up my ubuntu box with gnome, but sometimes I want to play UT (on a bare x server) or I just want to use my laptop as a server. In those cases I don't boot into Gnome but into the terminal. But the problem is Gnome manages my wireless network card. So no Gnome, no connection.
+[![Wirelesnas Anten](/images/uploads/2008/05/antenna-226x300.png)](/images/uploads/2008/05/antenna.png)I usually boot up my ubuntu box with gnome, but sometimes I want to play UT (on a bare x server) or I just want to use my laptop as a server. In those cases I don't boot into Gnome but into the terminal. But the problem is Gnome manages my wireless network card. So no Gnome, no connection.
 
 Some months ago I started searching for a solution for this. I found several options like [guessnet](http://guessnet.alioth.debian.org/), whereami, et cetera. I first tried whereami. But that wasn't a success. I required to much configuration and didn't really felt polished at all.
 

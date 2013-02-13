@@ -65,18 +65,18 @@ The LCD display is nice but is a little hard to read. Maybe with some good softw
 
 Here's a little impression of the work in progress:
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_1.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_1.jpg)
+[![](/images/uploads/2008/11/stap_1.jpg)](/images/uploads/2008/11/stap_1.jpg)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_2.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_2.jpg)
+[![](/images/uploads/2008/11/stap_2.jpg)](/images/uploads/2008/11/stap_2.jpg)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_3.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_3.jpg)
+[![](/images/uploads/2008/11/stap_3.jpg)](/images/uploads/2008/11/stap_3.jpg)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_4.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_4.jpg)
+[![](/images/uploads/2008/11/stap_4.jpg)](/images/uploads/2008/11/stap_4.jpg)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_5.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_5.jpg)
+[![](/images/uploads/2008/11/stap_5.jpg)](/images/uploads/2008/11/stap_5.jpg)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_6.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_6.jpg)
+[![](/images/uploads/2008/11/stap_6.jpg)](/images/uploads/2008/11/stap_6.jpg)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_7.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/11/stap_7.jpg)
+[![](/images/uploads/2008/11/stap_7.jpg)](/images/uploads/2008/11/stap_7.jpg)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/12/compleet.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/12/compleet.jpg)
+[![](/images/uploads/2008/12/compleet.jpg)](/images/uploads/2008/12/compleet.jpg)

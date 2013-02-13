@@ -18,4 +18,4 @@ I'm starting with Python/GtkBuilder and I wanted a nice IDE for Python. Because 
 
 For it to work you have to download the [latest (nightly) netbeans build](http://bits.netbeans.org/download/trunk/nightly/latest/) and the [netbeans python plugin(s)](http://bits.netbeans.org/download/trunk/nightly/latest/)
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/nbpythonlogo2.png)
+![](/images/uploads/2008/06/nbpythonlogo2.png)

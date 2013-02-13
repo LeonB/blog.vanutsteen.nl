@@ -18,7 +18,7 @@ tags:
 - vulnerabilities
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/intrepid_ibex-220x300.gif)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/intrepid_ibex.gif)There were some [vulnerabilities in Ruby](http://www.zedshaw.com/rants/the_big_ruby_vulnerabilities.html) which are supposedly fixed in ruby 1.8.7. Because of that and because it's always nice to have the latest, I installed ruby from Ubuntu Intrepid on Hardy Herron.
+[![](/images/uploads/2008/06/intrepid_ibex-220x300.gif)](/images/uploads/2008/06/intrepid_ibex.gif)There were some [vulnerabilities in Ruby](http://www.zedshaw.com/rants/the_big_ruby_vulnerabilities.html) which are supposedly fixed in ruby 1.8.7. Because of that and because it's always nice to have the latest, I installed ruby from Ubuntu Intrepid on Hardy Herron.
 
 And while I was doing that I also decided to install guessnet from Intrepid. So I don't have to [compile guessnet](2008/05/28/building-and-installing-the-latest-version-of-guessnet/) anymore.
 

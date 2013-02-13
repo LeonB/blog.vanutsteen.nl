@@ -23,15 +23,8 @@ I compiled evolution with the help of [a Makefile that I downloaded](http://mad-
 
 I had to add the "maverick" distro and install some additional packages such as:
 
-
-
-	
   * gobject-introspection
-
-	
   * autopoint
-
-	
   * libgdata-dev
 
 
@@ -40,7 +33,6 @@ I removed the evolution-exchange plugin.
 The master branch of gweather required gtk3 so I changed that to: gnome-2.30 (or something)
 I had to apply [a patch](http://www.mail-archive.com/evolution-list@gnome.org/msg15575.html) to solve a build error.
 
-Bottom of this post: http://www.mail-archive.com/evolution-hackers@gnome.org/msg03863.html
+[Bottom of this post](http://www.mail-archive.com/evolution-hackers@gnome.org/msg03863.html)
 
-
-http://www.mail-archive.com/evolution-list@gnome.org/msg15575.html
+[And this post](http://www.mail-archive.com/evolution-list@gnome.org/msg15575.html)

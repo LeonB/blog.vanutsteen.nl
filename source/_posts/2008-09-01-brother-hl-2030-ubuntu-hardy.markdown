@@ -14,7 +14,7 @@ tags:
 - printing
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/09/brother-hl2030-300x300.jpg)
+![](/images/uploads/2008/09/brother-hl2030-300x300.jpg)
 Ah, time for my yearrly recurring troubles with my Brother HL2030. Very nice printer. But the driver support under Linux is terrible. Yes, brother released some (crapy) closed source drivers for Linux. But in my opinion that's even worse than no drivers for linux at all. If there're no drivers, some opensource Kernel guru creates them. If there are drivers available, no matter how crappy they are, no one's going throught the trouble of creating them.
 
 I first picked the HL2060 drivers. But I had troubles printing pages in the landscape format. So after some searching I found the appropriate drivers. Just do:
@@ -28,4 +28,4 @@ I had to reboot before the drivers showed up in the system-config-printer tool. 
 So for now, it's very annoying to set the default job options every time, but it works...
 
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/09/brother_hl2030-300x243.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/09/brother_hl2030.png)
+[![](/images/uploads/2008/09/brother_hl2030-300x243.png)](/images/uploads/2008/09/brother_hl2030.png)

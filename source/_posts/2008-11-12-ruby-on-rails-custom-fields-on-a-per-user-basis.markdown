@@ -14,7 +14,7 @@ tags:
 - rails
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/11/english-300x200.gif)I'm now developing a flexible car database for a couple of hours per week. Our first customer, a Beemer dealer, has a lot of fancy requests. Well, the hired-in Flash developer has these requests actually.
+![](/images/uploads/2008/11/english-300x200.gif)I'm now developing a flexible car database for a couple of hours per week. Our first customer, a Beemer dealer, has a lot of fancy requests. Well, the hired-in Flash developer has these requests actually.
 
 One of them is that they want to save a field in the database that contains a unique identification number for the secondhand cars they sell. But this number is set-up in a way that is unique to BMW's. So actually, I didn't want to add this column to the database, 'cause that will mess up my clean database tables.
 

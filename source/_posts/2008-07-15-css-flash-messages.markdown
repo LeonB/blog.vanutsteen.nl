@@ -16,4 +16,4 @@ I was reading [a nice article on Ruby on Rails flesh messages](http://rubypond.c
 
 I'm a real sucker for nice message boxes. If you are too: this is a must-read.
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/flash_message.png)
+![](/images/uploads/2008/07/flash_message.png)

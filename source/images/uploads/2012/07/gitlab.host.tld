@@ -1,0 +1,25 @@
+server {
+        listen   80;
+        server_name  gitlab.host.tld;
+
+        access_log  /home/gitlab.host.tld/logs/access.log;
+        root        /home/gitlab.host.tld/public_html/public;
+
+        # serve static content directly
+        location ~* \.(ico|jpg|gif|png|css|js|swf|html)$ {
+          if (-f $request_filename) {
+            expires max;
+            break;
+          }
+        }
+
+        passenger_enabled on;
+	rails_env production; 
+
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        location ~ /\.ht {
+          deny  all;
+        }
+}

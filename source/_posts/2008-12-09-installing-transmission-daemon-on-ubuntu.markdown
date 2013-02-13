@@ -14,11 +14,11 @@ tags:
 - Ubuntu
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/12/transmission-logo-new-300x300.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/12/transmission-logo-new.png)I wanted to install the transmission torrent daemon on my new HTPC server so I can upload a torrent and go to sleep without having to leave my laptop on. Or thinking about starting transmission when my computer (re)boots. So here's how I installed transmission.
+[![](/images/uploads/2008/12/transmission-logo-new-300x300.png)](/images/uploads/2008/12/transmission-logo-new.png)I wanted to install the transmission torrent daemon on my new HTPC server so I can upload a torrent and go to sleep without having to leave my laptop on. Or thinking about starting transmission when my computer (re)boots. So here's how I installed transmission.
 
 ```
 aptitude install transmission
-wget http://www.vanutsteen.nl/wp-content/uploads/2008/12/transmission-daemon -O /etc/init.d/transmission-daemon
+wget /images/uploads/2008/12/transmission-daemon -O /etc/init.d/transmission-daemon
 chmod +x /etc/init.d/transmission-daemon
 adduser --home /dev/null --shell /bin/false --no-create-home --disabled-login transmission
 mkdir /etc/transmission
@@ -48,4 +48,4 @@ REMOTE_PASS=password
 You can not visit the daemon on: http://localhost:9091/transmission/web/
 
 Here's a nice screenshot:
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/12/transmission_screenshot-300x231.png)](http://www.vanutsteen.nl/wp-content/uploads/2008/12/transmission_screenshot.png)
+[![](/images/uploads/2008/12/transmission_screenshot-300x231.png)](/images/uploads/2008/12/transmission_screenshot.png)

@@ -14,7 +14,7 @@ tags:
 - tone mapping
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/09/enfuse-300x199.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/09/enfuse.jpg)
+[![](/images/uploads/2008/09/enfuse-300x199.jpg)](/images/uploads/2008/09/enfuse.jpg)
 Because I recently bought a new motorcycle I wanted to sell my [old GS500](http://www.motor-forum.nl/forum/list_message/10480070). Most important when selling your stuff online: good pictures of the item you're selling. So I dusted of my Nikon, gave my trusty Suzuki a nice cleaning and started taking pictures. With HDR in my mind I used a little tripod and took 3 pictures of every position with the bracketing function. +2EV, 0EV and -2EV. No raw but plain jpeg's. For some reason I don't like raws. It just takes too much time to get them ready for publishing.
 
 I shot 10x3 pictures, uploaded them to my laptop and started looking for some HDR/tone-mapping software for linux. Qtpfsgui looked very nice and I tried it out. It was available from the ubuntu repositories. I have the Intrepid repositories enabled and installed hugin-tools (a dependency for qtpfsgui) from there. The added benefit was that qtpfsgui could align the pictures for you. I used a tripod but I didn't use a remote control. So some pictures were not perfectly the same.

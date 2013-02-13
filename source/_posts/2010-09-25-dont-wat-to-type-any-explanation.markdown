@@ -16,7 +16,7 @@ tags:
 - winbind
 ---
 
-```
+```ini
 [global]
 security = ads
 realm = LAB.EXAMPLE.COM

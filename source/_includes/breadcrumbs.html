@@ -1,0 +1,13 @@
+<div class="row breadcrumbs">
+<ul class="span12">
+  <li><a href="/">Home</a></li>
+  {% if page.category %}
+  <li><span class="raquo">»</span></li>
+  <li>{{ page.category }}</li>
+  {% endif %}
+  {% if page.title and page.url != '/index.html' %}
+  <li><span class="raquo">»</span></li>
+  <li>{{ page.title }}</li>
+  {% endif %}
+</ul>
+</div>

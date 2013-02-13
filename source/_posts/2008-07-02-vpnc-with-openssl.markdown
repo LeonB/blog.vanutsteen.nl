@@ -15,7 +15,7 @@ tags:
 - vpns
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/cisco_logo-300x162.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/07/cisco_logo.jpg)The default vpnc in Ubuntu comes without openssl support. Bugger... But with these few lines of code this is solved:
+[![](/images/uploads/2008/07/cisco_logo-300x162.jpg)](/images/uploads/2008/07/cisco_logo.jpg)The default vpnc in Ubuntu comes without openssl support. Bugger... But with these few lines of code this is solved:
 
 ```
 sudo apt-get update

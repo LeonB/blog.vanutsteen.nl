@@ -11,6 +11,7 @@ categories:
 tags:
 - sqlite
 - sqlite3
+banner: images/uploads/2012/09/banner-how-to-repair-an-sqlite-database.jpg
 ---
 
 ```

@@ -18,4 +18,4 @@ tags:
 
 Ik heb de eerste versie van [motorrijweer.nl](http://www.motorrijweer.nl) live gezet! 't Is nog vrij basis maar je kunt wel al voor een paar regio's het motorweer/motorrijweer opvragen. Op naar de volgende versies!
 
-[![Motorrijweer / motorweer](http://www.vanutsteen.nl/wp-content/uploads/2012/03/motorrijweer_motorweer.jpg)](http://www.motorrijweer.nl)
+[![Motorrijweer / motorweer](/images/uploads/2012/03/motorrijweer_motorweer.jpg)](http://www.motorrijweer.nl)

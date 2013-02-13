@@ -15,7 +15,7 @@ tags:
 
 Ubuntu 9.10 comes with an older version of weechat. So I downloaded the stable release 0.3.0 and installed it:
 
-```
+```bash
 ./configure --prefix=/home/leon/Software/local/ --enable-gtk --enable-demo
 make
 make install
@@ -28,4 +28,4 @@ I wrote a little plugin for it that autosaves the current connected channels and
 And here a nice plugin of weechat in action with the autojoin plugin (Nice!!):
 
 
-[![Screenshot of weechat in action](http://www.vanutsteen.nl/wp-content/uploads/2009/10/Screenshot.png)](http://www.vanutsteen.nl/wp-content/uploads/2009/10/Screenshot.png)
+[![Screenshot of weechat in action](/images/uploads/2009/10/Screenshot.png)](/images/uploads/2009/10/Screenshot.png)

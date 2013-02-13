@@ -14,7 +14,7 @@ tags:
 - chromium-browser
 ---
 
-I wanted to make chromium (chrome) more secure. Just to be safe. I found out that the package apparmor-profiles on Ubuntu contained an apparmor profile for chromium-browser. I installed it and tried to enforce it without using the aa-enforce binary (which required the apparmor-utils package) but I couln't get that to work. So I installed apparmor-utils anyway.
+I wanted to make chromium (chrome) more secure. Just to be safe. I found out that the package apparmor-profiles on Ubuntu contained an apparmor profile for chromium-browser. I installed it and tried to enforce it without using the `aa-enforce` binary (which required the `apparmor-utils` package) but I couln't get that to work. So I installed `apparmor-utils` anyway.
 
 ```
 sudo apt-get install apparmor-profiles apparmor-utils

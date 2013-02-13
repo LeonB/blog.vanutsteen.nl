@@ -1,0 +1,78 @@
+Package: *
+Pin: release v=8.10
+Pin-Priority: -1
+
+/*All ruby*/
+Package: ruby
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: ruby1.8
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: libruby
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: libruby1.8
+Pin: release v=8.10
+Pin-Priority: 500
+rdoc1.8 ri1.8
+
+Package: rdoc
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: rdoc1.8
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: ril
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: ril1.8
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: irb
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: irb1.8
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: libopenssl-ruby
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: libreadline-ruby
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: libreadline-ruby1.8
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: ruby-dev
+Pin: release v=8.10
+Pin-Priority: 500
+
+Package: ruby1.8-dev
+Pin: release v=8.10
+Pin-Priority: 500
+/*End ruby*/
+
+Package: guessnet
+Pin: release v=8.10
+Pin-Priority: 501
+
+Package: glipper
+Pin: release v=8.10
+Pin-Priority: 501
+
+Package: flashplugin-nonfree
+Pin: release v=8.10
+Pin-Priority: 501

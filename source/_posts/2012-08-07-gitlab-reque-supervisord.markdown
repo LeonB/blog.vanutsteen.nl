@@ -20,10 +20,8 @@ tags:
 ---
 
 Gitlab needs at least one resque daemon. I always forget to start it when I boot the (virtual) pc where gitlab resides. So I installed supervisord an set up this conf file:
-/etc/supervisor/conf.d/resque.conf:
 
-
-```
+```ini /etc/supervisor/conf.d/resque.conf
 [program:resque]
 command=bundle exec rake environment resque:work
 # Do not use BACKGROUND=No, it only checks if BACKGROUND is set

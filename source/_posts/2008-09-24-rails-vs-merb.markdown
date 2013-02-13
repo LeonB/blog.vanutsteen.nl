@@ -26,4 +26,4 @@ For example, the "has and belongs to many" association in datamapper isn't fully
 I know, I could also make/fix this stuff for merb and datamapper myself and I would love to. But there just isn't enough time! Aaarghhh...
 
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/09/white_rabbit-300x218.gif)](http://www.vanutsteen.nl/wp-content/uploads/2008/09/white_rabbit.gif)
+[![](/images/uploads/2008/09/white_rabbit-300x218.gif)](/images/uploads/2008/09/white_rabbit.gif)

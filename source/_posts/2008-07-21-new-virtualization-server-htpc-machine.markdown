@@ -29,7 +29,7 @@ But, the trick question: what components? Pffff, I don't know anything about har
 
 A nice looking case with a lcd display with Linux drivers for it available (I think). And also an infrared receiver. And the price is not too high like some other cases.
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/antec_fusion_black-300x156.jpg)
+![](/images/uploads/2008/07/antec_fusion_black-300x156.jpg)
 
 
 ### Motherboard: Gigabyte vs. Asus
@@ -39,9 +39,9 @@ I've got two options: The Gigabyte GA-MA78GM-S2H or the Asus M3A78-EMH HDMI. I a
 
 Why one of these? They both have the new AMD 780G/SB700 chipset which supports full HD hardware encoding. So if I'm gonna us it as a HTPC it does it work descent.
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/ga-ma78gm-s2h-300x286.jpg)
+![](/images/uploads/2008/07/ga-ma78gm-s2h-300x286.jpg)
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/m3a78-emh-hdmi-300x287.jpg)
+![](/images/uploads/2008/07/m3a78-emh-hdmi-300x287.jpg)
 
 
 ### CPU: AMD Athlon X2 4450e
@@ -49,7 +49,7 @@ Why one of these? They both have the new AMD 780G/SB700 chipset which supports f
 
 Low power usage and only a couple of euro's more than it's brother the 4050. I think it supports amd-v/svm, but it's not too obvious if you read the AMD site. So I hope I got it right :)
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/amd-athlon-x2-4450e-300x225.jpg)
+![](/images/uploads/2008/07/amd-athlon-x2-4450e-300x225.jpg)
 
 
 ### Cooler: Scythe Ninja mini
@@ -57,7 +57,7 @@ Low power usage and only a couple of euro's more than it's brother the 4050. I t
 
 I want the system to be passively cooled. And this is the best small heatsink I could find.
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/ninja-mini-heatsink-300x252.jpg)
+![](/images/uploads/2008/07/ninja-mini-heatsink-300x252.jpg)
 
 
 ### Memory: 2 x 2GB
@@ -66,7 +66,7 @@ I want the system to be passively cooled. And this is the best small heatsink I 
 I don't care what kind of memory goes into it. As long if it's enough to support a couple of VM's.
 
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/pxtcddr1dc-300x244.jpg)
+![](/images/uploads/2008/07/pxtcddr1dc-300x244.jpg)
 
 
 
@@ -77,4 +77,4 @@ I don't care what kind of memory goes into it. As long if it's enough to support
 
 This one is hard! Is this worth the 160 euro's? Well it is fast, silent and reliable! And it's enough for DomU + some VM's. All my  data is gonna be saved on another (network) diskdrive. But still....
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/07/core_ssd_32gb-300x244.jpg)
+![](/images/uploads/2008/07/core_ssd_32gb-300x244.jpg)

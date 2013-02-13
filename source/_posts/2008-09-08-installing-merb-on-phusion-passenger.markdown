@@ -16,7 +16,7 @@ tags:
 - xml
 ---
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/09/merb.jpg)
+![](/images/uploads/2008/09/merb.jpg)
 I've created a little merb app for a customer. The reason I chose merb because I really like the :provides-api. The app had to generate a lot of xml, so using Merb was really nice.
 
 But the installation on the server was a little troublesome. I had to install some gems (which I of course forgot to do) and I had to figure out how the file permissions had to be.

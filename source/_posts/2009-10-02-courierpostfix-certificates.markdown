@@ -18,7 +18,7 @@ tags:
 
 The certificates of the courier imapd-ssl and pop3d-ssl were expired. After some searching I found how to renew them:
 
-```
+```bash
 sudo aptitude install courier-pop-ssl
 
 nano /etc/courier/imapd.cnf #edit the CN

@@ -25,6 +25,6 @@ align_image_stack -a test.jpg 1.jpg 2.jpg
 
 Then I put them next to eachother in GIMP :p
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2012/03/autootje_gewassen-1024x387.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2012/03/autootje_gewassen.jpg)
+[![](/images/uploads/2012/03/autootje_gewassen-1024x387.jpg)](/images/uploads/2012/03/autootje_gewassen.jpg)
 
 

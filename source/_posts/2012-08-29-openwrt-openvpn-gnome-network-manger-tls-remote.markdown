@@ -22,7 +22,7 @@ After that was done and it ran ok I decided to have another look at the settings
 
 My previous setup used three separate certificates/keys: a user certificate, a CA certificate and a private key (and actually a ta.key). I used the `build-key` command to generate a new user certificate on the router which generated a *.p12 file. I first wanted to extract the three different certificates from the PKCS12 file but it appears that Network Manager can use those files.
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2012/08/p12-300x286.png)](http://www.vanutsteen.nl/wp-content/uploads/2012/08/p12.png)
+[![](/images/uploads/2012/08/p12-300x286.png)](/images/uploads/2012/08/p12.png)
 
 After I figured that out I wanted to make OpenVPN a little securer. I had three things in mind:
 
@@ -85,7 +85,7 @@ option 'tls_auth' '/etc/openvpn/ta.key 0'
 
 And as last,  make sure the advanced section of the openvpn connection of Gnome Network Manager looks like this (copy the ta.key to your local machine):
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2012/08/ta.key_-300x232.png)](http://www.vanutsteen.nl/wp-content/uploads/2012/08/ta.key_.png)
+[![](/images/uploads/2012/08/ta.key_-300x232.png)](/images/uploads/2012/08/ta.key_.png)
 
 
 ### Certificate Subject Match
@@ -119,4 +119,4 @@ So change `name=MyFirstName MyLastName` to `name=MyFirstName MyLastName`. You t
 /C=MyCountry/ST=MyState/L=MyCity/O=example.tld/CN=host.example.tld/name=MyFirstName_MyLastName/emailAddress=myname@example.com
 ```
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2012/08/subject_match-300x232.png)](http://www.vanutsteen.nl/wp-content/uploads/2012/08/subject_match.png) Now, everything should work as planned!
+[![](/images/uploads/2012/08/subject_match-300x232.png)](/images/uploads/2012/08/subject_match.png) Now, everything should work as planned!

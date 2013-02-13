@@ -15,6 +15,6 @@ tags:
 - zf
 ---
 
-[![Zend Framework logo](http://www.vanutsteen.nl/wp-content/uploads/2010/09/zf_logo.png)](http://www.vanutsteen.nl/wp-content/uploads/2010/09/zf_logo.png)The last few days I've been spending my time on creating a website with Zend Framework. A lot of it I liked but the Zend_db stuff is is a complicated piece of crap. I've worked with a lot of ORM's and db api's but the Zend_db stuff is really the most awfull I've had till now.
+[![Zend Framework logo](/images/uploads/2010/09/zf_logo.png)](/images/uploads/2010/09/zf_logo.png)The last few days I've been spending my time on creating a website with Zend Framework. A lot of it I liked but the Zend_db stuff is is a complicated piece of crap. I've worked with a lot of ORM's and db api's but the Zend_db stuff is really the most awfull I've had till now.
 
 I really, really don't want to work with it ever again and I regret that I chose ZF for this particular project just because of the db layer.

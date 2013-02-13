@@ -19,7 +19,7 @@ tags:
 - video
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/05/safety_scissors-191x300.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/05/safety_scissors.jpg)
+[![](/images/uploads/2008/05/safety_scissors-191x300.jpg)](/images/uploads/2008/05/safety_scissors.jpg)
 
 I saw the MountainWest Ruby conference video: [code generation: safety scissors of metaprogramming](http://mwrc2008.confreaks.com/03bowkett.html). And the speaker (Giles Bowkett) used vi from inside irb. And I've never liked Vi, but using an editor from within irb is nice! Especially if you're testing a big chunk of code.
 
@@ -42,6 +42,6 @@ end
 
 Now to use nano in irb, just type: nano
 
-And the bonus: a nice [screencast that shows this feature in action](http://www.vanutsteen.nl/wp-content/uploads/2008/05/out.ogg). I tried to edit it with pitivi. But that really sucked. After I finally found it out how I could cut pieces I tried to save it and the whole program crashed. "apt-get remove pitivi"!
+And the bonus: a nice [screencast that shows this feature in action](/images/uploads/2008/05/out.ogg). I tried to edit it with pitivi. But that really sucked. After I finally found it out how I could cut pieces I tried to save it and the whole program crashed. "apt-get remove pitivi"!
 
 

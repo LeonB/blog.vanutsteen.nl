@@ -36,10 +36,10 @@ I the [release post of com_resized](2008/04/27/com_resize-on-wordpress-plugins/)
 ## No more ugly resized images:
 
 
-![](http://www.vanutsteen.nl/wp-content/uploads/2008/05/space_station.jpg)![](http://www.vanutsteen.nl/wp-content/uploads/2008/05/space_station.jpg)
+![](/images/uploads/2008/05/space_station.jpg)![](/images/uploads/2008/05/space_station.jpg)
 
 The one on the left is without com_resize. The one on the right is _with_ com_resize. If you don't see any difference. Your browser is probably doing some fancy stuff with the image. In that case you don't need com_resize. But maybe the readers of your blog do!
 
 For the people who don't see any difference (leave a comment with your OS + browser, please!) I have attached a screenshot. Made in IE6, so the font is ugly too :)
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/05/com_resize_example.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/05/com_resize_example.jpg)
+[![](/images/uploads/2008/05/com_resize_example.jpg)](/images/uploads/2008/05/com_resize_example.jpg)

@@ -13,8 +13,6 @@ tags:
 - upgrade moneybooker
 ---
 
-http://www.nicksays.co.uk/2010/03/fool-proof-magento-upgrades/
-
-```
+```bash http://www.nicksays.co.uk/2010/03/fool-proof-magento-upgrades/
 ./pear upgrade --force magento-core/Mage_All_Latest
 ```

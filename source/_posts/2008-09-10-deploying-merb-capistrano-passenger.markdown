@@ -19,7 +19,7 @@ First of all I did a:
 
 `capify .`
 
-And used this [deploy.rb](http://www.vanutsteen.nl/wp-content/uploads/2008/09/deploy.rb)
+And used this [deploy.rb](/images/uploads/2008/09/deploy.rb)
 
 Then to setup the current, releases, etc. directories:
 

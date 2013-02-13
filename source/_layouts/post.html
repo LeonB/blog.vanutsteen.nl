@@ -1,0 +1,52 @@
+---
+layout: default
+single: true
+---
+
+<div class="span8">
+  <article class="hentry" role="article">
+    <header>
+      <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+      <p class="meta">
+       {% include post/author.html %}
+        on
+        {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+        in
+       {% include post/categories.html %}
+      </p>
+    </header>
+
+    <div class="entry-content">{{ content }}</div>
+
+    <footer>
+      {% unless page.sharing == false %}
+        {% include post/sharing.html %}
+      {% endunless %}
+      <p class="meta row-fluid">
+        {% if page.previous.url %}
+          <a class="prev span6" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&larr; {{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next span6" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &rarr;</a>
+        {% endif %}
+      </p>
+    </footer>
+  </article>
+
+{% if site.disqus_short_name and page.comments == true %}
+  <section class="comments">
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+  </section>
+{% endif %}
+</div>
+
+{% unless page.sidebar == false %}
+<aside class="span4 hidden-phone">
+  {% if site.blog_index_asides.size %}
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>
+{% endunless %}

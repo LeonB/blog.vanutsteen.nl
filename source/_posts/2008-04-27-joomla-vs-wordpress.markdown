@@ -25,7 +25,7 @@ I've got to plugins installed. One for generating google sitemaps and another fo
 
 I'm using Joomla! during the day at my job. So Joomla! is buying my bread and paying my house and I know Joomla! through and through. I make webshops, coporate sites, intranets, etc. with Joomla!. But I wouldn't use it for a blog. Wordpress is the way to go!
 
- ![](http://www.vanutsteen.nl/wp-content/uploads/2008/04/wordpress_joomla_drupal.png)
+ ![](/images/uploads/2008/04/wordpress_joomla_drupal.png)
 
 edit: I saw I haven't added the sitemap to the above image. So here goes:
 

@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<section class="span8">
+  {% assign index = true %}
+  {% for post in paginator.posts %}
+  {% assign content = post.content %}
+    <article>
+      <header>
+        <h2 class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        {% if post.banner %}
+        <a href="{{ post.url }}" title="{{ post.title }}" class="banner">
+          <img src="{{ post.banner }}" />
+        </a>
+        {% endif %}
+        <p class="meta">
+          {% include post/author.html %}
+          on
+          {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+          in
+          {% include post/categories.html %}
+        </p>
+      </header>
+
+      {% if post.intro %}
+      <p class="entry-content">{{ post.intro }}</p>
+      {% else %}
+      <div class="entry-content">{{ post.content | strip_img | truncatehtml:200 }}</div>
+      {% endif %}
+
+      <footer>
+        <a href="{{ post.url }}" class="readmore" title="{{ post.title }}">Read More</a>
+      </footer>
+    </article>
+  {% endfor %}
+
+  <nav class="pagination">
+    {% if paginator.next_page %}
+      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
+    {% endif %}
+    <span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+    {% endif %}
+
+  </nav>
+</section>
+
+<aside class="span4 hidden-phone">
+  {% if site.blog_index_asides.size %}
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>

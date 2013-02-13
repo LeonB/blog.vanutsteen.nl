@@ -15,7 +15,7 @@ tags:
 - virtualbox
 ---
 
-[![](http://www.vanutsteen.nl/wp-content/uploads/2008/06/logitech_harmony_remote_525-300x231.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/logitech_harmony_remote_525.jpg)A.K.A.: **I bought a Logitech Harmony 525 remote control and a €1.49 remote saved my day!**
+[![](/images/uploads/2008/06/logitech_harmony_remote_525-300x231.jpg)](/images/uploads/2008/06/logitech_harmony_remote_525.jpg)A.K.A.: **I bought a Logitech Harmony 525 remote control and a €1.49 remote saved my day!**
 
 
 When I say "525" in this post, I of course mean the Logitech Harmony 525.
@@ -35,4 +35,4 @@ none /proc/bus/usb usbfs devgid=46,devmode=664 0 0
 
 Restarted my box, fired up Virtualbox and voila: I could now access the remote from Windows XP. After installing [the driver](http://www.logitech.com/index.cfm/440/371&cl=nl,nl?osid=1) and signing up for an account I was of. Added my xbox, dvd player an tv to the remote and it worked! Not like a charm, because not all of the features of the original remote of my tv (a Sanyo CE28FWH2F-C) were added to the 525. A search on google didn't return anything useful so the only solution was to copy the infrared codes from the original remote. But I didn't have it so I took my chances with a cheap 1,49 remote from [Action](http://www.action.nl). And because of the nice Harmony remote software it was easy as pie.
 
-[![Cheap remote](http://www.vanutsteen.nl/wp-content/uploads/2008/06/cheap_remote-300x192.jpg)](http://www.vanutsteen.nl/wp-content/uploads/2008/06/cheap_remote.jpg)
+[![Cheap remote](/images/uploads/2008/06/cheap_remote-300x192.jpg)](/images/uploads/2008/06/cheap_remote.jpg)
