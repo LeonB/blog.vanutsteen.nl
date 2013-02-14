@@ -10,6 +10,7 @@ gem "middleman-deploy"
 gem 'rb-inotify', '~> 0.8.8'
 gem 'erubis'
 
+gem 'rack-prettify', :git => 'https://github.com/logicaltext/rack-prettify.git'
 gem "redcarpet"
 gem "ZURB-foundation"
 # gem "html_truncator"
