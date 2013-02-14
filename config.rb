@@ -6,10 +6,9 @@ require "lib/backtick_code_block"
 require "lib/breadcrumbs"
 require "lib/github_repos"
 require "lib/blog_article_summary"
+require 'rack/prettify'
 
-#require 'rack/tidy'
-
-#use Rack::Tidy
+use Rack::Prettify, :output_type => :html
 
 # linkchecker "http://v5.vanutsteen.nl" --no-warnings
 
@@ -23,25 +22,33 @@ activate :blog do |blog|
   # blog.prefix = "posts"
   blog.permalink = ":year/:month/:day/:title.html"
   blog.sources = "posts/:year-:month-:day-:title.html"
-   blog.layout = "post"
+  blog.layout = "post"
   blog.paginate = true #enable pagination
   blog.per_page = 10
   blog.page_link = "page/:num"
 
-  blog.summary_generator = lambda{|resource, raw| (resource.data['summary']) ? resource.data['summary'] : (truncate_html(strip_img(resource.body), 40)) }
+  # blog.summary_generator = lambda{|resource, raw| (resource.data['summary']) ? resource.data['summary'] : (truncate_html(strip_img(resource.body), 40)) }
+  # blog.summary_generator = lambda { |resouce, rendered, length, ellipsis| 
+  blog.summary_generator = lambda do |resource, rendered, ellipsis|
+    length = 300
+    if resource.data['summary']
+      resource.data['summary']
+    else
+      TruncateHTML.truncate_html(strip_img(rendered), length, ellipsis)
+    end
+  end
 end
 
 activate :blog_categories do |categories|
-  categories.category_template = "/layouts/category.html.erb"
-  categories.categorylink = "categories/:category"
+  categories.category_template = "layouts/category.html.erb"
+  categories.categorylink = "categories/:category.html"
 end
 
-activate :livereload
+# activate :livereload
 activate :breadcrumbs
 activate :directory_indexes
 activate :github_repos
 activate :coderwall_badges
-activate :blog_article_summary
 
 ###
 # Compass
