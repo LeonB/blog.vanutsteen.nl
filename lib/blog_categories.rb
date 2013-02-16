@@ -37,6 +37,8 @@ module BlogCategories
       	category_pages(options)
 
       	if options.category_template
+          ignore options.category_template
+
 	        sitemap.register_resource_list_manipulator(
 	                                                   :blog_categories,
 	                                                   CategoryPages.new(self),
@@ -71,9 +73,9 @@ module BlogCategories
         p = ::Middleman::Sitemap::Resource.new(
           @app.sitemap,
           path,
-          @app.category_pages.category_template
+          # @app.category_pages.category_template
         )
-        # p.proxy_to(@app.category_pages.category_template)
+        p.proxy_to(@app.category_pages.category_template)
 
         # Add metadata in local variables so it's accessible to
         # later extensions
