@@ -1,7 +1,7 @@
 ---
 layout: false
 ---
-<% pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) } -%>
+<% pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) && p.template? && !p.directory_index? } -%>
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <% pages.each do |p| %>
