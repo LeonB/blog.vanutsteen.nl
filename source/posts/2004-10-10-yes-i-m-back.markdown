@@ -1,6 +1,7 @@
 ---
 title: Yes, I'm back
 date: 2004-10-10 23:34 +01:00
+layout: post
 tags:
 categories:
 ---

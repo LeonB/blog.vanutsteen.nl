@@ -1,6 +1,7 @@
 ---
 title: A howto on setting up Asterisk and Amportal for debian
 date: 2005-10-11 23:25 +01:00
+layout: post
 tags:
  - linux
  - debian

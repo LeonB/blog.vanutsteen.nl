@@ -1,6 +1,7 @@
 ---
 title: Final exam
 date: 2005-02-02 12:00 +01:00
+layout: post
 tags:
 categories:
 - Other

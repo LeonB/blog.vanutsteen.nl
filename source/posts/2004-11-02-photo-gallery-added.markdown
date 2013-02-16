@@ -1,6 +1,7 @@
 ---
 title: Photo gallery added
 date: 2004-11-02 12:00 +01:00
+layout: post
 tags:
 - zoom
 - mambo

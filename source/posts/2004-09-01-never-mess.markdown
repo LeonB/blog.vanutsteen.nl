@@ -1,6 +1,7 @@
 ---
 title: Never mess...
 date: 2004-09-01 23:58 +01:00
+layout: post
 tags:
 categories:
 - Other

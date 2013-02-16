@@ -1,6 +1,7 @@
 ---
 title: Remote sudo rsync'ing
 date: 2007-09-21 22:36 +01:00
+layout: post
 tags:
  - linux
  - sudo

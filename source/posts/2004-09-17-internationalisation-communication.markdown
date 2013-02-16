@@ -1,6 +1,7 @@
 ---
 title: internationalisation & communication
 date: 2004-09-17 23:39 +01:00
+layout: post
 tags:
 categories:
 ---

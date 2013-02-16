@@ -1,6 +1,7 @@
 ---
 title: Adding locales to ubuntu Feisty Fawn
 date: 2007-08-31 22:46 +01:00
+layout: post
 tags:
  - linux
  - bash

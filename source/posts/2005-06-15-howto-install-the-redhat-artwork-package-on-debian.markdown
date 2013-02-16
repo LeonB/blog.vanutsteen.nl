@@ -1,6 +1,7 @@
 ---
 title: Howto install the redhat artwork package on debian
 date: 2005-06-15 23:30 +01:00
+layout: post
 tags:
  - linux
  - debian

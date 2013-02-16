@@ -1,6 +1,7 @@
 ---
 title: another samba/cups/windows drivers blog
 date: 2007-07-28 12:00 +01:00
+layout: post
 tags:
 - samba
 - cups

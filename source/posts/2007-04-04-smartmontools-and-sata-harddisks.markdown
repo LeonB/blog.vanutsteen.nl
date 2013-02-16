@@ -1,6 +1,7 @@
 ---
 title: smartmontools and sata harddisks
 date: 2007-04-04 22:57 +01:00
+layout: post
 tags:
  - linux
  - smartmontools

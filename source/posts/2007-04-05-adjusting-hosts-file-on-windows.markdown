@@ -1,6 +1,7 @@
 ---
 title: adjusting hosts file on windows
 date: 2007-04-05 22:56 +01:00
+layout: post
 tags:
  - windows
  - host file

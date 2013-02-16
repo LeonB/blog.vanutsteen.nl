@@ -1,6 +1,7 @@
 ---
 title: "Debian sarge: how to install openoffice.org"
 date: 2005-09-18 23:19 +01:00
+layout: post
 tags:
  - linux
  - debian

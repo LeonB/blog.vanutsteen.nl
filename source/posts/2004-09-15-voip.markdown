@@ -1,6 +1,7 @@
 ---
 title: VoIP
 date: 2004-09-15 23:40 +01:00
+layout: post
 tags:
 - linux
 - asterisk

@@ -1,6 +1,7 @@
 ---
 title: Awstats troubles
 date: 2007-07-23 22:49 +01:00
+layout: post
 tags:
  - linux
  - awstats

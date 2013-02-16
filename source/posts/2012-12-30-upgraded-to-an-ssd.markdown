@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Upgraded to an ssd"
 slug: "upgraded-to-an-ssd"
 date: 2012-12-30 12:21
+layout: post
 comments: true
 test: aassd
 categories:

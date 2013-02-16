@@ -1,6 +1,7 @@
 ---
 title: CVS testsite
 date: 2004-09-06 23:51 +01:00
+layout: post
 tags:
 - mambo
 - cron

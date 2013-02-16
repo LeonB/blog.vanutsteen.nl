@@ -1,6 +1,7 @@
 ---
 title: Installing Winbind
 date: 2007-10-03 12:00 +01:00
+layout: post
 tags:
  - linux
  - winbind

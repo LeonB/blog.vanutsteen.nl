@@ -1,6 +1,7 @@
 ---
 title: Addition to ssh keys
 date: 2007-10-04 12:00 +01:00
+layout: post
 tags:
  - linux
  - ssh

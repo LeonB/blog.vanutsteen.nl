@@ -1,6 +1,7 @@
 ---
 title: Send linux mail to an external email adress
 date: 2007-03-14 23:05 +01:00
+layout: post
 tags:
  - linux
  - postfix

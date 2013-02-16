@@ -1,6 +1,7 @@
 ---
 title: PHP5
 date: 2004-12-19 12:00 +01:00
+layout: post
 tags:
 - php
 - oop

@@ -1,6 +1,7 @@
 ---
 title: Ruby on rails, apache en mongrel
 date: 2007-03-03 23:07 +01:00
+layout: post
 tags:
  - linux
  - apache

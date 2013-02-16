@@ -1,6 +1,7 @@
 ---
 title: Banner development
 date: 2004-09-03 23:54 +01:00
+layout: post
 tags:
 categories:
 - Other

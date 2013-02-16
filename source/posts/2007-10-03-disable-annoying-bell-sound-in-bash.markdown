@@ -1,6 +1,7 @@
 ---
 title: Disable annoying bell/sound in bash
 date: 2007-10-03 22:35 +01:00
+layout: post
 tags:
  - linux
  - bash

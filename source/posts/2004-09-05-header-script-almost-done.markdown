@@ -1,6 +1,7 @@
 ---
 title: Header script almost done
 date: 2004-09-05 23:53 +01:00
+layout: post
 tags:
 - php
 categories:

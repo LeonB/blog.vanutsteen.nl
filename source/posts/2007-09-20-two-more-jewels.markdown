@@ -1,6 +1,7 @@
 ---
 title: Two more jewels
 date: 2007-09-20 22:39 +01:00
+layout: post
 tags:
  - linux
 categories:

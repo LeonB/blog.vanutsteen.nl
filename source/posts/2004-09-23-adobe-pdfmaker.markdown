@@ -1,6 +1,7 @@
 ---
 title: Adobe PDFmaker
 date: 2004-09-23 23:35 +01:00
+layout: post
 tags:
  - windows
  - adobe

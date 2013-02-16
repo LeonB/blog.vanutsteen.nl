@@ -1,6 +1,7 @@
 ---
 title: Bass guitar
 date: 2004-09-08 23:45 +01:00
+layout: post
 tags:
 - bass
 - amp

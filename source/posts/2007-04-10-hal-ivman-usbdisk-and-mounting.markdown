@@ -1,6 +1,7 @@
 ---
 title: HAL, IVman, usbdisk and mounting
 date: 2007-04-10 22:54 +01:00
+layout: post
 tags:
  - linux
 categories:

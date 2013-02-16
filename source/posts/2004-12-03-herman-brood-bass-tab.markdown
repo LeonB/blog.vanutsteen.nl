@@ -1,6 +1,7 @@
 ---
 title: Herman Brood Bass tab
 date: 2004-12-03 12:00 +01:00
+layout: post
 tags:
 - bass
 - tabs

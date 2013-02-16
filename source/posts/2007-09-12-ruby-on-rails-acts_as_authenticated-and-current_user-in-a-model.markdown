@@ -1,6 +1,7 @@
 ---
 title: "Ruby on rails: acts_as_authenticated and current_user in a model"
 date: 2007-09-12 22:41 +01:00
+layout: post
 tags:
  - Ruby on Rails
  - ruby

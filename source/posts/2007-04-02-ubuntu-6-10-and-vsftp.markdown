@@ -1,6 +1,7 @@
 ---
 title: Ubuntu 6.10 and vsftp
 date: 2007-04-02 23:04 +01:00
+layout: post
 tags:
  - linux
  - ubuntu

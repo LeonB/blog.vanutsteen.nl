@@ -1,6 +1,7 @@
 ---
 title: XHTML validation
 date: 2004-08-26 23:55 +01:00
+layout: post
 tags:
 - mambo
 - xhtml

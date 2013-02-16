@@ -1,6 +1,7 @@
 ---
 title: Installing Unreal tournament GOTY on Ubuntu Feist Fawn
 date: 2007-07-27 12:00 +01:00
+layout: post
 tags:
 - linux
 - gaming

@@ -1,6 +1,7 @@
 ---
 title: "Go Mono!"
 date: 2004-10-14 12:00 +01:00
+layout: post
 tags:
 - mono
 - dotnet

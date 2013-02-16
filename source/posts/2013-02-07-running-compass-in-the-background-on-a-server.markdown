@@ -1,6 +1,7 @@
 ---
 title: running compass in the background on a server
 date: 2013-02-07 18:50 +01:00
+layout: post
 tags:
  - linux
  - compass

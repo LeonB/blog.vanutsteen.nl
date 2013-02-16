@@ -1,6 +1,7 @@
 ---
 title: "Ubuntu: changing from dhcp to static network interfaces"
 date: 2007-04-02 23:02 +01:00
+layout: post
 tags:
  - ubuntu
  - dhcp

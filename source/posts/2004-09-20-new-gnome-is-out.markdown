@@ -1,6 +1,7 @@
 ---
 title: "New Gnome is out!"
 date: 2004-09-20 23:38 +01:00
+layout: post
 tags:
  - linux
  - exchange

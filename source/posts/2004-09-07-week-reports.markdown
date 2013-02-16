@@ -1,6 +1,7 @@
 ---
 title: Week reports
 date: 2004-09-07 23:46 +01:00
+layout: post
 tags:
 categories:
 - Other

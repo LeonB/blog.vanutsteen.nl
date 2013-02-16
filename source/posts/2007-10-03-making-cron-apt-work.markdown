@@ -1,6 +1,7 @@
 ---
 title: Making cron-apt work
 date: 2007-10-03 22:48 +01:00
+layout: post
 tags:
  - linux
  - bash

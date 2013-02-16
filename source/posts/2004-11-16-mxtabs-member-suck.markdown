@@ -1,6 +1,7 @@
 ---
 title: "MXtabs member suck!"
 date: 2004-11-16 12:00 +01:00
+layout: post
 tags:
 - bass
 categories:

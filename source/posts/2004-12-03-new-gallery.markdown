@@ -1,6 +1,7 @@
 ---
 title: New Gallery
 date: 2004-12-03 12:00 +01:00
+layout: post
 tags:
 ---
 I installed a new gallery on my site. This one. It is verry extensive but it is also quite old and well, just plain ugly. The new one, V2 is better. But there's no mambo component for that one. So I installed gallery V1 here. After that I installed the mambo component. I openened the back-end and I got this error:

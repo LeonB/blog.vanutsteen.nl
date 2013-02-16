@@ -1,6 +1,7 @@
 ---
 title: New country list script
 date: 2005-07-23 23:29 +01:00
+layout: post
 tags:
  - php
  - sef

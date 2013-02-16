@@ -1,6 +1,7 @@
 ---
 title: Another gallery added
 date: 2004-11-06 12:00 +01:00
+layout: post
 tags:
 - mambo
 - gallery

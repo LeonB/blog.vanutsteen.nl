@@ -1,6 +1,7 @@
 ---
 title: Tim_online
 date: 2004-09-07 23:48 +01:00
+layout: post
 tags:
 - work
 categories:

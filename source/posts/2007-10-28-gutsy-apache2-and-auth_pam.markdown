@@ -1,6 +1,7 @@
 ---
 title: Gutsy, apache2 and auth_pam
 date: 2007-10-28 12:00 +01:00
+layout: post
 tags:
  - linux
  - ubuntu

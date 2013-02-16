@@ -1,6 +1,7 @@
 ---
 title: OpenSEF
 date: 2005-09-05 23:21 +01:00
+layout: post
 tags:
  - php
  - sef

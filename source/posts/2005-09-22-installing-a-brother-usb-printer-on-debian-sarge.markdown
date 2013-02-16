@@ -1,6 +1,7 @@
 ---
 title: Installing a brother usb printer on Debian Sarge
 date: 2005-09-22 23:16 +01:00
+layout: post
 tags:
  - linux
  - brother

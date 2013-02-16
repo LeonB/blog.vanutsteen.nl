@@ -1,6 +1,7 @@
 ---
 title: Samba, Pam, winbind & the AD
 date: 2007-04-03 22:59 +01:00
+layout: post
 tags:
  - linux
  - samba

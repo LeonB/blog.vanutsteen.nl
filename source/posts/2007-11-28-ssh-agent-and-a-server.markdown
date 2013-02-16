@@ -1,6 +1,7 @@
 ---
 title: ssh-agent and a server
 date: 2007-11-28 12:00 +01:00
+layout: post
 tags:
  - linux
  - ssh

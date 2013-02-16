@@ -1,6 +1,7 @@
 ---
 title: Brother HL-2030 and printing from Windows with Samba
 date: 2005-12-22 23:12 +01:00
+layout: post
 tags:
  - linux
  - brother

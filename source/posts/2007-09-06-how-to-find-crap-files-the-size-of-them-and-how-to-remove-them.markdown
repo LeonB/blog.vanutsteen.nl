@@ -1,6 +1,7 @@
 ---
 title: How to find crap files, the size of them and how to remove them
 date: 2007-09-06 22:45 +01:00
+layout: post
 tags:
  - linux
  - find

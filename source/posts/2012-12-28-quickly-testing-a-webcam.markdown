@@ -1,8 +1,8 @@
 ---
-layout: post
 slug: quickly-testing-a-webcam-on-ubuntu
 title: Quickly testing a webcam on Ubuntu
 date: 2012-12-28 14:56
+layout: post
 comments: true
 categories:
 - Linux

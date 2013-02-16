@@ -1,6 +1,7 @@
 ---
 title: Php function for checking a string for an url
 date: 2005-07-05 23:27 +01:00
+layout: post
 tags:
  - php
 categories:

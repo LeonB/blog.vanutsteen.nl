@@ -1,6 +1,7 @@
 ---
 title: Project planning
 date: 2004-10-13 23:50 +01:00
+layout: post
 tags:
 - visio
 - project

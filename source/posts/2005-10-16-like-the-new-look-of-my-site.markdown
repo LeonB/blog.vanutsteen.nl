@@ -1,6 +1,7 @@
 ---
 title: Like the new look of my site?
 date: 2005-10-16 23:23 +01:00
+layout: post
 tags:
  - php
  - sef

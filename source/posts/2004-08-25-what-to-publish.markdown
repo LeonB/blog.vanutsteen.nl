@@ -1,6 +1,7 @@
 ---
 title: What to publish
 date: 2004-08-25 23:57 +01:00
+layout: post
 tags:
 categories:
 - Other

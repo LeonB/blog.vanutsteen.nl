@@ -1,6 +1,7 @@
 ---
 title: PHP
 date: 2004-09-11 23:44 +01:00
+layout: post
 tags:
 - php
 - oop

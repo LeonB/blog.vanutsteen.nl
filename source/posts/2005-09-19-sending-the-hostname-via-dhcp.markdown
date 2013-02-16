@@ -1,6 +1,7 @@
 ---
 title: Sending the hostname via dhcp
 date: 2005-09-19 23:17 +01:00
+layout: post
 tags:
  - linux
  - windows

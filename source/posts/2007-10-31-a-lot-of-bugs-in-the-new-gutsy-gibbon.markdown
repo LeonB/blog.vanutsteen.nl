@@ -1,6 +1,7 @@
 ---
 title: A lot of bugs in the new Gutsy Gibbon
 date: 2007-10-31 12:00 +01:00
+layout: post
 tags:
  - linux
  - ubuntu
