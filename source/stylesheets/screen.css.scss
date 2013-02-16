@@ -13,6 +13,7 @@ $grid-max-width: 1170px;
 @import "zurb/mobile";
 @import "github";
 @import "jquery.fancybox";
+@import "partials/search";
 
 /*@include makeFluidColumn(2);
 http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html*/
@@ -213,7 +214,7 @@ figcaption {
 * Body gebeuren
 ****************************/
 .container {
-	margin-top: 3em;
+	padding-top: 3em; //No margin-top in connection with overlays
 	position: relative;
 }
 
