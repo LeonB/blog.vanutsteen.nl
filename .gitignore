@@ -13,5 +13,11 @@
 # Ignore Sass' cache
 /.sass-cache
 
+# Already in it's own repository
+/lib/middleman-swiftype/
+
+# Do not spill private information
+/config.rb
+
 .DS_Store
 /Gemfile.lock
