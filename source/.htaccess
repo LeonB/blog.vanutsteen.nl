@@ -1,19 +1,20 @@
 ErrorDocument 404 /404/
 AddEncoding gzip gz
+AddDefaultCharset UTF-8
 Header set X-UA-Compatible "IE=edge;chrome=1"
 
 <FilesMatch "\.js\.gz$">
-    ForceType text/javascript;charset=utf-8
+    ForceType text/javascript
     Header set Content-Encoding: gzip
 </FilesMatch>
 
 <FilesMatch "\.css\.gz$">
-    ForceType text/css;charset=utf-8
+    ForceType text/css
     Header set Content-Encoding: gzip
 </FilesMatch>
 
 <FilesMatch "\.html\.gz$">
-    ForceType text/html;charset=utf-8
+    ForceType text/html
     Header set Content-Encoding: gzip
 </FilesMatch>
 
