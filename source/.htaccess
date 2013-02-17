@@ -17,12 +17,10 @@ Header set X-UA-Compatible "IE=edge;chrome=1"
     Header set Content-Encoding: gzip
 </FilesMatch>
 
-<FilesMatch "\.xml\.gz$">
-    ForceType application/xml
-    Header set Content-Encoding: gzip
-</FilesMatch>
-
 RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^v5.vanutsteen.nl$
+RewriteRule (.*)$ http://blog.vanutsteen.nl/$1 [R=301,L]
 
 RewriteRule ^feed/?$ /feed.rss [QSA,L]
 
@@ -32,7 +30,6 @@ RewriteCond %{HTTP_USER_AGENT} !Konqueror
 RewriteCond %{REQUEST_FILENAME}.gz -f
 RewriteRule ^(.*)\.css$ $1.css.gz [QSA,L]
 RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]
-RewriteRule ^(.*)\.xml$ $1.xml.gz [QSA,L]
 
 <FilesMatch "^latest\.json$">
 Header Add Access-Control-Allow-Origin "*"
@@ -41,19 +38,23 @@ Header Add Access-Control-Allow-Origin "*"
 #### CACHING ####
 ExpiresActive On
 # Default: 1 HOUR
-ExpiresDefault A3600        
+ExpiresDefault A3600
 
 # 1 MONTH
 <FilesMatch "\.(ico|gif|jpe?g|png|flv|pdf|swf|mov|mp3|wmv|ppt)$">
 ExpiresDefault A2419200
 Header append Cache-Control "public"
 </FilesMatch>
-
-# 3 DAYS
-<FilesMatch "\.(xml|txt|html|htm|js|css)$">
-ExpiresDefault A259200
+<FilesMatch "\.(xml|txt|html|htm|js|css)(\.gz)?$">
+ExpiresDefault A2419200
 Header append Cache-Control "private, must-revalidate"
 </FilesMatch>
+
+# 3 DAYS
+# <FilesMatch "\.(xml|txt|html|htm|js|css)$">
+# ExpiresDefault A259200
+# Header append Cache-Control "private, must-revalidate"
+# </FilesMatch>
 
 # NEVER CACHE
 <FilesMatch "\.(php|cgi|pl)$">
