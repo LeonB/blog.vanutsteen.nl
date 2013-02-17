@@ -6,8 +6,6 @@ comments: true
 sharing: true
 footer: true
 ---
-<!-- ![Me](/images/uploads/2008/06/pasfoto-202x300.jpg) -->
-
 <img class="right" src="/images/uploads/2008/06/pasfoto-202x300.jpg" alt="Me">
 
 Hi! I'm Leon and this is my blog! It's mainly about ICT-related stuff I fix and make. So I don’t forget how I got it working
