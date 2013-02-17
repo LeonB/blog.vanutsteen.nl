@@ -6,13 +6,15 @@
 @import "compass/css3/images";
 
 $grid-max-width: 1170px;
+$lichtgrijs: #676761;
+$donkergrijs: #2F2F2F;
 
 @import "zurb/shared";
 @import "zurb/globals"; //includes reset
 @import "zurb/grid";
 @import "zurb/mobile";
-@import "github";
 @import "jquery.fancybox";
+@import "partials/github";
 @import "partials/search";
 
 /*@include makeFluidColumn(2);
@@ -20,7 +22,7 @@ http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-htm
 
 body {
 	font-family: 'Open Sans', Arial, sans-serif !important;
-	color: #676761;
+	color: $lichtgrijs;
 	background-color: #F5F5EC;
 	line-height: 125%;
 	background-image: image-url('line-tile.png');
@@ -30,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 0.3em;
-	color: #676761;
+	color: $lichtgrijs;
 	letter-spacing: -1px;
 	line-height: 1em;
 	font-weight: normal;
@@ -63,17 +65,17 @@ h4 {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 0.86em;
-	color: #676761;
+	color: $lichtgrijs;
 	padding-bottom: 0.8em;
 }
 
 a {
-	color: #676761;
+	color: $lichtgrijs;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #2F2F2F;
+	color: $donkergrijs;
 }
 
 p, pre {
@@ -297,7 +299,7 @@ nav {
 
 	a {
 		font-weight: bold;
-		color: #676761;
+		color: $lichtgrijs;
 		text-decoration: none;
 	}
 
@@ -440,7 +442,7 @@ article {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 0.86em;
-	color: #676761;
+	color: $lichtgrijs;
 	display: block;
 	text-decoration: none;
 

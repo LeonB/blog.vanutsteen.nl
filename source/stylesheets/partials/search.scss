@@ -9,10 +9,14 @@
 	margin-top: 3px;
 	margin-left: 4px;
 	height: 22px;
-	border: 0 solid transparent;
+	border: 0 solid transparent !important;
 	font-size: 1em;
 	vertical-align: top;
-	color: #676761;
+	color: $lichtgrijs;
+	background-image: url('/images/search24.png');
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	width: 83%;
 
 	&.placeholder { //for swiftype
 		color: rgba(#676761, .4);
@@ -23,19 +27,13 @@
 	}
 }
 
-::-webkit-input-placeholder	{ color:#f00; }
-
-input::-webkit-input-placeholder {
-	color: red;
-}
-
 .search input[type="submit"] {
 	display: block;
 	position: absolute;
 	height: 32px;
 	border: 0 solid transparent;
-	background-color: #e95c33; //non css3 browsers
-	background: -webkit-linear-gradient(top, rgba(233,92,51,1) 0,rgba(229,59,44,1) 100%);
+	background-color: $donkergrijs; //non css3 browsers
+	@include background-image(linear-gradient(#676761, #2F2F2F));
 	color: white;
 	padding: 0 1em;
 	border-radius: 5px;
@@ -48,24 +46,37 @@ input::-webkit-input-placeholder {
 }
 
 //Search results page
-#st-results-container {
+.search_results {
+	border-right: 1px solid #f0f0e5;
+	border-bottom: 1px solid #f0f0e5;
+	padding-bottom: 1.5em;
+
+	h1 {
+		margin: 0;
+		font-weight: bold;
+		font-size: 1.88em;
+		padding: 0.67em 0 0.67em 0.67em;
+		text-transform: uppercase;
+	}
+
+	form {
+		margin-left: auto;
+		margin-right: auto;
+		width: 94%;
+	}
 
 	.swiftype {
-
-		border-right: 1px solid #f0f0e5;
-		border-bottom: 1px solid #f0f0e5;
-		margin-bottom: 1.5em;
 	}
 
 	.st-search-summary {
-		border-bottom: 1px solid #f0f0e5;
-		margin: 0;
-		padding: 1.25em 0 1.25em 1.25em;
+		border-bottom: 1px solid #f0f0e5 !important;
+		margin: 0 !important;
+		padding: 1.25em 0 1.25em 1.25em !important;
 
 		h2 {
 			padding: 0;
 			font-size: 1em;
-			color: #676761;
+			color: $lichtgrijs;
 		}
 	}
 
@@ -96,7 +107,7 @@ input::-webkit-input-placeholder {
 		margin-left: auto;
 		margin-right: auto;
 		width: 89%;
-		border-top: 0 solid transparent;
+		border-top: 0 solid transparent !important;
 		padding-top: 0.94em;
 	}
 }
