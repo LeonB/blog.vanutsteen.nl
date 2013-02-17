@@ -1,6 +1,15 @@
 <% breadcrumbs.unshift current_page.title %>
 <% breadcrumbs.unshift link_to('Articles', '/archives', :title => 'Articles') %>
 <% content_for :meta_description do strip_tags(current_page.summary).strip end %>
+
+<% content_for(:opengraph) do -%>
+<meta property="og:type" content="blog" />
+<meta property="og:title" content="<%= current_page.title %>" />
+<% if current_page.data.banner %>
+<meta property="og:image" content="<%= settings.url + current_page.data.banner %>" />
+<% end %>
+<% end %>
+
 <% wrap_layout :default do %>
 
 <div class="eight columns">

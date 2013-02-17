@@ -18,6 +18,11 @@
   <% end %>
   <meta name="description" content="<%= yield_content(:meta_description) || settings.description %>" />
 
+  <% if yield_content(:opengraph) %>
+  <!-- Opengraph data -->
+  <%= yield_content(:opengraph) %>
+  <% end %>
+
   <link href="<%= settings.url %>/favicon.ico" rel="icon">
 
   <!-- feeds -->
