@@ -15,6 +15,7 @@
 
 # Already in it's own repository
 /lib/middleman-swiftype/
+/lib/middleman-backtick/
 
 # Do not spill private information
 /config.rb
