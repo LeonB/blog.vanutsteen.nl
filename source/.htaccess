@@ -3,17 +3,17 @@ AddEncoding gzip gz
 Header set X-UA-Compatible "IE=edge;chrome=1"
 
 <FilesMatch "\.js\.gz$">
-    ForceType text/javascript
+    ForceType text/javascript;charset=utf-8
     Header set Content-Encoding: gzip
 </FilesMatch>
 
 <FilesMatch "\.css\.gz$">
-    ForceType text/css
+    ForceType text/css;charset=utf-8
     Header set Content-Encoding: gzip
 </FilesMatch>
 
 <FilesMatch "\.html\.gz$">
-    ForceType text/html
+    ForceType text/html;charset=utf-8
     Header set Content-Encoding: gzip
 </FilesMatch>
 
