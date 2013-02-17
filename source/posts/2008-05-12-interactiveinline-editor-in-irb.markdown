@@ -31,14 +31,12 @@ These were the steps:
 gem install utility_belt
 ```
 
-My .irbrc:
-
-```
+``` ruby My .irbrc:
 require 'utility_belt/interactive_editor'
 module InteractiveEditing
-def nano
-edit_interactively(:nano)
-end
+  def nano
+    edit_interactively(:nano)
+  end
 end
 ```
 
