@@ -13,6 +13,7 @@ tags:
 - openwrt
 - router
 - vpn
+banner: /images/uploads/2013/02/banner_openvpn.jpg
 ---
 
 I've bought myself a Netgear WNDR3800 and put OpenWrt on it. I'm loving it! It's not as easy to use as Tomato but it is much, much more modular and configurable.
