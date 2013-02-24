@@ -49,6 +49,7 @@ to "$HOME/Maildir/.SPAM/"
 ```
 
 ``` php /etc/roundcube-webmail/main.inc.php:
+<?php
 // store spam messages in this mailbox
 $rcmail_config['junk_mbox'] = 'SPAM';
 
