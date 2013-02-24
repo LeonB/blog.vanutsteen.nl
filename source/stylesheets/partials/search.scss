@@ -78,22 +78,18 @@
 			padding: 0;
 			font-size: 1em;
 			color: $lichtgrijs;
+			letter-spacing: 0;
 		}
-	}
 
-	.st-result-listing {
-		padding-bottom: 1.5em;
-
-		h3 a {
-			padding: 0.94em 0 0.94em 0;
-			font-size: 1.4em;
+		.st-query {
+			font-style: italic;
 		}
 	}
 
 	.st-result-text {
 		margin-left: auto;
 		margin-right: auto;
-		width: 89%;
+		width: 94%;
 	}
 
 	.st-result {
@@ -109,6 +105,20 @@
 		margin-right: auto;
 		width: 89%;
 		border-top: 0 solid transparent !important;
+		padding-top: 0.94em;
+	}
+
+	#st-no-results {
+		margin-left: auto;
+		margin-right: auto;
+		width: 94%;
+		padding-top: 0.94em;
+	}
+
+	.st-loading-message {
+		margin-left: auto;
+		margin-right: auto;
+		width: 94%;
 		padding-top: 0.94em;
 	}
 }
