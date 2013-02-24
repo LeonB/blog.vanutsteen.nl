@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
 
 		// jQuery(config.resultContainingElement).insertBefore(summary);
 		// jQuery('.search').insertAfter(summary);
-		jQuery(summary).insertAfter('.search');
+		jQuery(summary).insertAfter('.main .search');
 
 		jQuery('.st-search-input').val(data.info.page.query);
 	}
