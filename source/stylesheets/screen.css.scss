@@ -261,6 +261,10 @@ header {
 		display: block;
 		margin-top: 3px;
 	}
+
+	.banner {
+		display: block;
+	}
 }
 
 nav {
@@ -393,7 +397,6 @@ article {
 	}
 
 	.banner img {
-		width: 100%;
 		margin: 0;
 		margin-bottom: 1.25em;
 	}
