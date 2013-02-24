@@ -1,4 +1,4 @@
-# require "html_truncator"
+require "nokogiri"
 
 module HtmlFilters
   class << self
@@ -10,7 +10,14 @@ module HtmlFilters
 
   module Helpers
   def strip_img(raw)
-    raw.gsub(/<img.*\/>/, '')
+    f = Nokogiri::HTML.fragment(raw)
+    f.at('img').remove if f.at('img')
+
+    f.css('p').each do |node|
+     node.remove if node.inner_text == ''
+    end
+
+    f.to_html
   end
   end
 
