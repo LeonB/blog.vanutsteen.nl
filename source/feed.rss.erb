@@ -15,9 +15,9 @@
     <link><%= settings.url %><%= article.url %></link>
     <guid isPermaLink="false"><%= UUID.create_sha1('darrenknewton.com' + article.url, UUID::NameSpace_URL) %></guid>
     <pubDate><%= article.date.strftime("%a, %d %b %Y %H:%M:%S %z") %></pubDate>
-    <comments><%= settings.url %><%= article.url %></#comments</comments>
+    <comments><%= settings.url %><%= article.url %></comments>
     <% article.categories.each do |category| -%>
-	<category><![CDATA[<%=category%>]]></category> 
+	<category><![CDATA[<%=category%>]]></category>
 	<% end %>
   </item>
   <% end %>
