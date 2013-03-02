@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
 
 		// jQuery(config.resultContainingElement).insertBefore(summary);
 		// jQuery('.search').insertAfter(summary);
-		jQuery(summary).insertAfter('.main .search');
+    jQuery(summary).insertAfter('.search_results .search');
 
 		jQuery('.st-search-input').val(data.info.page.query);
 	}
@@ -60,7 +60,7 @@ jQuery(document).ready(function(){
 
 	jQuery('#st-search-input').swiftypeSearch({
     	engineKey: 'rkpFqoWSMw9vXMnz3NPw',
-    	fetchFields: {'page': ['title','info']},
+    	fetchFields: {'page': ['title','info', 'url']},
     	searchFields: {'page': ['body', 'title', 'sections']},
         perPage: 9999999,
         resultContainingElement: '#st-results-container',
