@@ -27,7 +27,7 @@ jQuery(document).ready(function(){
     summary += '<div class="st-search-summary">';
       summary += '<h2>';
         summary += 'Results <strong>' + from + '&nbsp;-&nbsp;' + to + '</strong> of <strong>' + data.info.page.total_result_count + '</strong> ';
-        summary += 'for <span class="st-query">ruby</span>';
+        summary += 'for <span class="st-query">' + data.info.page.query + '</span>';
       summary += '</h2>';
     summary += '</div>';
 
