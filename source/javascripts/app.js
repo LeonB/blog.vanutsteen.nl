@@ -59,7 +59,7 @@ jQuery(document).ready(function(){
     };
 
   jQuery('#st-search-input').swiftypeSearch({
-      engineKey: 'rkpFqoWSMw9vXMnz3NPw',
+      engineKey: 'o9kvu6PBH1ojppC31qQV',
       fetchFields: {'page': ['title','info', 'url']},
       searchFields: {'page': ['body', 'title', 'sections']},
         perPage: 9999999,
