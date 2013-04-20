@@ -1,7 +1,9 @@
 ErrorDocument 404 /404/
 AddEncoding gzip gz
 AddDefaultCharset UTF-8
-Header set X-UA-Compatible "IE=edge;chrome=1"
+
+BrowserMatch MSIE ie
+Header set X-UA-Compatible "IE=edge;chrome=1" env=ie
 
 <FilesMatch "\.js\.gz$">
     ForceType text/javascript
