@@ -1,12 +1,12 @@
 <div class="row breadcrumbs">
-<ul class="twelve columns">
+<ul class="small-12 columns">
 	<% breadcrumbs.each do |breadcrumb| %>
   	<li><%= breadcrumb %></li>
-  	
+
   	<% if breadcrumb != breadcrumbs.last %>
   	<li><span class="raquo">»</span></li>
   	<% end %>
-  	
+
   <% end %>
 </ul>
 </div>

@@ -12,7 +12,7 @@
 
 <% wrap_layout :default do %>
 
-<div class="eight columns">
+<div class="small-12 large-8 columns">
   <section class="post_detail">
     <article class="hentry" role="article">
       <header>
@@ -22,14 +22,14 @@
       <div class="entry-content"><%= yield %></div>
 
       <footer>
-        <p class="meta row-fluid">
+        <p class="meta row">
           <% if current_page.previous_article %>
-            <a class="prev six columns" href="<%= current_page.previous_article.url %>" title="Previous Post: <%= current_page.previous_article.title %>">
+            <a class="prev small-6 columns" href="<%= current_page.previous_article.url %>" title="Previous Post: <%= current_page.previous_article.title %>">
               &larr; <%= current_page.previous_article.title %>
             </a>
           <% end %>
           <% if current_page.next_article %>
-            <a class="next six columns" href="<%= current_page.next_article.url %>" title="Next Post: <%= current_page.next_article.title %>">
+            <a class="next small-6 columns" href="<%= current_page.next_article.url %>" title="Next Post: <%= current_page.next_article.title %>">
               <%= current_page.next_article.title %> &rarr;
             </a>
           <% end %>

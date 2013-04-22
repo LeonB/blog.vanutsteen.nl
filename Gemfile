@@ -15,9 +15,10 @@ gem 'middleman-minify-html',   :github => 'middleman/middleman-minify-html'
 
 gem 'rb-inotify', '~> 0.9'
 gem 'erubis'
+gem 'nokogiri'
 
 gem 'middleman-swiftype', :path => 'lib/middleman-swiftype'
 gem 'middleman-backtick', :path => 'lib/middleman-backtick'
 
 gem "redcarpet"
-gem "ZURB-foundation"
+gem "zurb-foundation"

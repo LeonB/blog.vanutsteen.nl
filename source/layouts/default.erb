@@ -43,15 +43,13 @@
 </head>
 
   <body>
-  	<div class="container">
-		  <header role="banner" class="row"><%= partial "partials/header" %></header>
-		  <div class="main row">
-		  	<%= partial "partials/breadcrumbs" %>
-		    <div class="row content">
-		      <%= yield %>
-        </div>
-		  </div>
-    </div>
+	  <header role="banner" class="row"><%= partial "partials/header" %></header>
+	  <div class="main">
+	  	<%= partial "partials/breadcrumbs" %>
+	    <div class="row content">
+	      <%= yield %>
+      </div>
+	  </div>
     <%= partial "partials/footer" %>
 
     <script type="text/javascript">

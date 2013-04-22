@@ -4,13 +4,13 @@
     <% article_year = article.date.strftime('%Y') %>
     <% if year != article_year %>
       <% year = article_year %>
-      
+
       <% if article != articles.first %>
         </div> <!-- end year -->
       <% end %>
 
       <h2><%= year %></h2>
-      <div id="<%= year %>" class="year year=<%= year %> row-fluid">
+      <div id="<%= year %>" class="year year=<%= year %> row">
 
     <% end %>
 
@@ -18,14 +18,14 @@
     <li class="<%= 'first' if article == articles.first %> <%= 'last' if article == articles.last %>">
       <article>
         <div class="row">
-          <time class="two columns" datetime="<%= article.date.xmlschema %>" pubdate>
+          <time class="small-2 columns" datetime="<%= article.date.xmlschema %>" pubdate>
             <span class="month"><%= article.date.strftime('%b') %></span>
             <span class='day'><%= article.date.strftime('%d') %></span>
           </time>
-          <h3 class="ten columns"><%= link_to article.title, article %></h3>
+          <h3 class="small-10 columns"><%= link_to article.title, article %></h3>
         </div>
         <div class="row">
-          <footer class="ten columns offset-by-two">
+          <footer class="small-10 columns offset-by-two">
             <span class="categories">posted in <%= partial 'partials/post_categories', :locals => { :article => article } %></span>
           </footer>
         </div>

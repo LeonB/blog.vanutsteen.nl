@@ -3,16 +3,21 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
 @import "compass/css3/images";
+@import "compass/reset";
 
-$grid-max-width: 1170px;
+$row-width: 73.125em; //1170px (http://pxtoem.com/)
 $lichtgrijs: #676761;
 $donkergrijs: #2F2F2F;
 
-@import "zurb/shared";
-@import "zurb/globals"; //includes reset
-@import "zurb/grid";
-@import "zurb/mobile";
+// @import "normalize";
+@import "foundation/foundation-global";
+@import "foundation/components/global";
+@import "foundation/components/grid";
+@import "foundation/components/visibility";
+// @import "foundation";
 @import "jquery.fancybox";
 @import "partials/github";
 @import "partials/search";
@@ -241,11 +246,6 @@ blockquote p {
 /****************************
 * Body gebeuren
 ****************************/
-.container {
-	padding-top: 3em; //No margin-top in connection with overlays
-	position: relative;
-}
-
 /*header*/h1.title {
 	font-size: 1em;
 	margin-left: 0;
@@ -261,10 +261,19 @@ blockquote p {
 }
 
 header {
-	margin-bottom: 1.25em !important;
+	padding-top: 2em; //No margin-top in connection with overlays
+	margin-bottom: 1em !important;
 
 	@media only screen and (max-width: 767px) {
-		margin-bottom: 0 !important;
+		// margin-bottom: 0 !important;
+	}
+
+	@media #{$large} {
+		&.row .columns {
+			padding: 0;
+			margin: 0;
+			// max-width: $row-width+$column-gutter;
+		}
 	}
 
 	a {
@@ -279,6 +288,10 @@ header {
 
 	.banner {
 		display: block;
+
+		.columns {
+			margin: 0;
+		}
 	}
 }
 
@@ -316,15 +329,19 @@ nav {
 }
 
 .main {
-	border: 1px solid #F0F0E5;
-	background-color: white;
+	@extend .row;
 	@include box-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+	border: 1px solid #F0F0E5;
+	padding-left: $column-gutter/2;
+	padding-right: $column-gutter/2;
+
+	.columns {
+		background-color: white;
+	}
 }
 
 .breadcrumbs {
 	border-bottom: 1px solid #F0F0E5;
-	background-color: white;
-	font-size: 0.86em;
 	text-transform: uppercase;
 
 	a {
@@ -340,6 +357,7 @@ nav {
 		float: left !important;
 
 		li {
+			font-size: 0.86em;
 			float: left;
 			background-image: none;
 			padding: 0;
@@ -355,7 +373,10 @@ nav {
 
 .content {
 	background-color: white;
-	border-right: 1px solid #F0F0E5;
+
+	.large-8 {
+		padding-left: 0;
+	}
 }
 
 article {
@@ -370,7 +391,7 @@ article {
 		@include clearfix();
 
 		img {
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			// padding: 1.25em;
 			padding-left: 1.25em;
 			padding-right: 1.25em;
@@ -508,11 +529,15 @@ footer {
 }
 
 .frontpage_posts {
-	border-right: 1px solid #F0F0E5;
+	@media #{$small} {
+		border-right: 1px solid #F0F0E5;
+	}
 }
 
 .post_detail {
-	border-right: 1px solid #F0F0E5;
+	@media #{$small} {
+		border-right: 1px solid #F0F0E5;
+	}
 }
 
 .blog_categories, .blog_archive {
@@ -557,10 +582,6 @@ footer {
 	article {
 		padding-top: 2em;
 		padding-bottom: 1.25em;
-
-		.row-fluid {
-			padding: 0;
-		}
 
 		[class*="columns"] {
 			min-height: 20px;
