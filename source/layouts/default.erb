@@ -37,19 +37,19 @@
 
   <%= stylesheet_link_tag 'screen.css' %>
 
-	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 
   <body>
-	  <header role="banner" class="row"><%= partial "partials/header" %></header>
-	  <div class="main">
-	  	<%= partial "partials/breadcrumbs" %>
-	    <div class="row content">
-	      <%= yield %>
+    <header role="banner" class="row"><%= partial "partials/header" %></header>
+    <div class="main">
+      <%= partial "partials/breadcrumbs" %>
+      <div class="row content">
+        <%= yield %>
       </div>
-	  </div>
+    </div>
     <%= partial "partials/footer" %>
 
     <script type="text/javascript">
