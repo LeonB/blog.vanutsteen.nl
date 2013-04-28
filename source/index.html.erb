@@ -10,36 +10,34 @@ tags:
 - mac
 ---
 
-<div class="large-8 small-12 columns">
-  <section class="frontpage_posts">
-    <% page_articles.each_with_index do |article, i| %>
-      <article>
-        <header>
-          <h2 class="entry-title"><%= link_to article.title, article %></h2>
-          <% if article.data.banner %>
-            <% link_to article, :class => 'banner' do %>
-                <%= image_tag article.data.banner, :alt => article.title %>
-            <% end %>
+<section class="frontpage_posts">
+  <% page_articles.each_with_index do |article, i| %>
+    <article>
+      <header>
+        <h2 class="entry-title"><%= link_to article.title, article %></h2>
+        <% if article.data.banner %>
+          <% link_to article, :class => 'banner' do %>
+              <%= image_tag article.data.banner, :alt => article.title %>
           <% end %>
-          <p class="meta"><%= partial 'partials/meta', :locals => { :article => article } %></p>
-        </header>
-        <div class="entry-content"><%= article.summary %></div>
-        <footer>
-          <%= link_to 'Read more', article, :class => 'readmore', :title => article.title %>
-        </footer>
-      </article>
-    <% end %>
+        <% end %>
+        <p class="meta"><%= partial 'partials/meta', :locals => { :article => article } %></p>
+      </header>
+      <div class="entry-content"><%= article.summary %></div>
+      <footer>
+        <%= link_to 'Read more', article, :class => 'readmore', :title => article.title %>
+      </footer>
+    </article>
+  <% end %>
 
-    <nav class="pagination">
-    <% if next_page %>
-      <%= link_to '&larr; Older', next_page, :class => 'prev' %>
-    <% end %>
-    <span class="pages">Page <%= page_number %> of <%= num_pages %></span>
-    <% if prev_page %>
-      <%= link_to 'Newer &rarr;', prev_page, :class => 'next' %>
-    <% end %>
-    </nav>
-  </section>
-</div>
+  <nav class="pagination">
+  <% if next_page %>
+    <%= link_to '&larr; Older', next_page, :class => 'prev' %>
+  <% end %>
+  <span class="pages">Page <%= page_number %> of <%= num_pages %></span>
+  <% if prev_page %>
+    <%= link_to 'Newer &rarr;', prev_page, :class => 'next' %>
+  <% end %>
+  </nav>
+</section>
 
 <%= partial "partials/aside" %>

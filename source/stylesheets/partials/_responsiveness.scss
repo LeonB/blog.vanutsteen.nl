@@ -1,0 +1,59 @@
+header {
+    @media #{$small} {
+        .description {
+            display: block;
+        }
+    }
+
+    @media #{$medium} {
+        .subtitle {
+            display: inline;
+        }
+    }
+
+    @media #{$larger-then-site} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.content {
+    > :first-child {
+        @media #{$medium} {
+            /*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
+            @include grid-column(8, false, false, false, false, false, true); //collapse=true
+        }
+    }
+}
+
+aside {
+    @media #{$medium} {
+        display: block;
+        @include grid-column(4);
+    }
+}
+
+.footer-page {
+    @media #{$larger-then-site} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+ /*We use this media query to add styles to any device that supports media queries */
+/*@media #{$screen} { header:after { content: 'screen'; } }*/
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+/*@media #{$small} { header:after { content: 'small'; } }*/
+
+/* Used to alter styles for screens at least 1280px wide. */
+/*@media #{$medium} { header:after { content: 'medium'; } }*/
+
+/* Used to alter styles for screens at least 1440px wide. */
+/*@media #{$large} { header:after { content: 'large'; } }*/
+
+/* Apply styles to screens in landscape orientation */
+/*@media #{$landscape} { header:before { content: 'landscape'; } }*/
+
+/* Apply styles to screens in portrait orientation */
+/*@media #{$portrait} { header:before { content: 'portrait'; } }*/

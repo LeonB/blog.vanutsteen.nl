@@ -10,6 +10,7 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%#<meta name="viewport" content="width=device-width" />%>
   <% if current_page.data['tags'] -%>
   <meta name="keywords" content="<%= current_page.data['tags'].join(', ') %>">
   <% end %>
@@ -43,10 +44,10 @@
 </head>
 
   <body>
-    <header role="banner" class="row"><%= partial "partials/header" %></header>
+    <%= partial "partials/header" %>
     <div class="main">
       <%= partial "partials/breadcrumbs" %>
-      <div class="row content">
+      <div class="content">
         <%= yield %>
       </div>
     </div>
