@@ -1,17 +1,17 @@
-<div class="twelve columns">
-	<h1 class="title">
-		<a href="/" title="<%= settings.title %>">
-			<%=h settings.title %>
-			<span class="subtitle hide-on-phones"><%=h settings.subtitle %></span>
-		</a>
-		<span class="hide-on-phones"><%=h settings.description %></span>
-	</h1>
-	<nav role="navigation">
-		<ul class="main-navigation">
-		  <li class="first"><a href="/">Home</a></li>
-		  <li><a href="/about" rel="author">About</a></li>
-		  <li><a href="/archives">Archives</a></li>
-		  <li class="last"><a href="http://feeds.feedburner.com/vanutsteen" target="_blank" title="subscribe via RSS">RSS</a></li>
-		</ul>
-	</nav>
-</div>
+<header role="banner">
+  <h1 class="title">
+    <a href="/" title="<%= settings.title %>">
+      <%=h settings.title %>
+      <span class="subtitle"><%=h settings.subtitle %></span>
+    </a>
+    <span class="description"><%=h settings.description %></span>
+  </h1>
+  <nav role="navigation">
+    <ul class="main-navigation">
+      <li class="first"><a href="/">Home</a></li>
+      <li><a href="/about" rel="author">About</a></li>
+      <li><a href="/archives">Archives</a></li>
+      <li class="last"><a href="http://feeds.feedburner.com/vanutsteen" target="_blank" title="subscribe via RSS">RSS</a></li>
+    </ul>
+  </nav>
+</header>

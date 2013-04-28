@@ -4,34 +4,41 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/css3";
-@import "compass/utilities/general/clearfix";
 @import "compass/reset";
 
-// $rowWidth: 68.750em;
-$rowWidth: 1100px;
-$lichtgrijs: #676761;
+@import "foundation/foundation-global";
+
+$row-width: emCalc(1150px);
+$column-gutter: emCalc(30px);
+
+$lichtgrijs: #F0F0E5;
+$middelgrijs: #676761;
 $donkergrijs: #2F2F2F;
+$include-html-grid-classes: false;
 
-// @import "foundation";
-@import "foundation/settings";
-@import "foundation/functions/all";
-@import "foundation/mixins/all";
-@import "foundation/common/globals";
-// @import "foundation/common/typography";
+$small-screen: emCalc(768px);
+$medium-screen: emCalc(1024px);
+$large-screen: emCalc(1280px);
+
+$screen: "only screen";
+$small: "only screen and (min-width:"#{$small-screen}")";
+$medium: "only screen and (min-width:"#{$medium-screen}")";
+$large: "only screen and (min-width:"#{$large-screen}")";
+$larger-then-site: "only screen and (min-width:"#{$row-width+($column-gutter/2)}")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+@import "foundation/components/global";
 @import "foundation/components/grid";
-@import "foundation/components/modules/ui";
-@import "foundation/components/modules/mqueries";
+@import "foundation/components/tables";
 
-@import "jquery.fancybox";
-@import "partials/github";
-@import "partials/search";
-
-/*@include makeFluidColumn(2);
-http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html*/
+/*http://foundation.zurb.com/docs/components/grid.html*/
+/*@include grid-row;*/
+/*@include grid-column(4);*/
 
 body {
 	font-family: 'Open Sans', Arial, sans-serif !important;
-	color: $lichtgrijs;
+	color: $middelgrijs;
 	background-color: #F5F5EC;
 	line-height: 125%;
 	background-image: image-url('line-tile.png');
@@ -41,7 +48,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 0.3em;
-	color: $lichtgrijs;
+	color: $middelgrijs;
 	letter-spacing: -1px;
 	line-height: 1em;
 	font-weight: normal;
@@ -74,7 +81,7 @@ h4 {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 0.86em;
-	color: $lichtgrijs;
+	color: $middelgrijs;
 	padding-bottom: 0.8em;
 }
 
@@ -83,19 +90,19 @@ strong {
 }
 
 a {
-	color: $lichtgrijs;
+	color: $middelgrijs;
 	text-decoration: underline;
 
 	//http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
 	-ms-word-break: break-all;
-    word-break: break-all;
+	word-break: break-all;
 
-    /* Non standard for webkit */
-    word-break: break-word;
+	/* Non standard for webkit */
+	word-break: break-word;
 
 	-webkit-hyphens: auto;
-   	-moz-hyphens: auto;
-    hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 a:hover {
@@ -202,6 +209,10 @@ blockquote p {
 		font-size: 0.75em;
 	}
 
+	td {
+		font-size: inherit;
+	}
+
 	td.linenos {
 		text-align: right;
 		background-color: #ECECEC;
@@ -250,40 +261,25 @@ blockquote p {
 /****************************
 * Body gebeuren
 ****************************/
-.container {
-	padding-top: 3em; //No margin-top in connection with overlays
-	position: relative;
-}
-
 /*header*/h1.title {
 	font-size: 1em;
 	margin-left: 0;
 	float: left;
 }
 
-.subtitle {
-	display: inline !important;
-
-	@media only screen and (max-width: 767px) {
-		display: none !important;
-	}
-}
-
 header {
-	margin-bottom: 1.25em !important;
+	@include grid-row;
+	padding-top: 2em; //No margin-top in connection with overlays
+	margin-bottom: 1em !important;
+	padding-left: $column-gutter/2;
+	padding-right: $column-gutter/2;
 
-	@media only screen and (min-width: $rowWidth) {
-		.columns {
-			margin-left: -$columnGutter;
-		}
-
-		nav {
-			margin-right: -2*$columnGutter;
-		}
+	.subtitle {
+		display: none;
 	}
 
-	@media only screen and (max-width: 767px) {
-		margin-bottom: 0 !important;
+	.description {
+		display: none;
 	}
 
 	a {
@@ -306,10 +302,6 @@ nav {
 
 	ul {
 		float: right;
-
-		// @media only screen and (max-width: 767px) {
-		// 	margin-bottom: 0 !important;
-		// }
 	}
 
 	li {
@@ -335,20 +327,20 @@ nav {
 }
 
 .main {
-	border: 1px solid #F0F0E5;
-	background-color: white;
+	@include grid-row;
 	@include box-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+	border: 1px solid $lichtgrijs;
+	background-color: white;
 }
 
 .breadcrumbs {
-	border-bottom: 1px solid #F0F0E5;
-	background-color: white;
-	font-size: 0.86em;
+	@include grid-row;
+	border-bottom: 1px solid $lichtgrijs;
 	text-transform: uppercase;
 
 	a {
 		font-weight: bold;
-		color: $lichtgrijs;
+		color: $middelgrijs;
 		text-decoration: none;
 	}
 
@@ -359,6 +351,7 @@ nav {
 		float: left !important;
 
 		li {
+			font-size: 0.86em;
 			float: left;
 			background-image: none;
 			padding: 0;
@@ -373,12 +366,18 @@ nav {
 }
 
 .content {
-	background-color: white;
-	border-right: 1px solid #F0F0E5;
+	@include grid-row(collapse);
+
+	> :first-child {
+		/*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
+		@include grid-column(12, false, false, false, false, false, true); //collapse=true
+		border-right: 1px solid $lichtgrijs;
+		padding: 0;
+	}
 }
 
 article {
-	border-bottom: 1px solid #F0F0E5;
+	border-bottom: 1px solid $lichtgrijs;
 	padding-bottom: 1.5em;
 
 	.entry-content {
@@ -389,7 +388,7 @@ article {
 		@include clearfix();
 
 		img {
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			// padding: 1.25em;
 			padding-left: 1.25em;
 			padding-right: 1.25em;
@@ -449,6 +448,7 @@ article {
 
 	header {
 		margin: 0 !important;
+		padding-top: 0;
 
 		.meta {
 			margin-left: auto;
@@ -482,7 +482,7 @@ article {
 	}
 
 	article[role="article"] footer {
-		border-top: 1px solid #F0F0E5;
+		border-top: 1px solid $lichtgrijs;
 	}
 }
 
@@ -490,7 +490,7 @@ article {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 0.86em;
-	color: $lichtgrijs;
+	color: $middelgrijs;
 	display: block;
 	text-decoration: none;
 
@@ -500,12 +500,16 @@ article {
 	}
 }
 
-aside.columns {
+aside {
+	display: none;
 	padding-top: 2em;
+	padding-left: $column-gutter;
+	padding-left: $column-gutter;
 
 	section {
 		margin-bottom: 2em;
 		margin-right: 2em;
+		margin-left: 1em;
 	}
 
 	a {
@@ -518,6 +522,7 @@ aside.columns {
 }
 
 footer {
+	@include grid-row();
 	text-align: right;
 	padding-top: 0.94em;
 
@@ -526,17 +531,9 @@ footer {
 	}
 }
 
-.frontpage_posts {
-	border-right: 1px solid #F0F0E5;
-}
-
-.post_detail {
-	border-right: 1px solid #F0F0E5;
-}
-
 .blog_categories, .blog_archive {
-	border-right: 1px solid #F0F0E5;
-	border-bottom: 1px solid #F0F0E5;
+	border-right: 1px solid $lichtgrijs;
+	border-bottom: 1px solid $lichtgrijs;
 	margin-bottom: 1.5em;
 
 	h1 {
@@ -576,18 +573,6 @@ footer {
 	article {
 		padding-top: 2em;
 		padding-bottom: 1.25em;
-
-		.row-fluid {
-			padding: 0;
-		}
-
-		[class*="columns"] {
-			min-height: 20px;
-
-			@media (max-width: 767px) {
-				margin-left:  0px;
-			}
-		}
 	}
 
 	time {
@@ -609,7 +594,7 @@ footer {
 	padding-right: 5.5%;
 	padding-top: 2em;
 	padding-bottom: 2em;
-	border-right: 1px solid #F0F0E5;
+	border-right: 1px solid $lichtgrijs;
 
 	.pages {
 		text-transform: uppercase;
@@ -645,13 +630,10 @@ section.comments {
 	}
 }
 
-.footer-container {
-	@extend .container;
-	margin-top: 0;
-	padding-top: 0;
-}
-
 .footer-page {
+	padding-left: $column-gutter/2;
+	padding-right: $column-gutter/2;
+
 	ul {
 		width: 100%;
 		float: right;
@@ -662,3 +644,8 @@ section.comments {
 		background-image: none;
 	}
 }
+
+@import "jquery.fancybox";
+@import "partials/github";
+@import "partials/search";
+@import "partials/responsiveness";

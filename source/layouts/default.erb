@@ -10,6 +10,7 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%#<meta name="viewport" content="width=device-width" />%>
   <% if current_page.data['tags'] -%>
   <meta name="keywords" content="<%= current_page.data['tags'].join(', ') %>">
   <% end %>
@@ -37,20 +38,18 @@
 
   <%= stylesheet_link_tag 'screen.css' %>
 
-	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 
   <body>
-  	<div class="container">
-		  <header role="banner" class="row"><%= partial "partials/header" %></header>
-		  <div class="main row">
-		  	<%= partial "partials/breadcrumbs" %>
-		    <div class="row content">
-		      <%= yield %>
-        </div>
-		  </div>
+    <%= partial "partials/header" %>
+    <div class="main">
+      <%= partial "partials/breadcrumbs" %>
+      <div class="content">
+        <%= yield %>
+      </div>
     </div>
     <%= partial "partials/footer" %>
 

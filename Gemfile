@@ -30,4 +30,4 @@ gem 'middleman-swiftype', :path => 'lib/middleman-swiftype'
 gem 'middleman-backtick', :path => 'lib/middleman-backtick'
 
 gem "redcarpet"
-gem "zurb-foundation", '~> 3.2'
+gem "zurb-foundation", '~> 4.0'

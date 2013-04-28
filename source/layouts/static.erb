@@ -1,18 +1,16 @@
 <% breadcrumbs.unshift current_page.data['title'] %>
 <% wrap_layout :default do %>
 
-<div class="eight columns">
-  <section class="post_detail">
-    <article>
-      <header>
-        <h1><%= current_page.data['title'] %></h1>
-      </header>
-      <div class="entry-content">
-          <%= yield %>
-      </div>
-    </article>
-  </section>
-</div>
+<section class="post_detail">
+  <article>
+    <header>
+      <h1><%= current_page.data['title'] %></h1>
+    </header>
+    <div class="entry-content">
+        <%= yield %>
+    </div>
+  </article>
+</section>
 
 <%= partial "partials/aside" %>
 
