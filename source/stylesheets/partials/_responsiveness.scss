@@ -1,4 +1,4 @@
-header {
+header[role="banner"] {
     @media #{$small} {
         .description {
             display: block;
@@ -18,7 +18,7 @@ header {
 }
 
 .content {
-    > :first-child {
+    &> :first-child {
         @media #{$medium} {
             /*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
             @include grid-column(8, false, false, false, false, false, true); //collapse=true

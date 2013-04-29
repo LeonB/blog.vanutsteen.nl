@@ -10,25 +10,21 @@
       <% end %>
 
       <h2><%= year %></h2>
-      <div id="<%= year %>" class="year year=<%= year %> row">
+      <div id="<%= year %>" class="year year=<%= year %>">
 
     <% end %>
 
 
     <li class="<%= 'first' if article == articles.first %> <%= 'last' if article == articles.last %>">
       <article>
-        <div class="row">
-          <time class="small-2 columns" datetime="<%= article.date.xmlschema %>" pubdate>
-            <span class="month"><%= article.date.strftime('%b') %></span>
-            <span class='day'><%= article.date.strftime('%d') %></span>
-          </time>
-          <h3 class="small-10 columns"><%= link_to article.title, article %></h3>
-        </div>
-        <div class="row">
-          <footer class="small-10 columns offset-by-two">
-            <span class="categories">posted in <%= partial 'partials/post_categories', :locals => { :article => article } %></span>
-          </footer>
-        </div>
+        <time class="small-2 columns" datetime="<%= article.date.xmlschema %>" pubdate>
+          <span class="month"><%= article.date.strftime('%b') %></span>
+          <span class='day'><%= article.date.strftime('%d') %></span>
+        </time>
+        <h3 class="small-10 columns"><%= link_to article.title, article %></h3>
+        <footer class="small-10 columns offset-by-two">
+          <span class="categories">posted in <%= partial 'partials/post_categories', :locals => { :article => article } %></span>
+        </footer>
       </article>
     </li>
   <% end %>
