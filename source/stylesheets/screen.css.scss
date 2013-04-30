@@ -6,7 +6,7 @@
 @import "compass/css3";
 @import "compass/reset";
 
-@import "foundation/foundation-global";
+@import "foundation/variables";
 
 $row-width: emCalc(1150px);
 $column-gutter: emCalc(30px);
