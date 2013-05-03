@@ -1,6 +1,6 @@
 ---
 title: Using your desktop's git author everywhere you ssh
-date: 2013-04-30 15:16 UTC
+date: 2013-04-30 13:46 UTC
 layout: post
 categories:
 - Development
