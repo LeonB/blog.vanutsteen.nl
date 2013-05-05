@@ -31,3 +31,4 @@ gem 'middleman-backtick', :path => 'lib/middleman-backtick'
 
 gem "redcarpet"
 gem "zurb-foundation", '~> 4.0'
+gem 'rmagick'

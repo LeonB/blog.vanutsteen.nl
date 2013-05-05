@@ -1,8 +1,8 @@
 <ul class="coderwall_badges">
 <% coderwall_badges.each do |achievement| %>
 	<li>
-		<a href="https://coderwall.com/LeonB" target="_blank">
-			<img src="<%= achievement.badge %>" width="42" height="42" alt="<%= achievement.name %>" title="<%= achievement.description %>">
+		<a href="https://coderwall.com/LeonB" target="_blank" class="coderwall-<%= achievement.filename %>">
+			<%= achievement.description %>
 		</a>
 	</li>
 <% end %>

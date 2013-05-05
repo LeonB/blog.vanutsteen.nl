@@ -13,6 +13,9 @@
 # Ignore Sass' cache
 /.sass-cache
 
+# Ignore coderwall images
+/source/images/coderwall/
+
 # Already in it's own repository
 /lib/middleman-swiftype/
 /lib/middleman-backtick/
