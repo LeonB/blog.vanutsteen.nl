@@ -6,7 +6,7 @@ module BlogCategories
             :categorylink,
             :category_template,
            ]
-    
+
     KEYS.each do |name|
       attr_accessor name
     end
@@ -69,7 +69,7 @@ module BlogCategories
     def manipulate_resource_list(resources)
       resources + @app.blog.categories.map do |category, articles|
         path = CategoryPages.link(@app, category)
-        
+
         p = ::Middleman::Sitemap::Resource.new(
           @app.sitemap,
           path,
@@ -145,4 +145,4 @@ module Middleman
 end
 
 
-::Middleman::Extensions.register(:blog_categories, BlogCategories) 
+::Middleman::Extensions.register(:blog_categories, BlogCategories)
