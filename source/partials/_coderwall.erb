@@ -1,7 +1,7 @@
 <ul class="coderwall_badges">
 <% coderwall_badges.each do |achievement| %>
 	<li>
-		<a href="https://coderwall.com/LeonB" target="_blank" class="coderwall-<%= achievement.filename %>">
+		<a href="https://coderwall.com/LeonB" target="_blank" class="coderwall-<%= achievement.filename %>" title="<%= achievement.description %>">
 			<%= achievement.description %>
 		</a>
 	</li>
