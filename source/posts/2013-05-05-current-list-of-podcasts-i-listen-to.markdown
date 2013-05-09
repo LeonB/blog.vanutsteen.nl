@@ -41,6 +41,7 @@ I'm downloading a _lot_ of podcasts with [flexget](http://flexget.com/). Here's 
 - [Linux Action Show! Video](http://www.jupiterbroadcasting.com/feeds/lasstorrent.xml)
 - [Non Breaking Space Show](http://feeds.feedburner.com/nbsp-new?format=xml)
 - [Plan B Video](http://bitlove.org/jupiterbroadcasting/planbvid/feed)
+- [RailsCasts](http://feeds.feedburner.com/railscasts)
 - [Ruby 5](http://feeds.feedburner.com/Ruby5)
 - [Ruby Rogues](http://rubyrogues.com/feed/)
 - [Ruby Show](http://feeds.feedburner.com/rubyshow)
