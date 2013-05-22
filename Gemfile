@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 # git "https://github.com/middleman/middleman.git", :branch => '3.0-stable' do
 #   gem "middleman"
@@ -31,4 +31,4 @@ gem 'middleman-backtick', :path => 'lib/middleman-backtick'
 
 gem "redcarpet"
 gem "zurb-foundation", '~> 4.0'
-gem 'rmagick'
+# gem 'rmagick'
