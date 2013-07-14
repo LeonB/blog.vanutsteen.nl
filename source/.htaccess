@@ -28,6 +28,10 @@ RewriteRule ^feed/?$ /feed.rss [QSA,L]
 RewriteCond %{HTTP:Accept-encoding} gzip
 RewriteCond %{HTTP_USER_AGENT} !Konqueror
 RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)\.css$ $1.css.gz [QSA,L]
+RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]
+RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
+RewriteRule ^$ index.html.gz [QSA,L]
 
 <FilesMatch "^latest\.json$">
 Header Add Access-Control-Allow-Origin "*"
@@ -43,16 +47,17 @@ ExpiresDefault A3600
 ExpiresDefault A2419200
 Header append Cache-Control "public"
 </FilesMatch>
-<FilesMatch "\.(xml|txt|html|htm|js|css)(\.gz)?$">
+
+<FilesMatch "\.(txt|js|css)(\.gz)?$">
 ExpiresDefault A2419200
 Header append Cache-Control "private, must-revalidate"
 </FilesMatch>
 
 # 3 DAYS
-# <FilesMatch "\.(xml|txt|html|htm|js|css)$">
-# ExpiresDefault A259200
-# Header append Cache-Control "private, must-revalidate"
-# </FilesMatch>
+<FilesMatch "\.(xml|html|htm)(\.gz)?$">
+ExpiresDefault A259200
+Header append Cache-Control "private, must-revalidate"
+</FilesMatch>
 
 # NEVER CACHE
 <FilesMatch "\.(php|cgi|pl)$">
