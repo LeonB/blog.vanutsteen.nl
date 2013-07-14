@@ -25,13 +25,15 @@ RewriteRule (.*)$ http://blog.vanutsteen.nl/$1 [R=301,L]
 
 RewriteRule ^feed/?$ /feed.rss [QSA,L]
 
+# Check if pre-gzipped file exists
 RewriteCond %{HTTP:Accept-encoding} gzip
-RewriteCond %{HTTP_USER_AGENT} !Konqueror
 RewriteCond %{REQUEST_FILENAME}.gz -f
-RewriteRule ^(.*)\.css$ $1.css.gz [QSA,L]
-RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]
-RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
-RewriteRule ^$ index.html.gz [QSA,L]
+RewriteRule ^(.*)$ $1.gz [QSA,L]
+
+# Check if pre-gzipped directory index exists
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}/index.html.gz -f
+RewriteRule ^(.*)$ $1/index.html.gz [QSA,L]
 
 <FilesMatch "^latest\.json$">
     Header Add Access-Control-Allow-Origin "*"
