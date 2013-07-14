@@ -18,7 +18,7 @@ tags:
 
 ```
 aptitude install transmission
-wget /images/uploads/2008/12/transmission-daemon -O /etc/init.d/transmission-daemon
+wget http://blog.vanutsteen.nl/images/uploads/2008/12/transmission-daemon.txt -O /etc/init.d/transmission-daemon
 chmod +x /etc/init.d/transmission-daemon
 adduser --home /dev/null --shell /bin/false --no-create-home --disabled-login transmission
 mkdir /etc/transmission

@@ -67,7 +67,7 @@ And while writing this article I was looking for a [Wordpress/blog plugin for Vi
 As cherry on the pie, a nice screenshot of my gvim in action:
 
 
-[![Vim with python-mode](/wp-content/uploads/2009/10/vim_python.png)](/images/uploads/2009/10/vim_python.png)
+[![Vim with python-mode](/images/uploads/2009/10/vim_python.png)](/images/uploads/2009/10/vim_python.png)
 
 [update]
 I've installed Netneans 6.8m2 and it feels a lot faster than 6.7 but python completion is as bad as in 6.7.

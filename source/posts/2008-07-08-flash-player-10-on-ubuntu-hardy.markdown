@@ -19,26 +19,22 @@ tags:
 
 But then I thought: waaaait a minute, I can pull the same trick I did with [ruby 1.8.7 and guessnet](2008/06/29/installing-ruby-187-and-guessnet-on-hardy/)! The steps:
 
+  1. Copy [this file](/images/uploads/2008/07/intrepid.list) to /etc/apt/sources.list.d/intrepid.list
 
 
-	
-  1. Copy [this file](wp-content/uploads/2008/07/intrepid.list) to /etc/apt/sources.list.d/intrepid.list
-
-	
   2. Apt-get update
 
-	
+
   3. apt-get remove flashplugin-nonfree (just to be save)
 
-	
-  4. Add flashplugin-nonfree to /etc/apt/preferences ([here's the example how](wp-content/uploads/2008/07/preferences) including ruby & guessnet)
 
-	
+  4. Add flashplugin-nonfree to /etc/apt/preferences ([here's the example how](/images/uploads/2008/07/preferences.txt) including ruby & guessnet)
+
+
   5. apt-get install flashplugin-nonfree
 
-	
-  6. Restart firefox
 
+  6. Restart firefox
 
 Voila: flash 10
 
