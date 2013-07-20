@@ -4,7 +4,7 @@
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-  <title><%= current_page.data.title ? "#{current_page.data.title} - #{settings.title} #{settings.subtitle}" : "#{settings.title} - #{settings.title} #{settings.subtitle}" %></title>
+  <title><%= partial "partials/title" %></title>
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -14,7 +14,7 @@
   <% if current_page.data['tags'] -%>
   <meta name="keywords" content="<%= current_page.data['tags'].join(', ') %>">
   <% end %>
-  <meta name="description" content="<%= yield_content(:meta_description) || settings.description %>" />
+  <meta name="description" content="<%= yield_content(:meta_description) || current_page.data['description'] || settings.description %>" />
 
   <% if yield_content(:opengraph) %>
   <!-- Opengraph data -->
@@ -26,6 +26,10 @@
   <meta name="author" content="<%= settings.author %>">
 
   <link href="<%= settings.url %>/favicon.ico" rel="icon">
+
+  <% if link = yield_content(:canonical) %>
+    <link rel="canonical" href="<%= link %>" />
+  <% end %>
 
   <!-- feeds -->
   <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="<%= settings.title %> ATOM Feed">

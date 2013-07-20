@@ -4,6 +4,8 @@ per_page: 100
 ---
 <% breadcrumbs.unshift "#{categoryname}" %>
 <% breadcrumbs.unshift "categories" %>
+<% content_for :meta_description do "stuff I've written about in a specific category (#{categoryname})" end %>
+<% content_for :title do "All about #{categoryname}" end %>
 
 <div class="small-8 columns">
   <section class="blog_categories">

@@ -1,0 +1,10 @@
+<%
+  if title = yield_content(:title)
+    return "#{title} - #{settings.title}"
+  elsif title = current_page.data.title
+    return "#{title} - #{settings.title}"
+  else
+    return "#{settings.title} #{settings.subtitle}"
+  end
+
+%>
