@@ -1,4 +1,4 @@
-//= require "vendor/jquery-1.9.1"
+//= require "vendor/jquery-1.10.2.min.js"
 //= require "vendor/jquery.magnific-popup.min.js"
 //= require "vendor/jquery.ba-hashchange.min.js"
 //= require "vendor/jquery.swiftype.search.js"
