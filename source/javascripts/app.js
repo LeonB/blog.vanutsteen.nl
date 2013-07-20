@@ -1,5 +1,5 @@
 //= require "vendor/jquery-1.9.1"
-//= require "vendor/jquery.fancybox-2.1.4"
+//= require "vendor/jquery.magnific-popup.min.js"
 //= require "vendor/jquery.ba-hashchange.min.js"
 //= require "vendor/jquery.swiftype.search.js"
 
@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
   jQuery('.entry-content').find('a[href$=".jpg"], a[href$=".png"]').find('img').each(function(i, img){
     var img = jQuery(img);
     var a = img.parent();
-    a.fancybox({});
+    a.magnificPopup({type:'image'});
   });
 
   var customPreRenderFunction = function(data) {
