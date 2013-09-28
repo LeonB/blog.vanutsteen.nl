@@ -22,6 +22,7 @@
 
 # Do not spill private information
 /config.rb
+/.env
 
 .DS_Store
 /Gemfile.lock

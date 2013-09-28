@@ -12,6 +12,7 @@ gem "middleman-blog",          :github => 'middleman/middleman-blog'
 # gem "middleman-livereload",    :github => 'middleman/middleman-livereload'
 # gem "middleman-deploy",        :github => 'tvaughan/middleman-deploy'
 # gem 'middleman-minify-html',   :github => 'middleman/middleman-minify-html'
+gem "middleman-dotenv"
 
 # gem 'middleman'
 # gem 'middleman-core'
