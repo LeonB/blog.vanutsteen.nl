@@ -166,7 +166,7 @@ activate :deploy do |deploy|
   deploy.host = ENV['DEPLOY_HOST']
   deploy.path = ENV['DEPLOY_PATH']
   deploy.clean = true
-  deploy.after_build = false
+  deploy.build_before = false
 end
 
 activate :swiftype do |swiftype|
