@@ -38,156 +38,156 @@ $portrait: "only screen and (orientation: portrait)";
 /*@include grid-column(4);*/
 
 body {
-	font-family: 'Open Sans', Arial, sans-serif !important;
-	color: $middelgrijs;
-	background-color: #F5F5EC;
-	line-height: 125%;
-	background-image: image-url('line-tile.png');
-	background-position: top left;
-	font-size: 16px;
+    font-family: 'Open Sans', Arial, sans-serif !important;
+    color: $middelgrijs;
+    background-color: #F5F5EC;
+    line-height: 125%;
+    background-image: image-url('line-tile.png');
+    background-position: top left;
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	padding-bottom: 0.3em;
-	color: $middelgrijs;
-	letter-spacing: -1px;
-	line-height: 1em;
-	font-weight: normal;
-	margin: 0;
+    padding-bottom: 0.3em;
+    color: $middelgrijs;
+    letter-spacing: -1px;
+    line-height: 1em;
+    font-weight: normal;
+    margin: 0;
 }
 
 h1 {
-	font-size: 1.88em; //30px
-	a {
-		font-weight: bold;
-		font-size: 2em;
-	}
+    font-size: 1.88em; //30px
+    a {
+        font-weight: bold;
+        font-size: 2em;
+    }
 }
 
 h2 {
-	font-weight: bold;
-	font-size: 1.88em; //30px
-	padding: 0.75em 0 0.75em 0.75em;
-	text-transform: uppercase;
-	a {
-		text-decoration: none;
-	}
+    font-weight: bold;
+    font-size: 1.88em; //30px
+    padding: 0.75em 0 0.75em 0.75em;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+    }
 }
 
 h3 {
-	padding: 0.94em 0 0.94em 0;
-	font-size: 1.4em;
+    padding: 0.94em 0 0.94em 0;
+    font-size: 1.4em;
 }
 
 h4 {
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 0.86em;
-	color: $middelgrijs;
-	padding-bottom: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.86em;
+    color: $middelgrijs;
+    padding-bottom: 0.8em;
 }
 
 strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 a {
-	color: $middelgrijs;
-	text-decoration: underline;
+    color: $middelgrijs;
+    text-decoration: underline;
 
-	//http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
-	-ms-word-break: break-all;
-	word-break: break-all;
+    //http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+    -ms-word-break: break-all;
+    word-break: break-all;
 
-	/* Non standard for webkit */
-	word-break: break-word;
+    /* Non standard for webkit */
+    word-break: break-word;
 
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 a:hover {
-	color: $donkergrijs;
+    color: $donkergrijs;
 }
 
 p, pre {
-	font-size: 0.86em;
-	font-weight: normal;
-	padding-bottom: 10px;
-	line-height: 24px;
+    font-size: 0.86em;
+    font-weight: normal;
+    padding-bottom: 10px;
+    line-height: 24px;
 }
 
 ol li {
-	list-style-type: decimal;
-	list-style-position: inside;
+    list-style-type: decimal;
+    list-style-position: inside;
 }
 
 ul li {
-	list-style-type: none;
-	background-image: image-url('footer-bullet.png');
-	background-repeat: no-repeat;
-	background-position: 0 8px;
-	padding-left: 0.94em;
-	margin: 0;
+    list-style-type: none;
+    background-image: image-url('footer-bullet.png');
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    padding-left: 0.94em;
+    margin: 0;
 }
 
 img {
-	&.alignright {
-		float: right;
-		margin-right: 0;
-		margin-top: 0;
-	}
+    &.alignright {
+        float: right;
+        margin-right: 0;
+        margin-top: 0;
+    }
 
-	&.alignleft {
-		float: right;
-		margin-right: 0;
-		margin-top: 0;
-	}
+    &.alignleft {
+        float: right;
+        margin-right: 0;
+        margin-top: 0;
+    }
 
-	&.aligncenter {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+    &.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 em {
-	font-style: italic;
+    font-style: italic;
 }
 
 code {
-	margin: 0 2px;
-	padding: 0px 5px;
-	border: 1px solid #EAEAEA;
-	background-color: #F8F8F8;
-	border-radius: 3px;
-	white-space: nowrap;
+    margin: 0 2px;
+    padding: 0px 5px;
+    border: 1px solid #EAEAEA;
+    background-color: #F8F8F8;
+    border-radius: 3px;
+    white-space: nowrap;
 }
 
 figure {
-	margin-top: 5px;
-	margin-bottom: 1.25em;
+    margin-top: 5px;
+    margin-bottom: 1.25em;
 
-	code {
-		margin: 0;
-		padding: 0;
-		border: 0px solid transparent;
-		border-radius: none;
-		white-space: pre;
-		background-color: transparent;
-		-webkit-text-size-adjust:none; /*Do not adjust font-size in horizontal scrollable code blocks (iphone)*/
-	}
+    code {
+        margin: 0;
+        padding: 0;
+        border: 0px solid transparent;
+        border-radius: none;
+        white-space: pre;
+        background-color: transparent;
+        -webkit-text-size-adjust:none; /*Do not adjust font-size in horizontal scrollable code blocks (iphone)*/
+    }
 }
 
 figcaption {
-	@include background-image(linear-gradient(color-stops(#FAFAFA, #EAEAEA)));
-	font-size: 0.75em;
-	padding: 5px 10px;
-	height: 2.5em;
-	border-top: 1px solid #DDD;
-	border-left: 1px solid #DDD;
-	border-right: 1px solid #DDD;
+    @include background-image(linear-gradient(color-stops(#FAFAFA, #EAEAEA)));
+    font-size: 0.75em;
+    padding: 5px 10px;
+    height: 2.5em;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
 }
 
 blockquote {
@@ -210,18 +210,18 @@ blockquote p {
         table-layout: fixed;
     }
 
-	td {
+    td {
         font-family: Consolas, "Liberation Mono", Courier, monospace;
-		font-size: inherit;
+        font-size: inherit;
         padding: 8px 15px;
         line-height: 1.5em;
         vertical-align: top;
-	}
+    }
 
     .gl {
-		text-align: right;
-		background-color: #ECECEC;
-		border-right: 1px solid #DDD;
+        text-align: right;
+        background-color: #ECECEC;
+        border-right: 1px solid #DDD;
         color: #999;
         padding: 8px 10px;
         width: auto;
@@ -248,394 +248,394 @@ blockquote p {
 * Body gebeuren
 ****************************/
 /*header*/h1.title {
-	font-size: 1em;
-	margin-left: 0;
-	float: left;
+    font-size: 1em;
+    margin-left: 0;
+    float: left;
 }
 
 header[role="banner"] {
-	@include grid-row;
-	padding-top: 2em; //No margin-top in connection with overlays
-	margin-bottom: 1em !important;
-	padding-left: $column-gutter/2;
-	padding-right: $column-gutter/2;
+    @include grid-row;
+    padding-top: 2em; //No margin-top in connection with overlays
+    margin-bottom: 1em !important;
+    padding-left: $column-gutter/2;
+    padding-right: $column-gutter/2;
 
-	.subtitle {
-		display: none;
-	}
+    .subtitle {
+        display: none;
+    }
 
-	.description {
-		display: none;
-	}
+    .description {
+        display: none;
+    }
 
-	a {
-		margin-left: 0;
-		text-decoration: none;
-	}
+    a {
+        margin-left: 0;
+        text-decoration: none;
+    }
 
-	span {
-		display: block;
-		margin-top: 3px;
-	}
+    span {
+        display: block;
+        margin-top: 3px;
+    }
 
-	.banner {
-		display: block;
-	}
+    .banner {
+        display: block;
+    }
 }
 
 nav {
-	float: right;
+    float: right;
 
-	ul {
-		float: right;
-	}
+    ul {
+        float: right;
+    }
 
-	li {
-		float: left;
-		background-image: none;
-		padding-left: 1.1em;
+    li {
+        float: left;
+        background-image: none;
+        padding-left: 1.1em;
 
-		&.first {
-			padding-left: 0;
-		}
+        &.first {
+            padding-left: 0;
+        }
 
-		&.first a {
-			margin-left: 0;
-		}
-	}
+        &.first a {
+            margin-left: 0;
+        }
+    }
 
-	a {
-		margin-left: 0.5em;
-		margin-right: 0;
-		font-weight: bold;
-		text-decoration: none;
-	}
+    a {
+        margin-left: 0.5em;
+        margin-right: 0;
+        font-weight: bold;
+        text-decoration: none;
+    }
 }
 
 .main {
-	@include grid-row;
-	@include box-shadow(0 0 4px rgba(0, 0, 0, 0.1));
-	border: 1px solid $lichtgrijs;
-	background-color: white;
+    @include grid-row;
+    @include box-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+    border: 1px solid $lichtgrijs;
+    background-color: white;
 }
 
 .breadcrumbs {
-	@include grid-row;
-	border-bottom: 1px solid $lichtgrijs;
-	text-transform: uppercase;
+    @include grid-row;
+    border-bottom: 1px solid $lichtgrijs;
+    text-transform: uppercase;
 
-	a {
-		font-weight: bold;
-		color: $middelgrijs;
-		text-decoration: none;
-	}
+    a {
+        font-weight: bold;
+        color: $middelgrijs;
+        text-decoration: none;
+    }
 
-	ul {
-		padding: 1.25em 0 1.25em 1em !important;
-		margin: 0;
-		list-style-type: none;
-		float: left !important;
+    ul {
+        padding: 1.25em 0 1.25em 1em !important;
+        margin: 0;
+        list-style-type: none;
+        float: left !important;
 
-		li {
-			font-size: 0.86em;
-			float: left;
-			background-image: none;
-			padding: 0;
-			margin: 0;
-		}
-	}
+        li {
+            font-size: 0.86em;
+            float: left;
+            background-image: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
 }
 
 .raquo {
-	margin-left: 5px;
-	margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .content {
-	@include grid-row(collapse);
+    @include grid-row(collapse);
 
-	> :first-child {
-		/*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
-		@include grid-column(12, false, false, false, false, false, true); //collapse=true
-		border-right: 1px solid $lichtgrijs;
-		padding: 0;
-	}
+    > :first-child {
+        /*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
+        @include grid-column(12, false, false, false, false, false, true); //collapse=true
+        border-right: 1px solid $lichtgrijs;
+        padding: 0;
+    }
 }
 
 article {
-	border-bottom: 1px solid $lichtgrijs;
-	padding-bottom: 1.5em;
+    border-bottom: 1px solid $lichtgrijs;
+    padding-bottom: 1.5em;
 
-	.entry-content {
-		margin-left: auto;
-		margin-right: auto;
-		width: 89%;
-		// overflow: auto;
-		@include clearfix();
+    .entry-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 89%;
+        // overflow: auto;
+        @include clearfix();
 
-		img {
-			@include box-sizing(border-box);
-			// padding: 1.25em;
-			padding-left: 1.25em;
-			padding-right: 1.25em;
-			max-width: 100%;
-		}
-	}
+        img {
+            @include box-sizing(border-box);
+            // padding: 1.25em;
+            padding-left: 1.25em;
+            padding-right: 1.25em;
+            max-width: 100%;
+        }
+    }
 
-	p {
-		word-wrap: break-word;
-	}
+    p {
+        word-wrap: break-word;
+    }
 
-	ul, ol {
-		font-size: 0.86em;
-		margin-left: 10px;
-		margin-bottom: 10px;
-	}
+    ul, ol {
+        font-size: 0.86em;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 
-	li {
-		p {
-			padding-bottom: 5px;
-		}
-	}
+    li {
+        p {
+            padding-bottom: 5px;
+        }
+    }
 
-	.meta {
-		font-style: italic;
-		font-size: 0.88em;
-		padding-bottom: 4px;
-		@include clearfix();
+    .meta {
+        font-style: italic;
+        font-size: 0.88em;
+        padding-bottom: 4px;
+        @include clearfix();
 
-		.prev {
-			float: left;
-			text-align: left;
-		}
+        .prev {
+            float: left;
+            text-align: left;
+        }
 
-		.next {
-			float: right;
-			text-align: right;
-		}
-	}
+        .next {
+            float: right;
+            text-align: right;
+        }
+    }
 
-	.banner img {
-		margin: 0;
-		margin-bottom: 1.25em;
-	}
+    .banner img {
+        margin: 0;
+        margin-bottom: 1.25em;
+    }
 
-	h1 {
-		margin: 0;
-		font-weight: bold;
-		font-size: 1.88em;
-		padding: 0.67em 0 0.67em 0.67em;
-		text-transform: uppercase;
-	}
+    h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.88em;
+        padding: 0.67em 0 0.67em 0.67em;
+        text-transform: uppercase;
+    }
 
-	h2 {
-		padding: 0.67em 0 0.67em 0.67em;
-	}
+    h2 {
+        padding: 0.67em 0 0.67em 0.67em;
+    }
 
-	header {
-		margin: 0 !important;
-		padding-top: 0;
+    header {
+        margin: 0 !important;
+        padding-top: 0;
 
-		.meta {
-			margin-left: auto;
-			margin-right: auto;
-			width: 89%;
-			color: #C0C0B5;
+        .meta {
+            margin-left: auto;
+            margin-right: auto;
+            width: 89%;
+            color: #C0C0B5;
 
-			a {
-				color: #C0C0B5;
-				margin-right: 0;
-			}
+            a {
+                color: #C0C0B5;
+                margin-right: 0;
+            }
 
-			a:hover {
-				color: #9E9E97;
-			}
-		}
-	}
+            a:hover {
+                color: #9E9E97;
+            }
+        }
+    }
 
-	h2 {
-		margin: 0;
-	}
+    h2 {
+        margin: 0;
+    }
 
-	header span {
-		display: inline;
-	}
+    header span {
+        display: inline;
+    }
 
-	footer {
-		margin-left: auto;
-		margin-right: auto;
-		width: 89%;
-	}
+    footer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 89%;
+    }
 
-	article[role="article"] footer {
-		border-top: 1px solid $lichtgrijs;
-	}
+    article[role="article"] footer {
+        border-top: 1px solid $lichtgrijs;
+    }
 }
 
 .readmore {
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 0.86em;
-	color: $middelgrijs;
-	display: block;
-	text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.86em;
+    color: $middelgrijs;
+    display: block;
+    text-decoration: none;
 
-	:hover {
-		text-decoration: none;
-		color: #111;
-	}
+    :hover {
+        text-decoration: none;
+        color: #111;
+    }
 }
 
 aside {
-	display: none;
-	padding-top: 2em;
-	padding-left: $column-gutter;
-	padding-left: $column-gutter;
+    display: none;
+    padding-top: 2em;
+    padding-left: $column-gutter;
+    padding-left: $column-gutter;
 
-	section {
-		margin-bottom: 2em;
-		margin-right: 2em;
-		margin-left: 1em;
-	}
+    section {
+        margin-bottom: 2em;
+        margin-right: 2em;
+        margin-left: 1em;
+    }
 
-	a {
-		text-decoration: none;
-	}
+    a {
+        text-decoration: none;
+    }
 
-	li {
-		padding-bottom: 0.5em;
-	}
+    li {
+        padding-bottom: 0.5em;
+    }
 }
 
 footer {
-	@include grid-row();
-	text-align: right;
-	padding-top: 0.94em;
+    @include grid-row();
+    text-align: right;
+    padding-top: 0.94em;
 
-	p {
-		font-size: 0.81em; //13px
-	}
+    p {
+        font-size: 0.81em; //13px
+    }
 }
 
 .blog_categories, .blog_archive {
-	border-right: 1px solid $lichtgrijs;
-	border-bottom: 1px solid $lichtgrijs;
-	margin-bottom: 1.5em;
+    border-right: 1px solid $lichtgrijs;
+    border-bottom: 1px solid $lichtgrijs;
+    margin-bottom: 1.5em;
 
-	h1 {
-		margin: 0;
-		font-weight: bold;
-		font-size: 1.88em;
-		padding: 0.67em 0 0.67em 0.67em;
-		text-transform: uppercase;
-	}
+    h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.88em;
+        padding: 0.67em 0 0.67em 0.67em;
+        text-transform: uppercase;
+    }
 
-	h2 {
-		position: absolute;
-	}
+    h2 {
+        position: absolute;
+    }
 
-	h3 {
-		padding: 0;
-	}
+    h3 {
+        padding: 0;
+    }
 
-	ul {
-		margin-left: auto;
-		margin-right: auto;
-		width: 89%;
-	}
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 89%;
+    }
 
-	li {
-		background-image: none;
+    li {
+        background-image: none;
 
-		&.last article {
-			border-bottom: 0;
-		}
-	}
+        &.last article {
+            border-bottom: 0;
+        }
+    }
 
-	div.year {
-		@include grid-row(nest);
-		margin-left: 6em;
-	}
+    div.year {
+        @include grid-row(nest);
+        margin-left: 6em;
+    }
 
-	article {
-		@include grid-row(nest);
-		padding-top: 2em;
-		padding-bottom: 1.25em;
-	}
+    article {
+        @include grid-row(nest);
+        padding-top: 2em;
+        padding-bottom: 1.25em;
+    }
 
-	time {
-		@include grid-column(2);
-	}
+    time {
+        @include grid-column(2);
+    }
 
-	h3 {
-		/*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
-		@include grid-column(10, false, false, false, false, false, true);
-	}
+    h3 {
+        /*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
+        @include grid-column(10, false, false, false, false, false, true);
+    }
 
-	footer {
-		/*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
-		@include grid-column(10, false, false, 2, false, false, true);
-		text-align: left;
-		float: left;
-		padding-top: 0;
-		border-top: 0 solid transparent;
-	}
+    footer {
+        /*@include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);*/
+        @include grid-column(10, false, false, 2, false, false, true);
+        text-align: left;
+        float: left;
+        padding-top: 0;
+        border-top: 0 solid transparent;
+    }
 }
 
 .pagination {
-	text-align: right;
-	padding-right: 5.5%;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	border-right: 1px solid $lichtgrijs;
+    text-align: right;
+    padding-right: 5.5%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-right: 1px solid $lichtgrijs;
 
-	.pages {
-		text-transform: uppercase;
-		font-size: 0.86em;
-		font-weight: bold;
-	}
+    .pages {
+        text-transform: uppercase;
+        font-size: 0.86em;
+        font-weight: bold;
+    }
 
-	.prev {
-		margin-left: 0;
-		margin-right: 1.25em;
-	}
+    .prev {
+        margin-left: 0;
+        margin-right: 1.25em;
+    }
 
-	.next {
-		margin-right: 0;
-		margin-left: 1.25em;
-	}
+    .next {
+        margin-right: 0;
+        margin-left: 1.25em;
+    }
 }
 
 section.comments {
-	padding-top: 1.5em;
-	margin-left: auto;
-	margin-right: auto;
-	width: 89%;
+    padding-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 89%;
 
-	h1 {
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: 1.88em; //30px
-	}
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.88em; //30px
+    }
 
-	li {
-		background-image: none;
-	}
+    li {
+        background-image: none;
+    }
 }
 
 .footer-page {
-	padding-left: $column-gutter/2;
-	padding-right: $column-gutter/2;
+    padding-left: $column-gutter/2;
+    padding-right: $column-gutter/2;
 
-	ul {
-		width: 100%;
-		float: right;
-	}
+    ul {
+        width: 100%;
+        float: right;
+    }
 
-	li {
-		float: right;
-		background-image: none;
-	}
+    li {
+        float: right;
+        background-image: none;
+    }
 }
 
 @import "vendor/magnific-popup";
