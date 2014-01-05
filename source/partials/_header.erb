@@ -1,11 +1,4 @@
 <header role="banner">
-  <h1 class="title">
-    <a href="/" title="<%= settings.title %>">
-      <%=h settings.title %>
-      <span class="subtitle"><%=h settings.subtitle %></span>
-    </a>
-    <span class="description"><%=h settings.description %></span>
-  </h1>
   <nav role="navigation">
     <ul class="main-navigation">
       <li class="first"><a href="/">Home</a></li>
@@ -14,4 +7,12 @@
       <li class="last"><a href="http://feeds.feedburner.com/vanutsteen" target="_blank" title="subscribe via RSS">RSS</a></li>
     </ul>
   </nav>
+
+  <% if current_page.url == '/' %><h1><% end %>
+    <a class="title" href="/" title="<%= settings.title %>">
+      <span><%=h settings.title %></span>
+      <span class="subtitle"><%=h settings.subtitle %></span>
+    </a>
+    <span class="description"><%=h settings.description %></span>
+  <% if current_page.url == '/' %></h1><% end %>
 </header>

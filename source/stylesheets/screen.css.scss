@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 1.88em; //30px
+    font-size: 1.88em;
     a {
         font-weight: bold;
         font-size: 2em;
@@ -66,17 +66,22 @@ h1 {
 
 h2 {
     font-weight: bold;
-    font-size: 1.88em; //30px
+    font-size: 1.5em;
     padding: 0.75em 0 0.75em 0.75em;
     text-transform: uppercase;
+
     a {
         text-decoration: none;
+    }
+
+    .frontpage_posts & {
+        font-size: 1.88rem;
     }
 }
 
 h3 {
     padding: 0.94em 0 0.94em 0;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 h4 {
@@ -107,15 +112,18 @@ a {
     hyphens: auto;
 }
 
-a:hover {
+a:hover, a:hover span {
     color: $donkergrijs;
 }
 
 p, pre {
     font-size: 0.86em;
     font-weight: normal;
-    padding-bottom: 10px;
     line-height: 24px;
+}
+
+p {
+    padding-bottom: 10px;
 }
 
 ol li {
@@ -167,7 +175,7 @@ code {
 
 figure {
     margin-top: 5px;
-    margin-bottom: 1.25em;
+    /* margin-bottom: 1.25em; */
 
     code {
         margin: 0;
@@ -177,6 +185,11 @@ figure {
         white-space: pre;
         background-color: transparent;
         -webkit-text-size-adjust:none; /*Do not adjust font-size in horizontal scrollable code blocks (iphone)*/
+    }
+
+    pre, table {
+        /* margin-bottom: 0; */
+        /* padding-bottom: 0; */
     }
 }
 
@@ -247,11 +260,6 @@ blockquote p {
 /****************************
 * Body gebeuren
 ****************************/
-/*header*/h1.title {
-    font-size: 1em;
-    margin-left: 0;
-    float: left;
-}
 
 header[role="banner"] {
     @include grid-row;
@@ -260,12 +268,31 @@ header[role="banner"] {
     padding-left: $column-gutter/2;
     padding-right: $column-gutter/2;
 
+    .title {
+        @extend h1;
+        font-size: 2rem;
+        margin-left: 0;
+        font-weight: bold;
+        float: left;
+        padding-bottom: 0;
+
+        span {
+            float: left;
+        }
+    }
+
     .subtitle {
         display: none;
+        margin-left: 7px;
     }
 
     .description {
         display: none;
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: -1px;
+        float: left;
+        clear: both;
     }
 
     a {
