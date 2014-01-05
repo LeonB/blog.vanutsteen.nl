@@ -254,6 +254,7 @@ blockquote p {
         display: block;
         overflow-y: hidden;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
