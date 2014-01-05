@@ -264,7 +264,7 @@ blockquote p {
 
 header[role="banner"] {
     @include grid-row;
-    padding-top: 2em; //No margin-top in connection with overlays
+    padding-top: 1em; //No margin-top in connection with overlays
     margin-bottom: 1em !important;
     padding-left: $column-gutter/2;
     padding-right: $column-gutter/2;
