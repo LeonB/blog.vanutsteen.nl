@@ -37,7 +37,7 @@ RewriteCond %{HTTP:Accept-encoding} gzip
 RewriteCond %{REQUEST_FILENAME}/index.html.gz -f
 RewriteRule ^(.*)$ $1/index.html.gz [QSA,L]
 
-<FilesMatch "^latest\.json$">
+<FilesMatch "^latest\.json(\.gz)?$">
     Header Add Access-Control-Allow-Origin "*"
 </FilesMatch>
 
@@ -58,7 +58,7 @@ ExpiresDefault A3600
 </FilesMatch>
 
 # 3 DAYS
-<FilesMatch "\.(xml|html|htm)(\.gz)?$">
+<FilesMatch "\.(xml|json|html|htm)(\.gz)?$">
     ExpiresDefault A259200
     Header append Cache-Control "private, must-revalidate"
 </FilesMatch>
