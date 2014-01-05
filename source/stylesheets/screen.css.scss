@@ -201,63 +201,47 @@ blockquote p {
   font-style: italic;
 }
 
-.highlighttable {
-	font-family: Consolas, "Liberation Mono", Courier, monospace;
-	width: 100%;
-	table-layout: fixed;
+.highlight {
+    overflow-x: visible;
 
-	pre {
-		line-height: 1.84em; //22px
-		font-size: 0.75em;
-	}
+    table {
+        max-width: 100%;
+        width: 100%;
+        table-layout: fixed;
+    }
 
 	td {
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
 		font-size: inherit;
+        padding: 8px 15px;
+        line-height: 1.5em;
+        vertical-align: top;
 	}
 
-	td.linenos {
+    .gl {
 		text-align: right;
 		background-color: #ECECEC;
 		border-right: 1px solid #DDD;
-		padding: 0;
-		padding-left: 0;
-		vertical-align: top;
-		/*position: absolute;*/
-		width: 1.2em;
+        color: #999;
+        padding: 8px 10px;
+        width: auto;
+        display: block;
+        float: left;
 
-		pre {
-			display: block;
-			text-align: right;
-			padding: 0;
-			margin: 0;
-			padding-right: 0.4em;
-			padding-top: 0.3em;
-			padding-right: 0.4em;
-			color: #AAA;
-		}
-	}
+        /* Stop line numbers being visually selected */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
-	td.code {
-		padding: 0;
-		width: 100%;
-		vertical-align: top;
-
-		.highlight {
-			overflow-y: hidden;
-			overflow-x: auto;
-			background-color: transparent;
-		}
-
-		pre {
-			display: block;
-		  padding-left: 0.8em;
-		  padding-top: 0.3em;
-		  padding-right: 0.8em;
-		  padding-bottom: 0;
-		  width: auto;
-		  float: left;
-		}
-	}
+    .code {
+        display: block;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
 }
 
 /****************************

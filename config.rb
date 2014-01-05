@@ -216,7 +216,7 @@ ready do
 end
 
 # Syntax highlighting based on Pygments
-activate :syntax, :linenos => 'table', :linenostart => 1
+activate :syntax, :line_numbers => true
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
