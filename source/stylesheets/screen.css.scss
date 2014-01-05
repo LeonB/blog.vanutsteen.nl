@@ -666,8 +666,9 @@ section.comments {
     }
 }
 
-@import "vendor/magnific-popup";
+@import "partials/post_detail";
 @import "partials/github";
 @import "partials/search";
 @import "partials/responsiveness";
 @import "partials/coderwall";
+@import "vendor/magnific-popup";
