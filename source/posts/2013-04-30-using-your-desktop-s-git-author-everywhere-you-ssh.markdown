@@ -43,7 +43,7 @@ export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 
 ``` plain ~/.ssh/config
 Host *
-	endEnv LANG LC_* GIT_*
+    SendEnv LANG LC_* GIT_*
 ```
 
 ``` plain /etc/ssh/sshd_config
