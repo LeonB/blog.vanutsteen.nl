@@ -18,7 +18,7 @@ scripting we can easily implement the behavior we want (upgrade all the
 packges).
 
 ``` bash
-for pkg in `opkg list-upgradable | cut -d' ' -f1`; do okpg upgrade $pkg; done
+for pkg in `opkg list-upgradable | cut -d' ' -f1` | grep -v Multiple; do opkg upgrade $pkg; done
 ```
 
 It wouldn't advise doing an upgrade like this. The best way is still to
