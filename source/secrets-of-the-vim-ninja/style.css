@@ -1,0 +1,68 @@
+*							{ -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body						{ margin: 0; padding: 0; font-family: "Open Sans", "Lucida Grande", Helvetica, Arial, sans-serif; color: #fff; background: #556372; }
+
+#page						{ width: 850px; position: relative; left: 275px; margin-bottom: 150px; }
+#page h1					{ font-weight: 300; margin-bottom: 0; }
+#page h2					{ font-weight: 600; font-size: 18px; margin: 0 0 5px 0; color: #e1f3a8; letter-spacing: -0.03em; }
+#page a						{ color: #46c3f2; }
+#page a:hover				{ background: #000; color: #fff; }
+
+#page article				{ padding-top: 2em; padding-right: 50px; }
+
+#page ul, #page ol			{ background: rgba(0, 0, 0, 0.2); -moz-border-radius: 10px; border-radius: 10px; box-shadow: 1px 1px rgba(255, 255, 255, 0.1), -1px -1px rgba(0, 0, 0, 0.3); padding: 0px; list-style: none; margin: 0; }
+
+#page ul li					{ padding: 5px; overflow: hidden; }
+
+#page ul li label			{ float: left; background: rgba(0, 0, 0, 0.2); width: 16%; display: inline-block; padding: 3px 8px; -moz-border-radius: 6px; border-radius: 6px; font-weight: 600; font-size: 1.2em; }
+#page ul li label.bash		{ color: #a2d2e6; }
+#page ul li label.insert	{ color: #b1e6a2; }
+#page ul li label.visual	{ color: #fbf; }
+#page ul li label.command	{ color: #e6c2a2; }
+
+#page ul li div				{ float: left; padding: 5px; display: inline-block; width: 82%; margin-left: 2%; }
+#page ul li div p			{ margin: 0; }
+
+#page ul li i				{ color: rgba(255, 255, 255, 0.5); font-weight: 300; }
+
+#page ul.wide li + li		{ margin-top: 10px; }
+#page ul.wide li label		{ float: none; width: auto; display: block; }
+#page ul.wide li div		{ float: none; width: auto; display: block; margin-left: 0; }
+
+#page ul.small li			{ margin: 0; padding: 10px; }
+#page ul.small li + li		{ margin-top: 0; padding-top: 0; }
+#page ul.small li label		{ font-size: 1em; background: none; padding: 0; }
+
+/* Crash course */
+
+#page ol					{ margin-top: 2em; }
+
+#page ol li					{ padding: 5px; overflow: hidden; margin-bottom: 3px; }
+
+#page ol li .command		{ float: left; background: rgba(0, 0, 0, 0.2); width: 40%; display: inline-block; padding: 3px 8px; -moz-border-radius: 6px; border-radius: 6px; font-weight: 600; font-size: 1.2em; }
+#page ol li .notes			{ float: left; padding: 5px; display: inline-block; width: 58%; margin-left: 2%; }
+
+#page .bash_mode .command	{ color: #a2d2e6; }
+#page .insert_mode .command	{ color: #b1e6a2; }
+#page .command_mode .command	{ color: #e6c2a2; }
+
+#page .meta					{ color: rgba(255, 255, 255, 0.3); }
+
+#page .key					{ padding: 1px 4px; background: rgba(0, 0, 0, 0.2); -moz-border-radius: 3px; border-radius: 3px; font-size: .9em; }
+
+#page code					{ font-family: "PT Mono", Monaco, Menlo, monospace; color: #ffb; font-size: .9em; }
+
+#toc						{ position: fixed; left: 15px; top: 28px; font-size: 13px; width: 200px; }
+#toc h2						{ margin: 0; font-size: 11px; font-weight: 300; color: rgba(255, 255, 255, 0.6); padding-left: 25px; }
+#toc ol						{ padding-left: 25px; margin: 5px 0 0; }
+#toc ol li					{ color: rgba(0, 0, 0, 0.4); margin-bottom: 2px; }
+#toc a						{ color: rgba(255, 255, 255, 1); }
+#toc a:hover				{ cursor: pointer; background: #000; }
+
+#page #legend				{ font-size: 12px; padding-top: 0; }
+#legend div					{ display: inline-block; margin-right: 10px; }
+#legend div::before			{ content: '■'; font-size: 24px; padding-right: 3px; top: 3px; position: relative; }
+#legend .insert				{ color: #b1e6a2; }
+#legend .command			{ color: #e6c2a2; }
+#legend .visual				{ color: #fbf; }
+#legend .bash				{ color: #a2d2e6; }

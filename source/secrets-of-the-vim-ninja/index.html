@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Secrets of the Vim Ninja</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic' rel='stylesheet' type='text/css' />
+    <link href="/secrets-of-the-vim-ninja/style.css" rel="stylesheet" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+
+<div id="toc">
+    <h2>CONTENTS</h2>
+    <ol>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#undo">Undo and redo</a></li>
+        <li><a href="#movement_lines">Movement: Lines</a></li>
+        <li><a href="#movement_characters">Movement: Characters</a></li>
+        <li><a href="#movement_words">Movement: Words and text</a></li>
+        <li><a href="#movement_code">Movement: Code</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#repetition">Repetition</a></li>
+        <li><a href="#replace">Replace</a></li>
+        <li><a href="#insert">Insert mode</a></li>
+        <li><a href="#deleting">Deleting text</a></li>
+        <li><a href="#changing">Changing text</a></li>
+        <li><a href="#indenting">Indenting text</a></li>
+        <li><a href="#selecting">Selecting text and cut/copy/paste</a></li>
+        <li><a href="#files">Files and directories</a></li>
+        <li><a href="#buffers">Buffers</a></li>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#scrolling">Scrolling</a></li>
+        <li><a href="#folding">Folding</a></li>
+        <li><a href="#autocompletion">Autocompletion</a></li>
+        <li><a href="#bookmarks">Bookmarks and history</a></li>
+        <li><a href="#mapping">Mapping keys</a></li>
+        <li><a href="#options">Useful options</a></li>
+        <li><a href="#misc">Miscellaneous</a></li>
+        <li><a href="#vimrc">Sample .vimrc files</a></li>
+        <li><a href="#reading">More reading</a></li>
+    </ol>
+</div>
+
+<div id="page">
+    <h1>Secrets of the Vim Ninja</h1>
+
+    <article id="legend">
+        <div class="normal">Normal mode</div>
+        <div class="insert">Insert mode</div>
+        <div class="command">Command mode</div>
+        <div class="visual">Visual mode</div>
+        <div class="bash">Shell mode</div>
+    </article>
+
+    <article id="help">
+        <h2>Help</h2>
+
+        <ul>
+            <li><label class="command">:help</label> <div>Load help.</div></li>
+            <li><label class="command">:help j</label> <div>Get help on the 'j' command.</div></li>
+            <li><label class="command">:help :split</label> <div>Get help on the ':split' command.</div></li>
+            <li><label class="command">:help z*</label> <div>Get help for all commands that start with 'z'.</div></li>
+            <li><label class="normal">&lt;C-]&gt;</label> <div>Open link under cursor in help system.</div></li>
+            <li><label class="normal">&lt;C-o&gt;</label> <div>Go back one page in help system.</div></li>
+        </ul>
+    </article>
+
+    <article id="undo">
+        <h2>Undo and redo</h2>
+
+        <ul>
+            <li><label class="normal">u</label> <div>Undo.</div></li>
+            <li><label class="normal">U</label> <div>Undo all latest changes on one line.</div></li>
+            <li><label class="normal">&lt;C-r&gt;</label> <div>Redo. (&lt;C-r&gt; means <span class="key">Ctrl+r</span>, by the way. It's a Vim convention.)</div></li>
+            <li><label class="command">:redo</label> <div>Redo (alternate form).</div></li>
+        </ul>
+    </article>
+
+    <article id="movement_lines">
+        <h2>Movement: Lines</h2>
+
+        <ul>
+            <li><label class="normal">0</label> <div>Jump to beginning of the current line.</div></li>
+            <li><label class="normal">^</label> <div>Jump to first non-space character on the current line.</div></li>
+            <li><label class="normal">$</label> <div>Jump to end of the current line.</div></li>
+            <li><label class="normal">gg</label> <div>Jump to the first line in the file.</div></li>
+            <li><label class="normal">G</label> <div>Jump to the last line in the file.</div></li>
+            <li><label class="normal">47G</label> <div>Jump to line 47.</div></li>
+            <li><label class="command">:47</label> <div>Jump to line 47 (alternate form).</div></li>
+        </ul>
+    </article>
+
+    <article id="movement_characters">
+        <h2>Movement: Characters</h2>
+
+        <ul>
+            <li><label class="normal">f&thinsp;<i>[char]</i></label> <div>Jump to next occurrence of <i>[char]</i>.</div></li>
+            <li><label class="normal">3f&thinsp;<i>[char]</i></label> <div>Jump to third occurrence of <i>[char]</i>.</div></li>
+            <li><label class="normal">F&thinsp;<i>[char]</i></label> <div>Jump to previous occurrence of <i>[char]</i>.</div></li>
+            <li><label class="normal">t&thinsp;<i>[char]</i></label> <div>Jump to one character before the next occurrence of <i>[char]</i>.</div></li>
+            <li><label class="normal">T&thinsp;<i>[char]</i></label> <div>Jump to one character after the previous occurrence of <i>[char]</i>.</div></li>
+            <li><label class="normal">;</label> <div>Repeat last <span class="key">f</span>/<span class="key">F</span>/<span class="key">t</span>/<span class="key">T</span> movement.</div></li>
+            <li><label class="normal">,</label> <div>Repeat last <span class="key">f</span>/<span class="key">F</span>/<span class="key">t</span>/<span class="key">T</span> movement in opposite directory.</div></li>
+        </ul>
+    </article>
+
+    <article id="movement_words">
+        <h2>Movement: Words and text</h2>
+
+        <ul>
+            <li><label class="normal">w</label> <div>Jump to beginning of next word.</div></li>
+            <li><label class="normal">e</label> <div>Jump to next end of word.</div></li>
+            <li><label class="normal">b</label> <div>Jump back to beginning of previous word.</div></li>
+            <li><label class="normal">(</label> <div>Jump back to beginning of previous sentence.</div></li>
+            <li><label class="normal">)</label> <div>Jump to beginning of next sentence.</div></li>
+            <li><label class="normal">{</label> <div>Jump back to beginning of previous paragraph.</div></li>
+            <li><label class="normal">}</label> <div>Jump to beginning of next paragraph.</div></li>
+        </ul>
+    </article>
+
+    <article id="movement_code">
+        <h2>Movement: Code</h2>
+
+        <ul>
+            <li><label class="normal">%</label> <div>Jump between opening/closing braces, brackets, parentheses, etc.</div></li>
+            <li><label class="normal">[[</label> <div>Jump to previous function.</div></li>
+            <li><label class="normal">]]</label> <div>Jump to next function.</div></li>
+            <li><label class="normal">[{</label> <div>Jump to beginning of current block.</div></li>
+            <li><label class="normal">]}</label> <div>Jump to end of current block.</div></li>
+        </ul>
+    </article>
+
+    <article id="search">
+        <h2>Search</h2>
+
+        <ul>
+            <li><label class="normal">/</label> <div>Search.</div></li>
+            <li><label class="normal">?</label> <div>Search backwards.</div></li>
+            <li><label class="normal">n</label> <div>Jump to next match.</div></li>
+            <li><label class="normal">N</label> <div>Jump to next match, moving in the opposite direction.</div></li>
+            <li><label class="normal">*</label> <div>Search for current word under the cursor.</div></li>
+            <li><label class="normal">#</label> <div>Search for current word under the cursor, moving backwards.</div></li>
+        </ul>
+    </article>
+
+    <article id="repetition">
+        <h2>Repetition</h2>
+
+        <ul>
+            <li><label class="normal">.</label> <div>Repeat last command.</div></li>
+            <li><label class="normal">23dd</label> <div>Delete 23 lines.</div></li>
+            <li><label class="normal">5j</label> <div>Jump down 5 lines.</div></li>
+            <li><label class="normal">qa</label> <div>Start recording keystrokes to the @a macro.</div></li>
+            <li><label class="normal">q</label> <div>Stop recording.</div></li>
+            <li><label class="normal">@a</label> <div>Play back the @a macro.</div></li>
+            <li><label class="normal">4@a</label> <div>Play back the @a macro 4 times.</div></li>
+        </ul>
+    </article>
+
+    <article id="replace">
+        <h2>Replace</h2>
+
+        <ul class="wide">
+            <li><label class="command">:%s/search/replace/g</label> <div>Replace all instances of 'search' with 'replace' throughout the whole file.</div></li>
+            <li><label class="command">:5,10s/search/replace/g</label> <div>Replace all instances of 'search' with 'replace' from line 5 to line 10.</div></li>
+
+            <li><label class="command">:%s/\(\d\+\)-\(\d\+\)\+/\1\&amp;ndash;\2/g</label> <div>Find all [number]-[number] text and replace with [number]&amp;ndash;[number]</div></li>
+            <li><label class="command">:%s/\v(\d+)-(\d+)+/\1\&amp;ndash;\2/g</label> <div>Same as last, but using magic regex.</div></li>
+
+            <li><label class="command">:g/foo/ s/bar/BAR/g</label> <div>On lines that match the regex /foo/, replace 'bar' with 'BAR'.</div></li>
+
+            <li><label class="command">:vimgrep /^&lt;h5/ *.html</label> <div>Find lines that start with '&lt;h5' in all HTML files in the current directory.</div></li>
+
+            <li><label class="command">:cn</label> <div>In vimgrep mode, move to next match.</div></li>
+            <li><label class="command">:cp</label> <div>In vimgrep mode, move to previous match.</div></li>
+        </ul>
+    </article>
+
+    <article id="insert">
+        <h2>Insert mode</h2>
+
+        <ul>
+            <li><label class="normal">i</label> <div>Go into insert mode before the character under the cursor.</div></li>
+            <li><label class="normal">I</label> <div>Jump to beginning of the current line and enter insert mode.</div></li>
+            <li><label class="normal">a</label> <div>Go into insert mode after the character under the cursor.</div></li>
+            <li><label class="normal">A</label> <div>Jump to end of the current line and enter insert mode.</div></li>
+            <li><label class="normal">o</label> <div>Add a blank line after current line and enter insert mode on that line.</div></li>
+            <li><label class="normal">O</label> <div>Add a blank line before current line and enter insert mode on that line.</div></li>
+        </ul>
+    </article>
+
+    <article id="deleting">
+        <h2>Deleting text</h2>
+
+        <ul>
+            <li><label class="normal">x</label> <div>Delete the character under the cursor.</div></li>
+            <li><label class="normal">dw</label> <div>Delete a word.</div></li>
+            <li><label class="normal">dd</label> <div>Delete the current line.</div></li>
+            <li><label class="normal">D</label> <div>Delete from cursor position to the end of the current line.</div></li>
+            <li><label class="normal">dt&thinsp;<i>[char]</i></label> <div>Delete from cursor position to <i>[char]</i>. (Also works with <span class="key">f</span>.)</div></li>
+            <li><label class="normal">d)</label> <div>Delete from cursor position to the beginning of the next sentence.</div></li>
+            <li><label class="normal">d}</label> <div>Delete from cursor position to the end of the paragraph.</div></li>
+            <li><label class="normal">di(</label> <div>Delete inside parentheses. (You can be anywhere inside them.)</div></li>
+            <li><label class="normal">da&lt;</label> <div>Delete around angle brackets.</div></li>
+            <li><label class="normal">dit</label> <div>Delete inside tag. (Meaning, delete what's between the opening and closing tags.)</div></li>
+        </ul>
+    </article>
+
+    <article id="changing">
+        <h2>Changing text</h2>
+
+        <ul>
+            <li><label class="normal">J</label> <div>Join line (pull the next line up after the end of the current line).</div></li>
+            <li><label class="normal">~</label> <div>Toggle the case (upper/lower) of the character under the cursor.</div></li>
+            <li><label class="visual">u</label> <div>In visual mode: change selected text to lowercase.</div></li>
+            <li><label class="visual">U</label> <div>In visual mode: change selected text to uppercase.</div></li>
+            <li><label class="normal">r&thinsp;<i>[char]</i></label> <div>Replace character under cursor with <i>[char]</i>.</div></li>
+            <li><label class="normal">R</label> <div>Enter overtype mode.</div></li>
+            <li><label class="normal">cw</label> <div>Change word (delete word and enter insert mode).</div></li>
+            <li><label class="normal">c)</label> <div>Change from cursor position to the beginning of the next sentence.</div></li>
+            <li><label class="normal">c}</label> <div>Change from cursor position to the end of the paragraph.</div></li>
+            <li><label class="normal">ci"</label> <div>Change inside quotes (not including quotes).</div></li>
+            <li><label class="normal">ca"</label> <div>Change around quotes (including quotes).</div></li>
+            <li><label class="normal">cit</label> <div>Change inside tag contents (between opening and closing tags).</div></li>
+            <li><label class="normal">cat</label> <div>Change a tag's contents (includes opening/closing tags).</div></li>
+            <li><label class="normal">cis</label> <div>Change inside sentence (doesn&rsquo;t include space after period).</div></li>
+            <li><label class="normal">cas</label> <div>Change a sentence (includes space after period).</div></li>
+            <li><label class="normal">cip</label> <div>Change inside paragraph (doesn&rsquo;t include blank line).</div></li>
+            <li><label class="normal">cap</label> <div>Change a paragraph (includes blank line).</div></li>
+            <li><label class="normal">ci&lt;</label> <div>Change inside tag name (between opening and closing angle brackets).</div></li>
+            <li><label class="normal">ca&lt;</label> <div>Change a tag name (includes brackets).</div></li>
+            <li><label class="normal">ci(</label> <div>Change inside parentheses.</div></li>
+            <li><label class="normal">ci{</label> <div>Change inside curly braces.</div></li>
+            <li><label class="normal">ci[</label> <div>Change inside square brackets.</div></li>
+            <li><label class="normal">C</label> <div>Delete the rest of the line and enter insert mode.</div></li>
+            <li><label class="normal">ct&thinsp;<i>[char]</i></label> <div>Change from cursor position to <i>[char]</i>.</div></li>
+        </ul>
+    </article>
+
+    <article id="indenting">
+        <h2>Indenting text</h2>
+
+        <ul>
+            <li><label class="normal">&gt;&gt;</label> <div>Indent current line.</div></li>
+            <li><label class="normal">&lt;&lt;</label> <div>Dedent current line.</div></li>
+            <li><label class="visual">&gt;</label> <div>In visual mode: Indent selected lines.</div></li>
+            <li><label class="visual">&lt;</label> <div>In visual mode: Dedent selected lines.</div></li>
+            <li><label class="normal">&gt;aB</label> <div>Indent current block (defined by curly braces).</div></li>
+            <li><label class="normal">&gt;ap</label> <div>Indent current paragraph.</div></li>
+            <li><label class="normal">&gt;i{</label> <div>Indent inside current set of curly braces.</div></li>
+            <li><label class="visual">=</label> <div>In visual mode: Reformat selected text.</div></li>
+        </ul>
+    </article>
+
+    <article id="selecting">
+        <h2>Selecting text and cut/copy/paste</h2>
+
+        <ul>
+            <li><label class="normal">v</label> <div>Enter visual select (by character).</div></li>
+            <li><label class="normal">V</label> <div>Enter visual select (by line).</div></li>
+            <li><label class="normal">&lt;C-v&gt;</label> <div>Enter visual select (by column).</div></li>
+            <li><label class="normal">gv</label> <div>Re-select last selected area.</div></li>
+            <li><label class="visual">y</label> <div>In visual mode: Yank selected text to Vim clipboard.</div></li>
+            <li><label class="visual">"+y</label> <div>In visual mode: Yank selected text to system clipboard.</div></li>
+            <li><label class="normal">yy</label> <div>Yank current line to clipboard.</div></li>
+            <li><label class="normal">yw</label> <div>Yank word.</div></li>
+            <li><label class="normal">yip</label> <div>Yank inside paragraph.</div></li>
+            <li><label class="normal">yas</label> <div>Yank a sentence.</div></li>
+            <li><label class="normal">yi&lt;</label> <div>Yank inside angle brackets.</div></li>
+            <li><label class="normal">p</label> <div>Paste from clipboard.</div></li>
+            <li><label class="normal">P</label> <div>Paste from clipboard before cursor.</div></li>
+            <li><label class="insert">&lt;C-r&gt;"</label> <div>In insert mode: Paste from clipboard.</div></li>
+            <li><label class="normal">"ayy</label> <div>Yank current line to the 'a' register. (You can use 'a' through 'z'.)</div></li>
+            <li><label class="normal">"ap</label> <div>Paste from the 'a' register.</div></li>
+        </ul>
+    </article>
+
+    <article id="files">
+        <h2>Files and directories</h2>
+
+        <ul>
+            <li><label class="command">:e!</label> <div>Reload current file, abandoning any changes.</div></li>
+            <li><label class="command">:r <i>[file]</i></label> <div>Insert the contents of <i>[file]</i>.</div></li>
+            <li><label class="command">:r !date</label> <div>Insert the results from the Unix <code>date</code> command.</div></li>
+            <li><label class="command">:pwd</label> <div>Echo current working directory to status line.</div></li>
+            <li><label class="command">:cd&thinsp;<i>[dir]</i></label> <div>Change current working directory to <i>[dir]</i>.</div></li>
+        </ul>
+    </article>
+
+    <article id="buffers">
+        <h2>Buffers</h2>
+
+        <ul>
+            <li><label class="command">:ls</label> <div>List open buffers.</div></li>
+            <li><label class="command">:buf 2</label> <div>Switch to buffer #2.</div></li>
+            <li><label class="command">:bn</label> <div>Go to [N]th next buffer in buffer list.</div></li>
+            <li><label class="command">:bp</label> <div>Go to [N]th previous buffer in buffer list.</div></li>
+            <li><label class="command">:b#</label> <div>Jump to previously (edited) buffer.</div></li>
+            <li><label class="command">:bd</label> <div>Close current buffer.</div></li>
+        </ul>
+    </article>
+
+    <article id="windows">
+        <h2>Windows</h2>
+
+        <ul>
+            <li><label class="command">:split</label> <div>Split window (one window on top of the other).</div></li>
+            <li><label class="command">:vsplit</label> <div>Split window (one window next to the other).</div></li>
+            <li><label class="command">:split <i>[file]</i></label> <div>Split window and open <i>[file]</i> in the new window.</div></li>
+            <li><label class="command">:close</label> <div>Close current window.</div></li>
+            <li><label class="command">:only</label> <div>Close every window except for the current one.</div></li>
+            <li><label class="normal">&lt;C-w&gt; h</label> <div>Move focus to the window to the left.</div></li>
+            <li><label class="normal">&lt;C-w&gt; j</label> <div>Move focus to the window underneath.</div></li>
+            <li><label class="normal">&lt;C-w&gt; k</label> <div>Move focus to the window above.</div></li>
+            <li><label class="normal">&lt;C-w&gt; l</label> <div>Move focus to the window to the right.</div></li>
+            <li><label class="normal">&lt;C-w&gt; w</label> <div>Move focus to the next window.</div></li>
+        </ul>
+    </article>
+
+    <article id="tabs">
+        <h2>Tabs</h2>
+
+        <ul>
+            <li><label class="command">:tabe</label> <div>Open a new tab.</div></li>
+            <li><label class="command">:tabe <i>[file]</i></label> <div>Open a new tab with <i>[file]</i>.</div></li>
+            <li><label class="command">:tabc</label> <div>Close current tab.</div></li>
+            <li><label class="normal">gt</label> <div>Move to next tab.</div></li>
+            <li><label class="normal">gT</label> <div>Move to previous tab.</div></li>
+        </ul>
+    </article>
+
+    <article id="scrolling">
+        <h2>Scrolling</h2>
+
+        <ul>
+            <li><label class="normal">H</label> <div>Jump to the high part of the screen.</div></li>
+            <li><label class="normal">M</label> <div>Jump to the middle part of the screen.</div></li>
+            <li><label class="normal">L</label> <div>Jump to the low part of the screen.</div></li>
+            <li><label class="normal">zt</label> <div>Scroll so the current line is at the top of the screen.</div></li>
+            <li><label class="normal">zz</label> <div>Scroll so the current line is in the middle of the screen.</div></li>
+            <li><label class="normal">zb</label> <div>Scroll so the current line is at the bottom of the screen.</div></li>
+            <li><label class="normal">&lt;C-u&gt;</label> <div>Scroll half page up.</div></li>
+            <li><label class="normal">&lt;C-d&gt;</label> <div>Scroll half page down.</div></li>
+            <li><label class="normal">&lt;C-b&gt;</label> <div>Scroll full page up.</div></li>
+            <li><label class="normal">&lt;C-f&gt;</label> <div>Scroll full page down.</div></li>
+        </ul>
+    </article>
+
+    <article id="folding">
+        <h2>Folding</h2>
+
+        <ul>
+            <li><label class="command">:fold</label> <div>In visual mode: Fold selected lines.</div></li>
+            <li><label class="normal">3zF</label> <div>Fold 3 lines.</div></li>
+            <li><label class="normal">zo</label> <div>Open current fold under the cursor.</div></li>
+            <li><label class="normal">zc</label> <div>Close current fold under the cursor.</div></li>
+            <li><label class="normal">zR</label> <div>Open all folds.</div></li>
+            <li><label class="normal">zd</label> <div>Delete fold under the cursor. (Leaves text intact, just removes fold.)</div></li>
+        </ul>
+    </article>
+
+    <article id="autocompletion">
+        <h2>Autocompletion</h2>
+
+        <ul>
+            <li><label class="normal">&lt;C-n&gt;</label> <div>Autocomplete current word. Also moves forward through autocomplete list.</div></li>
+            <li><label class="normal">&lt;C-p&gt;</label> <div>Move backward through autocomplete list.</div></li>
+            <li><label class="normal">&lt;C-x&gt; &lt;C-o&gt;</label> <div>Omnicomplete. See <code>:help omnifunc</code></div></li>
+        </ul>
+    </article>
+
+    <article id="bookmarks">
+        <h2>Bookmarks and history</h2>
+
+        <ul>
+            <li><label class="normal">ma</label> <div>Set current position as mark 'a' (any lowercase letter will do).</div></li>
+            <li><label class="normal">`a</label> <div>Jump to mark 'a'. (The first character is a backtick, left of the '1' on your keyboard.)</div></li>
+            <li><label class="normal">g;</label> <div>Go back to the last place you edited. (You can do it multiple times in a row.)</div></li>
+        </ul>
+    </article>
+
+    <article id="mapping">
+        <h2>Mapping keys</h2>
+
+        <ul class="wide">
+            <li><label class="command">:map</label> <div>List all mapped keys.</div></li>
+            <li><label class="command">:imap</label> <div>List all mapped keys for insert mode.</div></li>
+            <li><label class="command">:nmap</label> <div>List all mapped keys for normal mode.</div></li>
+            <li><label class="command">:imap jj &lt;Esc&gt;</label> <div>Map 'jj' in insert mode to do the same as the escape key.</div></li>
+            <li><label class="command">:map ,c &gt;&gt;</label> <div>Map ',c' to indent the current line.</div></li>
+        </ul>
+    </article>
+
+    <article id="options">
+        <h2>Useful options</h2>
+
+        <ul class="wide">
+            <li><label class="command">:syntax on</label> <div>Turn on syntax highlighting.</div></li>
+            <li><label class="command">:set number</label> <div>Turn on line numbers.</div></li>
+            <li><label class="command">:set wrap</label> <div>Wraps lines. (<code>:set nowrap</code> turns it off.)</div></li>
+            <li><label class="command">:set incsearch</label> <div>Show matches as you search rather than waiting for you to hit Enter.</div></li>
+            <li><label class="command">:set ignorecase smartcase</label> <div>When searching, ignore case unless you type a capital, in which case it&rsquo;ll match case (smartcase).</div></li>
+            <li><label class="command">:set pastetoggle=&lt;F5&gt;</label> <div>Sets paste toggle to the F5 key, so you can paste text without the indentation going berserk.</div></li>
+            <li><label class="command">:abbr teh the</label> <div>Add an abbreviation, so when you type 'teh', it changes it to 'the'.</div></li>
+            <li><label class="command">:abbr em@ my.email@gmail.com</label> <div>Another type of abbreviation, to save keystrokes (like TextExpander).</div></li>
+        </ul>
+    </article>
+
+    <article id="misc">
+        <h2>Miscellaneous</h2>
+
+        <ul class="wide">
+            <li><label class="command">:sort</label> <div>Sort selected text.</div></li>
+            <li><label class="command">:%sort</label> <div>Sort the whole file.</div></li>
+            <li><label class="command">:1,10sort</label> <div>Sort the first ten lines of the file.</div></li>
+            <li><label class="command">:!sort -n</label> <div>Sort selected text using the external Unix <code>sort</code> command with the <code>-n</code> option.</div></li>
+            <li><label class="command">:%!uniq</label> <div>Run the whole file through the external <code>uniq</code> command.</div></li>
+            <li><label class="bash">vimdiff <i>[file1]</i> <i>[file2]</i></label> <div>Diff <i>[file1]</i> and <i>[file2]</i> using synchronized split windows.</div></li>
+            <li><label class="normal">]c</label> <div>In vimdiff mode, move to next line with differences.</div></li>
+            <li><label class="normal">[c</label> <div>In vimdiff mode, move to previous line with differences.</div></li>
+            <li><label class="bash">vim + <i>[file]</i></label> <div>Open <i>[file]</i> in Vim and jump to the end of the file.</div></li>
+            <li><label class="bash">vim +21 <i>[file]</i></label> <div>Open <i>[file]</i> in Vim and jump to line 21.</div></li>
+            <li><label class="normal">[i</label> <div>Show (in the status line) the first line containing the word under the cursor.</div></li>
+            <li><label class="normal">[I</label> <div>Show (in the status line) all lines containing the word under the cursor.</div></li>
+            <li><label class="command">:g/pattern/</label> <div>Show (in the status line) all lines that match the regex <code>/pattern/</code>.</div></li>
+            <li><label class="command">:e scp://username@server//path/to/file</label> <div>Open a remote file over SSH.</div></li>
+            <li><label class="command">:au! BufNewFile,BufRead *.php set filetype=php.html.javascript.css</label> <div>When you open or create a .php file, set the filetype to include HTML, JS, and CSS (for good syntax highlighting).</div></li>
+            <li><label class="command">:iab &lt;expr&gt; dts strftime("%-d %b %Y (%a)")</label> <div>Make it so typing 'dts' followed by a space will insert the current date.</div></li>
+        </ul>
+    </article>
+
+    <article id="vimrc">
+        <h2>Sample .vimrc files</h2>
+
+        <ul class="wide small">
+            <li><label><a href="http://github.com/bencrowder/dotfiles/blob/master/vimrc">Ben&rsquo;s .vimrc</a></label></li>
+            <li><label><a href="http://github.com/chadgh/configs-utils/blob/master/dotfiles/vimrc">Chad&rsquo;s .vimrc</a></label></li>
+        </ul>
+    </article>
+
+    <article id="reading">
+        <h2>More reading</h2>
+
+        <ul class="wide small">
+            <li><label><a href="http://www.moolenaar.net/habits.html">Seven habits of effective text editing</a></label></li>
+            <li><label><a href="http://www.catswhocode.com/blog/100-vim-commands-every-programmer-should-know">100 Vim commands every programmer should know</a></label></li>
+            <li><label><a href="http://www.ukuug.org/events/linux2004/programme/paper-SMyers/Linux_2004_slides/vim_tips/">Power Vim usage: Tips &amp; Tricks for Everyday Editing</a></label></li>
+            <li><label><a href="http://arstechnica.com/information-technology/2011/11/two-decades-of-productivity-vims-20th-anniversary/">Two decades of productivity: Vim&rsquo;s 20th anniversary</a></label></li>
+            <li><label><a href="http://vimgolf.com/">VimGolf</a></label></li>
+            <li><label><a href="http://vimcasts.org/episodes/archive">Vimcasts</a></label></li>
+            <li><label><a href="http://rtorruellas.com/vim-cheat-sheet/">Richard Torruellas's Vim cheat sheet</a></label></li>
+        </ul>
+    </article>
+</div>
+
+</body>
+</html>
