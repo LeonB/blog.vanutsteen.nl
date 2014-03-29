@@ -51,13 +51,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.3em;
     color: $middelgrijs;
     letter-spacing: -1px;
-    line-height: 1em;
+    line-height: 1.1em;
     font-weight: normal;
     margin: 0;
 }
 
 h1 {
     font-size: 1.88em;
+    float: left;
+
     a {
         font-weight: bold;
         font-size: 2em;
@@ -322,6 +324,7 @@ nav {
         float: left;
         background-image: none;
         padding-left: 1.1em;
+        margin-bottom: 1em;
 
         &.first {
             padding-left: 0;
