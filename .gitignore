@@ -16,6 +16,9 @@
 # Ignore Sass' cache
 /.sass-cache
 
+# Ignore sprockets cache
+/.cache
+
 # Ignore coderwall images
 /source/images/coderwall/
 
