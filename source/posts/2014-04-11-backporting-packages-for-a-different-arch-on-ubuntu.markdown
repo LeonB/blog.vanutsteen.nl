@@ -31,7 +31,7 @@ use it in some place I should.
 # install dependencies
 sudo apt-get install dput ubuntu-dev-tools pbuilder
 # create a pbuilder image
-sudo dist=precise ARCH=i386 pbuilder create
+sudo DIST=precise ARCH=i386 pbuilder create
 # build the package and upload it
 ARCH=i386 backportpackage -b -B pbuilder -s trusty -d precise modsecurity-apache -u ppa:leonbo/servers -S ~ppa2
 ```
