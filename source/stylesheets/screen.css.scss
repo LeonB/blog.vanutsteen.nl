@@ -22,10 +22,10 @@ $medium-screen: emCalc(1024px);
 $large-screen: emCalc(1280px);
 
 $screen: "only screen";
-$small: "only screen and (min-width:"#{$small-screen}")";
-$medium: "only screen and (min-width:"#{$medium-screen}")";
-$large: "only screen and (min-width:"#{$large-screen}")";
-$larger-then-site: "only screen and (min-width:"#{$row-width+($column-gutter/2)}")";
+$small: "only screen and (min-width:#{$small-screen})";
+$medium: "only screen and (min-width:#{$medium-screen})";
+$large: "only screen and (min-width:#{$large-screen})";
+$larger-then-site: "only screen and (min-width:#{$row-width+($column-gutter/2)})";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)";
 

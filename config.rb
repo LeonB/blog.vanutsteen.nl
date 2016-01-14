@@ -5,6 +5,7 @@ require "lib/html_filters"
 require "lib/breadcrumbs"
 require "lib/github_repos"
 require 'middleman-blog/truncate_html'
+require 'zurb-foundation'
 
 # linkchecker "http://v5.vanutsteen.nl" --no-warnings
 
@@ -59,10 +60,10 @@ activate :minify_html,
 # First: gem install susy
 # require 'susy'
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  # config.output_style = :compact
+  config.add_import_path Foundation.scss_path
+end
 
 ###
 # Page options, layouts, aliases and proxies

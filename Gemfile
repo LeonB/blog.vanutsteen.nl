@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'middleman'
-gem 'middleman-core'
-gem 'middleman-more'
+gem 'middleman', '~> 3.0'
+gem 'middleman-core', '~> 3.0'
+gem 'middleman-more', '~> 3.0'
 gem "middleman-dotenv"
 gem 'middleman-blog'
 gem 'middleman-syntax'
