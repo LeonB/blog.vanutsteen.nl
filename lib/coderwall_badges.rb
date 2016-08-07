@@ -35,7 +35,7 @@ module CoderwallBadges
         raise(ArgumentError, "Invalid username")
       end
 
-      @@coderwall_badges = response["badges"].map { |badge| Achievement.new(badge) }
+      @@coderwall_badges = response["user"]["badges"].map { |badge| Achievement.new(badge) }
 
       @@coderwall_badges.each do |badge|
         badge.filename = badge.name.gsub(/\s/, '-')
